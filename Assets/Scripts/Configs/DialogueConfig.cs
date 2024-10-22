@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "DialogueConfig", menuName = "Scriptable Objects/DialogueConfig")]
-public class DialogueConfig : ScriptableObject
+public class DialogueConfig : UnlockableConfig
 {
     public enum DialogueLineSlot
     {

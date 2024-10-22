@@ -5,6 +5,8 @@ public class EvaluationReport : MonoBehaviour
     private int currentBlockIndex;
     private ReportBlock currentBlock;
     private ReportBlock[] blocks;
+    public event System.Action<DocumentConfig> DocumentUnlocked;
+    public event System.Action<DialogueConfig> DialogueUnlocked;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private void Awake()
@@ -42,6 +44,17 @@ public class EvaluationReport : MonoBehaviour
 
     private void OnBlockValidated(ReportBlock block)
     {
+        foreach(var unlocked in block.UnlockOnValidate)
+        {
+            if(unlocked is DocumentConfig docConfig)
+            {
+                DocumentUnlocked?.Invoke(docConfig);
+            }
+            else if(unlocked is DialogueConfig dialogueConfig)
+            {
+                DialogueUnlocked?.Invoke(dialogueConfig);
+            }
+        }
         block.Validated -= OnBlockValidated;
         SetCurrentBlock(currentBlockIndex + 1);
     }

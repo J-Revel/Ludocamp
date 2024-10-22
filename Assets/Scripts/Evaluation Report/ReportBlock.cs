@@ -8,6 +8,7 @@ public class ReportBlock : MonoBehaviour
     [SerializeField] private float disabledBlockOpacity;
     [SerializeField] private CanvasGroup canvasGroup;
     public event System.Action<ReportBlock> Validated;
+    public UnlockableConfig[] UnlockOnValidate => unlockOnValidate;
     private ReportOption[] options;
 
     private void Awake()

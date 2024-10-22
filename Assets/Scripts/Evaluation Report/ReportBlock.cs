@@ -39,10 +39,10 @@ public class ReportBlock : MonoBehaviour
     public void SetValidated()
     {
         validatedFrame.SetActive(true);
-        foreach(var unlockable in unlockOnValidate)
-        {
-            unlockable.OnUnlock();
-        }
+        //foreach(var unlockable in unlockOnValidate)
+        //{
+        //    unlockable.OnUnlock();
+        //}
         //validatedFrame.transform.SetAsLastSibling(); // = validatedFrame.transform.parent.childCount;
         Validated?.Invoke(this);
     }

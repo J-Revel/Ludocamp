@@ -49,10 +49,12 @@ public class EvaluationReport : MonoBehaviour
             if(unlocked is DocumentConfig docConfig)
             {
                 DocumentUnlocked?.Invoke(docConfig);
+                Debug.Log($"unlocked {docConfig.name}");
             }
             else if(unlocked is DialogueConfig dialogueConfig)
             {
                 DialogueUnlocked?.Invoke(dialogueConfig);
+                Debug.Log($"unlocked {dialogueConfig.name}");
             }
         }
         block.Validated -= OnBlockValidated;

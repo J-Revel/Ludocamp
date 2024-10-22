@@ -20,4 +20,9 @@ public class DialogueConfig : UnlockableConfig
     
     public DialogueLine[] lines;
     public string[] unlocks;
+
+    public override void OnUnlock()
+    {
+        GameState.UnlockDialogue(this);
+    }
 }

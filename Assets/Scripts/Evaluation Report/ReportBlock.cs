@@ -3,6 +3,7 @@ using System.Linq;
 
 public class ReportBlock : MonoBehaviour
 {
+    [SerializeField] private UnlockableConfig[] unlockOnValidate;
     [SerializeField] private GameObject validatedFrame;
     [SerializeField] private float disabledBlockOpacity;
     [SerializeField] private CanvasGroup canvasGroup;
@@ -37,6 +38,10 @@ public class ReportBlock : MonoBehaviour
     public void SetValidated()
     {
         validatedFrame.SetActive(true);
+        foreach(var unlockable in unlockOnValidate)
+        {
+            unlockable.OnUnlock();
+        }
         //validatedFrame.transform.SetAsLastSibling(); // = validatedFrame.transform.parent.childCount;
         Validated?.Invoke(this);
     }

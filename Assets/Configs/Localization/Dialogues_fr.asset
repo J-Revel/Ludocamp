@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogues_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: cb8e8526a9d155842a7d8256c227454f, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 11997419651072
+    m_Localized: Bienvenue Evaluateur. je vous attendais. pas trop stresser pour
+      ce premier jour ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11997541285888
+    m_Localized: "Honn\xEAtement un peu\u2026 Mais j\u2019ai hate de pouvoir commencer
+      !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11997541285889
+    m_Localized: "Oui oui. Ne sous estimez pas ce que vous allez voir quand m\xEAme.
+      Nous traitons tous les jours avec des choses choquantes et rentrons dans l\u2019intimit\xE9
+      des gens. j\u2019esp\xE8re que vous en prenez conscience ? \r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11997545480192
+    m_Localized: "Je voie\u2026 Je n\u2019pensais pas qu\u2019on irait aussi loin
+      pour un accident de la route\u2026 "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11997549674496
+    m_Localized: "l'impact des victimes d\u2019accidents est \xE9norme. Je comprendrais
+      si vous pr\xE9f\xE9rez arr\xEAt\xE9 mais comprenez bien qu\u2019il est indispensable
+      pour le nouvel \xE9tat de mieux comprendre le suivies des victimes d\u2019accident
+      pour \xE9viter tout futur probl\xE8mes. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11997549674497
+    m_Localized: 'Je comprends bien oui. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11997549674498
+    m_Localized: "Pour votre premi\xE8re analyse vous allez travailler sur le dossier
+      2015-06-18-1254. C\u2019est un dossier un peu vieux mais il vient d\u2019\xEAtre
+      rouvert \xE0 la demande de l\u2019avocat de la victime."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11997549674499
+    m_Localized: "Pour vous \xE9vitez de trop vous perdre nous vous avons affect\xE9
+      un assistant. Il vous trie les documents et vous les classe selon qui vous
+      les a fournis. Nous vous avons donn\xE9 la d\xE9p\xEAche de l\u2019affaire
+      dans un premier temps. "
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

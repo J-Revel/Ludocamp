@@ -1,17 +1,31 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class ScreenRoot : MonoBehaviour
 {
+    public delegate IEnumerator ScreenTransitionDelegate();
+
+    public IEnumerator disappear_coroutine { 
+        get
+        {
+            return GetComponent<IScreenDisappearTransition>().DisappearTransitionCoroutine();
+        }
+    }
+    public IEnumerator appear_coroutine { 
+        get
+        {
+            return GetComponent<IScreenAppearTransition>().AppearTransitionCoroutine();
+        }
+    }
 }
 
-[RequireComponent(typeof(CanvasGroup))]
-public class ScreenFadeTransition: MonoBehaviour
+public interface IScreenAppearTransition
 {
-    private CanvasGroup canvas_group;
+    public IEnumerator AppearTransitionCoroutine();
+}
 
-    private void Start()
-    {
-        
-    }
+public interface IScreenDisappearTransition
+{
+    public IEnumerator DisappearTransitionCoroutine();
 }

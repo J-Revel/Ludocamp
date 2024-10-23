@@ -20,4 +20,5 @@ public class DialogueConfig : UnlockableConfig
     
     public DialogueLine[] lines;
     public string[] unlocks;
+    public string id;
 }

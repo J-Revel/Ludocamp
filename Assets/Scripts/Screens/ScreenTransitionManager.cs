@@ -21,7 +21,7 @@ public class ScreenTransitionManager : MonoBehaviour
 
     public ScreenRoot InstantiateScreen(ScreenRoot prefab, ScreenStackMode screen_stack_mode)
     {
-        ScreenRoot screen = Instantiate(prefab);
+        //ScreenRoot screen = Instantiate(prefab);
         switch(screen_stack_mode)
         {
             case ScreenStackMode.Push:
@@ -35,7 +35,7 @@ public class ScreenTransitionManager : MonoBehaviour
         ScreenRoot screen_root = Instantiate(prefab, transform);
         screen_stack.Add(screen_root);
         transition_coroutines.Add(StartCoroutine(screen_root.appear_coroutine));
-        return screen;
+        return screen_root;
     }
 
     public void ShowScreen(ScreenRoot prefab, ScreenStackMode screen_stack_mode)

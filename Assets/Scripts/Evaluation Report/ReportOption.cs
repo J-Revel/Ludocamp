@@ -6,7 +6,9 @@ public class ReportOption : MonoBehaviour
     [SerializeField] private int correctOption;
     [SerializeField] private ReportOptionConfig optionConfig;
     [SerializeField] private TMPro.TMP_Dropdown optionDropdown;
+
     public event System.Action<ReportOption> Validated;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
@@ -15,6 +17,8 @@ public class ReportOption : MonoBehaviour
         optionDropdown.onValueChanged.RemoveAllListeners();
 
         optionDropdown.onValueChanged.AddListener(OnValueChanged);
+
+        Debug.Log($"start {gameObject.name}");
     }
 
     private void OnValueChanged(int value)

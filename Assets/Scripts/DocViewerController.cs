@@ -14,6 +14,8 @@ public class DocViewerController : MonoBehaviour
 
     public void OpenDocument(DocumentConfig docConfig)
     {
+        EvaluationReport.Instance.AddViewedDoc(docConfig);
+
         List<GameObject> toDelete = new List<GameObject>();
 
         for(int i = 0; i<documentContainer.childCount;i++)

@@ -9,8 +9,10 @@ public class DocumentMiniature : MonoBehaviour, IPointerEnterHandler, IPointerEx
     [SerializeField] private TMPro.TextMeshProUGUI shortTitleText;
     [SerializeField] private TMPro.TextMeshProUGUI fullTitleText;
     [SerializeField] private GameObject fullTitleTooltip;
+    [SerializeField] private GameObject newIndicator;
     //[SerializeField] private GameObject placeholderPrefab;
     [SerializeField] private Transform tooltipContainer;
+    public DocumentConfig DocumentConfig => documentConfig;
     private int childIndex;
     
     void Awake()
@@ -32,12 +34,18 @@ public class DocumentMiniature : MonoBehaviour, IPointerEnterHandler, IPointerEx
         docViewer.GetComponentInChildren<DocViewerController>().OpenDocument(documentConfig);
     }
 
+    public void SetNew(bool isNew)
+    {
+        newIndicator.SetActive(isNew);
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         //Debug.Log("enter");
         fullTitleTooltip.gameObject.SetActive(true);
         if(moveToFrontOnHover) transform.SetAsLastSibling();
         fullTitleTooltip.transform.SetAsFirstSibling();
+        SetNew(false);
     }
 
     public void OnPointerExit(PointerEventData eventData)

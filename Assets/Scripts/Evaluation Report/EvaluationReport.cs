@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 public class EvaluationReport : MonoBehaviour
 {
@@ -14,13 +15,17 @@ public class EvaluationReport : MonoBehaviour
     public int TotalPage => pages.Length;
     private int currentPageIndex;
     public static EvaluationReport Instance;
-    public List<DocumentConfig> UnlockedDocuments { get; private set; }
-    public List<DialogueConfig> UnlockedDialogues { get; private set; }
+    private HashSet<DocumentConfig> unlockedDocuments; // { get; private set; }
+    private HashSet<DialogueConfig> unlockedDialogues; // { get; private set; }
+    private HashSet<DocumentConfig> viewedDocuments; // { get; private set; }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private void Awake()
     {
         Instance = this;
+        unlockedDocuments = new HashSet<DocumentConfig>();
+        unlockedDialogues = new HashSet<DialogueConfig>();
+        viewedDocuments = new HashSet<DocumentConfig>();
     }
 
     private void Start()
@@ -48,6 +53,25 @@ public class EvaluationReport : MonoBehaviour
         }
 
         SetCurrentBlock(0);
+    }
+
+    public bool IsDialogueUnlocked(DialogueConfig dialogue) => unlockedDialogues.Contains(dialogue);
+    public bool IsDocumentUnlocked(DocumentConfig doc) => unlockedDocuments.Contains(doc);
+    public List<DialogueConfig> UnlockedDialogues => unlockedDialogues.ToList();
+    public List<DocumentConfig> UnlockedDocuments => unlockedDocuments.ToList();
+    public List<DocumentConfig> ViewedDocuments => viewedDocuments.ToList();
+    public void AddViewedDoc(DocumentConfig doc) => viewedDocuments.Add(doc);
+    public void UnlockDocument(DocumentConfig docConfig)
+    {
+        unlockedDocuments.Add(docConfig);
+        DocumentUnlocked?.Invoke(docConfig);
+        
+    }
+    public void UnlockDialogue(DialogueConfig dialConfig)
+    {
+        Debug.Log($"unlock dialogue {dialConfig}");
+        unlockedDialogues.Add(dialConfig);
+        DialogueUnlocked?.Invoke(dialConfig);
     }
 
     public void OpenPage(int index)
@@ -94,14 +118,12 @@ public class EvaluationReport : MonoBehaviour
         {
             if (unlocked is DocumentConfig docConfig)
             {
-                DocumentUnlocked?.Invoke(docConfig);
-                UnlockedDocuments.Add(docConfig);
+                UnlockDocument(docConfig);
                 //Debug.Log($"unlocked {docConfig.name}");
             }
             else if (unlocked is DialogueConfig dialogueConfig)
             {
-                DialogueUnlocked?.Invoke(dialogueConfig);
-                UnlockedDialogues.Add(dialogueConfig);
+                UnlockDialogue(dialogueConfig);
                 //Debug.Log($"unlocked {dialogueConfig.name}");
             }
         }

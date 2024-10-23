@@ -4,6 +4,9 @@ using System.Linq;
 
 public class EvaluationReport : MonoBehaviour
 {
+    [SerializeField] private float initialScroll;
+    [SerializeField] private float scrollSpeed;
+    [SerializeField] private UnityEngine.UI.ScrollRect scrollRect;
     [SerializeField] private RectTransform pagesContainer;
     
     private int currentBlockIndex;
@@ -18,6 +21,8 @@ public class EvaluationReport : MonoBehaviour
     private HashSet<DocumentConfig> unlockedDocuments; // { get; private set; }
     private HashSet<DialogueConfig> unlockedDialogues; // { get; private set; }
     private HashSet<DocumentConfig> viewedDocuments; // { get; private set; }
+ 
+    public float scrollDirection;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private void Awake()
@@ -51,7 +56,7 @@ public class EvaluationReport : MonoBehaviour
 
             pageIndex++;
         }
-
+        scrollRect.verticalNormalizedPosition = initialScroll;
         SetCurrentBlock(0);
     }
 
@@ -69,7 +74,7 @@ public class EvaluationReport : MonoBehaviour
     }
     public void UnlockDialogue(DialogueConfig dialConfig)
     {
-        Debug.Log($"unlock dialogue {dialConfig}");
+        //Debug.Log($"unlock dialogue {dialConfig}");
         unlockedDialogues.Add(dialConfig);
         DialogueUnlocked?.Invoke(dialConfig);
     }
@@ -85,6 +90,26 @@ public class EvaluationReport : MonoBehaviour
         }
 
         pages[index].OnPageOpened(pages.Length);
+    }
+
+    private void Update()
+    {
+        scrollRect.verticalNormalizedPosition += Time.deltaTime * scrollDirection * scrollSpeed; 
+    }
+
+    public void OnUpArrowClicked()
+    {
+        scrollDirection = -1;
+    }
+
+    public void OnDownArrowClicked()
+    {
+        scrollDirection = +1;
+    }
+
+    public void OnArrowButtonUp()
+    {
+        scrollDirection = 0;
     }
 
     private void SetCurrentBlock(int index)

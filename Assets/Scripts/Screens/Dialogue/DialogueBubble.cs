@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System;
 using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
@@ -13,11 +14,17 @@ public class DialogueBubble : MonoBehaviour
     public float disappear_duration = 1;
     public float disappear_delay = 2;
     public float2 position;
+    public Color character_color;
     
 
     IEnumerator Start()
     {
-        text.text = dialogue_line.text;
+        string color_hex = ((int)(character_color.r*255)).ToString("X2");
+        color_hex += ((int)(character_color.g*255)).ToString("X2");
+        color_hex += ((int)(character_color.b*255)).ToString("X2");
+        color_hex += ((int)(character_color.a*255)).ToString("X2");
+
+        text.text = "<b><color=#" + color_hex + "> " + dialogue_line.character + " : </b></color>" + dialogue_line.text;
         canvas_group = GetComponent<CanvasGroup>();
         RectTransform rect_transform = GetComponent<RectTransform>();
         rect_transform.anchorMin = position;

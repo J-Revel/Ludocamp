@@ -19,7 +19,7 @@ public class ScreenTransitionManager : MonoBehaviour
         instance = this;
     }
 
-    public void ShowScreen(ScreenRoot prefab, ScreenStackMode screen_stack_mode)
+    public ScreenRoot InstantiateScreen(ScreenRoot prefab, ScreenStackMode screen_stack_mode)
     {
         ScreenRoot screen = Instantiate(prefab);
         switch(screen_stack_mode)
@@ -35,6 +35,12 @@ public class ScreenTransitionManager : MonoBehaviour
         ScreenRoot screen_root = Instantiate(prefab, transform);
         screen_stack.Add(screen_root);
         transition_coroutines.Add(StartCoroutine(screen_root.appear_coroutine));
+        return screen;
+    }
+
+    public void ShowScreen(ScreenRoot prefab, ScreenStackMode screen_stack_mode)
+    {
+        InstantiateScreen(prefab, screen_stack_mode);
     }
 
     public void CloseScreen()

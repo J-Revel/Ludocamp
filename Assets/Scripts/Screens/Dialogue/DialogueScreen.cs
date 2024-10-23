@@ -19,9 +19,9 @@ public struct DialogueLine
 
 public class DialogueScreen : MonoBehaviour
 {
-    public string dialogue_id;
-    public TableReference table;
-    public DialogueLine[] lines;
+    public char location_id = 'A';
+    public int dialogue_index;
+    public DialogueEntryData[] lines;
     private int cursor = 0;
     public DialogueBubble bubble_prefab;
     public RectTransform text_popup_container;
@@ -32,27 +32,7 @@ public class DialogueScreen : MonoBehaviour
     void Start()
     {
         random = new Unity.Mathematics.Random((uint)DateTime.Now.Ticks);
-        List<DialogueLine> lines = new List<DialogueLine>();
-        foreach (KeyValuePair<long, StringTableEntry> entry in LocalizationSettings.StringDatabase.GetTable(table))
-        {
-            if(entry.Value.Key.StartsWith(dialogue_id))
-            {
-                int line_index = int.Parse(entry.Value.Key.Substring(dialogue_id.Length + 1, 3));
-                string character_id = entry.Value.Key.Substring(dialogue_id.Length + 5);
-                lines.Add(new DialogueLine
-                {
-                    index = line_index,
-                    text = entry.Value.Value,
-                    character = character_id,
-                });
-            }
-        }
-        lines.Sort((DialogueLine A, DialogueLine B) => { return A.index - B.index; });
-        this.lines = new DialogueLine[lines.Count];
-        for(int i=0; i<lines.Count; i++)
-        {
-            this.lines[i] = lines[i];
-        }
+        lines = DialogueDatabase.instance.GetLines(location_id, dialogue_index);
         ShowNext();
     }
 
@@ -62,7 +42,7 @@ public class DialogueScreen : MonoBehaviour
 
     public void ShowNext()
     {
-        DialogueLine current_line = lines[cursor];
+        DialogueEntryData current_line = lines[cursor];
         if (active_bubble != null)
             active_bubble.passed = true;
 

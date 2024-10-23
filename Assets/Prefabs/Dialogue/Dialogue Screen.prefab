@@ -55,10 +55,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e40a9a0197b0663469fda0b2a2fe083a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue_id: A01
-  table:
-    m_TableCollectionName: Dialogues
-  lines: []
+  location_id: 65
+  dialogue_index: 1
   bubble_prefab: {fileID: 6951191834323219338, guid: 92de85d73412c714caed2a9ec9379c48, type: 3}
   text_popup_container: {fileID: 1796156279469824350}
 --- !u!114 &8310702686666269401
@@ -139,7 +137,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 2516075710434141383}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:

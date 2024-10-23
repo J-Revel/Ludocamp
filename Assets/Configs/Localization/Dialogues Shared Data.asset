@@ -23,6 +23,10 @@ MonoBehaviour:
     m_Key: A01_002_ME
     m_Metadata:
       m_Items: []
+  - m_Id: 349586383159296
+    m_Key: A01_002_Unlock
+    m_Metadata:
+      m_Items: []
   - m_Id: 11997541285889
     m_Key: A01_003_Chef
     m_Metadata:
@@ -45,6 +49,42 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11997549674499
     m_Key: A01_008_Chef
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349586450268160
+    m_Key: A02_001_Chef
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349586450268161
+    m_Key: A02_002_Chef
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349586450268162
+    m_Key: A03_001_Archiviste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349586450268163
+    m_Key: A03_002_ME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349586450268164
+    m_Key: A03_003_Archiviste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349586450268165
+    m_Key: A03_004_Archiviste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349586450268166
+    m_Key: A03_005_ME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349586450268167
+    m_Key: A04_001_Chef
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349586450268168
+    m_Key: A04_002_Chef
     m_Metadata:
       m_Items: []
   m_Metadata:

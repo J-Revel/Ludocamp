@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DialogueBubble : MonoBehaviour
 {
-    public DialogueLine dialogue_line;
+    public DialogueEntryData dialogue_line;
     public TMPro.TextMeshProUGUI text;
     private CanvasGroup canvas_group;
     public bool passed = false;

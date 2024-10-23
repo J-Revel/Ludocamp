@@ -30,6 +30,10 @@ public class DialogueBubble : MonoBehaviour
         rect_transform.anchorMin = position;
         rect_transform.anchorMax = position;
         rect_transform.pivot = position;
+        foreach (string unlock in dialogue_line.unlocks)
+        {
+            EvaluationReport.Instance.UnlockDialogueOrDocument(unlock);
+        }
 
         for (float time = 0; time < appear_duration; time += Time.unscaledDeltaTime)
         {

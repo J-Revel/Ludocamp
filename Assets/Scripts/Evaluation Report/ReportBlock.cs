@@ -10,10 +10,11 @@ public class ReportBlock : MonoBehaviour
     public event System.Action<ReportBlock> Validated;
     public UnlockableConfig[] UnlockOnValidate => unlockOnValidate;
     private ReportOption[] options;
+    public int PageIndex { get; set; }
 
     private void Awake()
     {
-        options = GetComponentsInChildren<ReportOption>();
+        options = GetComponentsInChildren<ReportOption>(includeInactive: true);
 
         foreach(var option in options)
         {
@@ -22,6 +23,8 @@ public class ReportBlock : MonoBehaviour
 
         validatedFrame.transform.SetAsLastSibling();
     }
+
+
 
     public void SetCurrent()
     {
@@ -51,6 +54,7 @@ public class ReportBlock : MonoBehaviour
     {
         if(IsBlockValid())
         {
+            Debug.Log("option valid");
             SetValidated();
         }
     }

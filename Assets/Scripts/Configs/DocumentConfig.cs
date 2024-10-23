@@ -5,4 +5,6 @@ public class DocumentConfig : UnlockableConfig
 {
     public string id;
     public RectTransform document_prefab;
+    public string fullTitle;
+    public string shortTitle;
 }

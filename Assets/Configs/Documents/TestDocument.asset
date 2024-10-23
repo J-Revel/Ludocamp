@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Document_Test
   document_prefab: {fileID: 0}
+  fullTitle: Super Important Document
+  shortTitle: Doc

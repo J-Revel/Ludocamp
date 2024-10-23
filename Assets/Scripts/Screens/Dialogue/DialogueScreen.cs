@@ -26,6 +26,7 @@ public class DialogueScreen : MonoBehaviour
     public DialogueBubble bubble_prefab;
     public RectTransform text_popup_container;
     private Unity.Mathematics.Random random;
+    private DialogueBubble active_bubble;
 
 
     void Start()
@@ -57,21 +58,23 @@ public class DialogueScreen : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            ShowNext();
-        }
     }
 
-    void ShowNext()
+    public void ShowNext()
     {
         DialogueLine current_line = lines[cursor];
+        if (active_bubble != null)
+            active_bubble.passed = true;
 
-        float2 position_ratio = random.NextFloat2(new float2(1, 1));
-        float2 position = (float2)text_popup_container.rect.min + new float2(text_popup_container.rect.width * position_ratio.x, text_popup_container.rect.height * position_ratio.y);
-        var bubble = Instantiate(bubble_prefab, (float3)text_popup_container.position + new float3(position, 0), Quaternion.identity, text_popup_container);
+        var bubble = Instantiate(bubble_prefab, text_popup_container);
+        bubble.position = random.NextFloat2(new float2(1, 1));
         bubble.dialogue_line = current_line;
+        active_bubble = bubble;
 
         cursor++;
+        if(lines.Length <= cursor)
+        {
+            ScreenTransitionManager.instance.CloseScreen();
+        }
     }
 }

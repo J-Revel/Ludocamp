@@ -1,5 +1,6 @@
 using JetBrains.Annotations;
 using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class DialogueBubble : MonoBehaviour
@@ -11,12 +12,17 @@ public class DialogueBubble : MonoBehaviour
     public float appear_duration = 1;
     public float disappear_duration = 1;
     public float disappear_delay = 2;
+    public float2 position;
     
 
     IEnumerator Start()
     {
         text.text = dialogue_line.text;
         canvas_group = GetComponent<CanvasGroup>();
+        RectTransform rect_transform = GetComponent<RectTransform>();
+        rect_transform.anchorMin = position;
+        rect_transform.anchorMax = position;
+        rect_transform.pivot = position;
 
         for (float time = 0; time < appear_duration; time += Time.unscaledDeltaTime)
         {
@@ -38,6 +44,8 @@ public class DialogueBubble : MonoBehaviour
             canvas_group.alpha = 1 - f;
             yield return null;
         }
+
+        
         Destroy(gameObject);
     }
 }

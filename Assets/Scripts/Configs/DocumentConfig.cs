@@ -7,4 +7,5 @@ public class DocumentConfig : UnlockableConfig
     public RectTransform document_prefab;
     public string fullTitle;
     public string shortTitle;
+    //public bool HasBeenViewed; // { get; set; }
 }

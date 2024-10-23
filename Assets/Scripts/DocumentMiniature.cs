@@ -3,13 +3,16 @@ using UnityEngine.EventSystems;
 
 public class DocumentMiniature : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    [SerializeField] private ScreenRoot docViewerScreenPrefab;
     [SerializeField] private bool moveToFrontOnHover;
     [SerializeField] private DocumentConfig documentConfig;
     [SerializeField] private TMPro.TextMeshProUGUI shortTitleText;
     [SerializeField] private TMPro.TextMeshProUGUI fullTitleText;
     [SerializeField] private GameObject fullTitleTooltip;
+    [SerializeField] private GameObject newIndicator;
     //[SerializeField] private GameObject placeholderPrefab;
     [SerializeField] private Transform tooltipContainer;
+    public DocumentConfig DocumentConfig => documentConfig;
     private int childIndex;
     
     void Awake()
@@ -24,18 +27,31 @@ public class DocumentMiniature : MonoBehaviour, IPointerEnterHandler, IPointerEx
         fullTitleTooltip.transform.position = this.transform.position + yOffset * Vector3.up;
     }
 
+    public void OpenDocument()
+    {
+        ScreenRoot docViewer = ScreenTransitionManager.instance.InstantiateScreen(docViewerScreenPrefab, ScreenStackMode.Push);
+
+        docViewer.GetComponentInChildren<DocViewerController>().OpenDocument(documentConfig);
+    }
+
+    public void SetNew(bool isNew)
+    {
+        newIndicator.SetActive(isNew);
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         //Debug.Log("enter");
         fullTitleTooltip.gameObject.SetActive(true);
         if(moveToFrontOnHover) transform.SetAsLastSibling();
         fullTitleTooltip.transform.SetAsFirstSibling();
+        SetNew(false);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         fullTitleTooltip.gameObject.SetActive(false);
         transform.SetSiblingIndex(childIndex);
-        Debug.Log("child index = " + transform.GetSiblingIndex());
+        //Debug.Log("child index = " + transform.GetSiblingIndex());
     }
 }

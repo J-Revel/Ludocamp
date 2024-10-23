@@ -18,7 +18,7 @@ public class ReportOption : MonoBehaviour
 
         optionDropdown.onValueChanged.AddListener(OnValueChanged);
 
-        Debug.Log($"start {gameObject.name}");
+        //Debug.Log($"start {gameObject.name}");
     }
 
     private void OnValueChanged(int value)

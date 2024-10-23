@@ -3,36 +3,37 @@ using System.Collections.Generic;
 
 public class DocFolderController : MonoBehaviour
 {
-    private Dictionary<DocumentConfig, DocumentMiniature> docs;
+    private Dictionary<string, DocumentMiniature> docs;
 
     private void Start()
     {
-        EvaluationReport.Instance.DocumentUnlocked += OnDocUnlocked;
+        EvaluationReport.Instance.DocumentOrDialogueUnlocked += OnDocUnlocked;
         Initialize();
     }
 
     private void OnDisable()
     {
-        EvaluationReport.Instance.DocumentUnlocked -= OnDocUnlocked;
+        EvaluationReport.Instance.DocumentOrDialogueUnlocked -= OnDocUnlocked;
     }
 
-    private void OnDocUnlocked(DocumentConfig docConfig)
+    private void OnDocUnlocked(string id)
     {
-        docs[docConfig].gameObject.SetActive(true);
-        docs[docConfig].SetNew(true);
+        if (!docs.ContainsKey(id)) return;
+        docs[id].gameObject.SetActive(true);
+        docs[id].SetNew(true);
     }
 
     private void Initialize()
     {
-        var unlockedDocs = EvaluationReport.Instance.UnlockedDocuments;
+        //var unlockedDocs = EvaluationReport.Instance.UnlockedDocuments;
         var viewedDocs = EvaluationReport.Instance.ViewedDocuments;
-        docs = new Dictionary<DocumentConfig, DocumentMiniature>();
+        docs = new Dictionary<string, DocumentMiniature>();
         //docs = GetComponentsInChildren<DocumentMiniature>(true);
         foreach (var docMiniature in GetComponentsInChildren<DocumentMiniature>(true))
         {
-            docs.Add(docMiniature.DocumentConfig, docMiniature);
+            docs.Add(docMiniature.DocumentConfig.id, docMiniature);
 
-            if(unlockedDocs.Contains(docMiniature.DocumentConfig))
+            if(EvaluationReport.Instance.IsDocumentUnlocked(docMiniature.DocumentConfig))
             {
                 docMiniature.gameObject.SetActive(true);
                 docMiniature.SetNew(!viewedDocs.Contains(docMiniature.DocumentConfig));

@@ -29,6 +29,7 @@ public class ReportBlock : MonoBehaviour
     public void SetCurrent()
     {
         validatedFrame.SetActive(false);
+        canvasGroup.interactable = true;
         canvasGroup.alpha = 1f;
         
     }
@@ -37,10 +38,12 @@ public class ReportBlock : MonoBehaviour
     {
         validatedFrame.SetActive(false);
         canvasGroup.alpha = disabledBlockOpacity;
+        canvasGroup.interactable = false;
     }
 
     public void SetValidated()
     {
+        canvasGroup.interactable = true;
         validatedFrame.SetActive(true);
         //foreach(var unlockable in unlockOnValidate)
         //{

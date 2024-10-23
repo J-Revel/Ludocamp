@@ -3,6 +3,8 @@ using UnityEngine;
 public class ReportPage : MonoBehaviour
 {
     public int Index { get; set; }
+    [SerializeField] private Color baseColor; // color if not the first page
+    [SerializeField] private UnityEngine.UI.Image background;
     [SerializeField] private TMPro.TextMeshProUGUI pageNumberText;
     [SerializeField] private UnityEngine.UI.Button previousPageButton, nextPageButton;
 
@@ -12,6 +14,13 @@ public class ReportPage : MonoBehaviour
 
         previousPageButton.gameObject.SetActive(Index > 0);
         nextPageButton.gameObject.SetActive(Index < totalPage);
+
+        background.color = Color.white;
+    }
+
+    public void SetPageColorToBase()
+    {
+        background.color = baseColor;
     }
 
     public void OnNextPageArrowClicked()

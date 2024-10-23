@@ -50,8 +50,6 @@ public class EvaluationReport : MonoBehaviour
         SetCurrentBlock(0);
     }
 
-
-
     public void OpenPage(int index)
     {
         currentPageIndex = index;
@@ -59,6 +57,7 @@ public class EvaluationReport : MonoBehaviour
         foreach (var page in pages)
         {
             page.gameObject.SetActive(page.Index >= index);
+            if (page.Index > index) page.SetPageColorToBase();
         }
 
         pages[index].OnPageOpened(pages.Length);

@@ -18,6 +18,11 @@ public class ScreenFadeTransition: MonoBehaviour, IScreenAppearTransition, IScre
     public IEnumerator AppearTransitionCoroutine()
     {
         canvas_group = GetComponent<CanvasGroup>();
+        if(appear_transition_duration < Mathf.Epsilon)
+        {
+            canvas_group.alpha = 1;
+            yield break;
+        }
         for(float time = 0; time < appear_transition_duration; time+=Time.unscaledDeltaTime)
         {
             float f = time / appear_transition_duration;
@@ -30,7 +35,12 @@ public class ScreenFadeTransition: MonoBehaviour, IScreenAppearTransition, IScre
     public IEnumerator DisappearTransitionCoroutine()
     {
         canvas_group = GetComponent<CanvasGroup>();
-        for(float time = 0; time < disappear_transition_duration; time+=Time.unscaledDeltaTime)
+        if (disappear_transition_duration < Mathf.Epsilon)
+        {
+            canvas_group.alpha = 0;
+            yield break;
+        }
+        for (float time = 0; time < disappear_transition_duration; time+=Time.unscaledDeltaTime)
         {
             float f = time / disappear_transition_duration;
             canvas_group.alpha = 1 - f;

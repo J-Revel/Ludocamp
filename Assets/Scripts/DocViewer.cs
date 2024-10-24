@@ -12,6 +12,15 @@ public class DocViewer : MonoBehaviour
         scrollView.verticalNormalizedPosition = 1f;
     }
 
+    private void Update()
+    {
+        // close screen if on top
+        if (Input.GetKeyDown(KeyCode.Escape) && ScreenTransitionManager.instance.IsTopScreen(GetComponent<ScreenRoot>()))
+        {
+            ScreenTransitionManager.instance.CloseScreen();
+        }
+    }
+
     public void OpenDocument(DocumentConfig docConfig)
     {
         EvaluationReport.Instance.AddViewedDoc(docConfig);

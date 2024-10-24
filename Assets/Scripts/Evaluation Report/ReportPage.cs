@@ -7,6 +7,7 @@ public class ReportPage : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Image background;
     [SerializeField] private TMPro.TextMeshProUGUI pageNumberText;
     [SerializeField] private UnityEngine.UI.Button previousPageButton, nextPageButton;
+    [SerializeField] private AudioSource pageturnAudio;
 
     public void OnPageOpened(int totalPage)
     {
@@ -16,6 +17,8 @@ public class ReportPage : MonoBehaviour
         nextPageButton.gameObject.SetActive(Index < totalPage);
 
         background.color = Color.white;
+
+        pageturnAudio.Play();
     }
 
     public void SetPageColorToBase()

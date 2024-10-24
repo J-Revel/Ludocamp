@@ -16,6 +16,15 @@ public class DocFolder : MonoBehaviour
         EvaluationReport.Instance.DocumentOrDialogueUnlocked -= OnDocUnlocked;
     }
 
+    private void Update()
+    {
+        // close screen if on top
+        if (Input.GetKeyDown(KeyCode.Escape) && ScreenTransitionManager.instance.IsTopScreen(GetComponent<ScreenRoot>()))
+        {
+            ScreenTransitionManager.instance.CloseScreen();
+        }
+    }
+
     private void OnDocUnlocked(string id)
     {
         if (!docs.ContainsKey(id)) return;

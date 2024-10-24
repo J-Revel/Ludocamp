@@ -10,6 +10,7 @@ public class EvaluationReport : MonoBehaviour
     [SerializeField] private float scrollSpeed;
     [SerializeField] private UnityEngine.UI.ScrollRect scrollRect;
     [SerializeField] private RectTransform pagesContainer;
+    [SerializeField] private AudioSource slideSound;
     
     private int currentBlockIndex;
     private ReportBlock currentBlock;
@@ -24,8 +25,10 @@ public class EvaluationReport : MonoBehaviour
     //private HashSet<DocumentConfig> unlockedDocuments; // { get; private set; }
     //private HashSet<DialogueConfig> unlockedDialogues; // { get; private set; }
     private HashSet<DocumentConfig> viewedDocuments; // { get; private set; }
- 
-    public float scrollDirection;
+
+    private float scrollDirection;
+    private float lastScrollPosition;
+    private bool isPlayingSlideSound;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private void Awake()
@@ -102,7 +105,19 @@ public class EvaluationReport : MonoBehaviour
 
     private void Update()
     {
-        scrollRect.verticalNormalizedPosition += Time.deltaTime * scrollDirection * scrollSpeed; 
+        scrollRect.verticalNormalizedPosition += Time.deltaTime * scrollDirection * scrollSpeed;
+
+        if(Mathf.Abs(scrollRect.verticalNormalizedPosition - lastScrollPosition) < Mathf.Epsilon)
+        {
+            slideSound.Stop();
+            isPlayingSlideSound = false;
+        }
+        else if(!isPlayingSlideSound)
+        {
+            slideSound.Play();
+            isPlayingSlideSound = true;
+        }
+        lastScrollPosition = scrollRect.verticalNormalizedPosition;
     }
 
     public void OnUpArrowClicked()

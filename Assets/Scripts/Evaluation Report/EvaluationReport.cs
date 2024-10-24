@@ -104,7 +104,7 @@ public class EvaluationReport : MonoBehaviour
             notViewedDocuments.Add(id);
         }
         DocumentOrDialogueUnlocked?.Invoke(id);
-        return false;
+        return true;
     }
     public void UnlockDocument(DocumentConfig docConfig)
     {

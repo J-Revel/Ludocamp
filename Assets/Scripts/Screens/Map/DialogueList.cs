@@ -6,14 +6,17 @@ public class DialogueList : MonoBehaviour
 {
     public Button button;
     public char location;
+    public string title;
     public DialoguePlayerButton button_prefab;
     public RectTransform container;
     public bool open;
     public Transform animated_element;
     public float animation_duration = 0.5f;
+    public TMPro.TextMeshProUGUI title_display;
 
     IEnumerator Start()
     {
+        title_display.text = title;
         button.onClick.AddListener(() => {
             open = !open;
         });

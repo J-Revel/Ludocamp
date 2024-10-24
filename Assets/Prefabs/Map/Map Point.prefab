@@ -136,11 +136,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 8745745562548955588}
   location: 65
+  title: Archiviste
   button_prefab: {fileID: 8923134976019889780, guid: 7f05f82e12da1034b81da05011ec50c0, type: 3}
   container: {fileID: 1164555943650677838}
   open: 0
   animated_element: {fileID: 449817041944894895}
   animation_duration: 0.5
+  title_display: {fileID: 7228990015288124969}
 --- !u!1 &4937254147446728753
 GameObject:
   m_ObjectHideFlags: 0

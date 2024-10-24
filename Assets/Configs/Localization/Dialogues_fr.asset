@@ -23,93 +23,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 808571200585728
-    m_Localized: Bienvenue Evaluateur. je vous attendais. pas trop stresser pour
-      ce premier jour ?
+    m_Localized: "Bonjour Matthieu. Et bienvenue. Pas trop stress\xE9 pour ce premier
+      jour ?"
     m_Metadata:
       m_Items: []
   - m_Id: 808571200585729
-    m_Localized: "Honn\xEAtement un peu\u2026 Mais j\u2019ai hate de pouvoir commencer
-      !"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571200585730
-    m_Localized: A02 Doc_05
+    m_Localized: "Un peu, mais \xE7a va. Je commence quand ?"
     m_Metadata:
       m_Items: []
   - m_Id: 808571204780032
-    m_Localized: "Oui oui. Ne sous estimez pas ce que vous allez voir quand m\xEAme.
-      Nous traitons tous les jours avec des choses choquantes et rentrons dans l\u2019intimit\xE9
-      des gens. j\u2019esp\xE8re que vous en prenez conscience ? \r"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571204780033
-    m_Localized: "Je vois\u2026 Je n\u2019pensais pas qu\u2019on irait aussi loin
-      pour un accident de la route\u2026 "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571204780034
-    m_Localized: "l'impact des victimes d\u2019accidents est \xE9norme. Je comprendrais
-      si vous pr\xE9f\xE9rez arr\xEAt\xE9 mais comprenez bien qu\u2019il est indispensable
-      pour le nouvel \xE9tat de mieux comprendre le suivies des victimes d\u2019accident
-      pour \xE9viter tout futur probl\xE8mes. "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571204780035
-    m_Localized: 'Je comprends bien oui. '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571204780036
-    m_Localized: "Pour votre premi\xE8re analyse vous allez travailler sur le dossier
-      2015-06-18-1254. C\u2019est un dossier un peu vieux mais il vient d\u2019\xEAtre
-      rouvert \xE0 la demande de l\u2019avocat de la victime."
+    m_Localized: "Bient\xF4t, bient\xF4t. Ne sous estimez pas ce que vous allez voir
+      quand m\xEAme. "
     m_Metadata:
       m_Items: []
   - m_Id: 808571204780037
-    m_Localized: "Pour vous \xE9viter de trop vous perdre nous vous avons affect\xE9
-      un assistant. Il vous trie les documents et vous les classe selon qui vous
-      les a fournis. Nous vous avons donn\xE9 la d\xE9p\xEAche de l\u2019affaire
-      dans un premier temps. "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571204780041
-    m_Localized: Intro 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571204780042
-    m_Localized: 'Eh, salut Matthieu ! Et bienvenue. Que puis-je faire pour toi ? '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571204780043
-    m_Localized: "Bonjour ! Il me faudrait le rapport d\u2019enqu\xEAte pour le dossier
-      2015-06-18-1254 s\u2019il te plait"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974336
-    m_Localized: 'Pas de soucis, laisse moi une petite minute. '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974337
-    m_Localized: "Tiens le voil\xE0 ! Et n\u2019h\xE9site pas si t\u2019as besoin
-      d\u2019autre chose"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974338
-    m_Localized: "Je te remercie, c\u2019est parfait ! "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974339
-    m_Localized: Intro 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974340
-    m_Localized: "Parfait, merci Matthieu. Le rapport d\u2019\xE9valuation est votre
-      outil principal :"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974341
-    m_Localized: " il faudra valider les diff\xE9rents points du rapport pour pouvoir
-      avancer dans l\u2019enqu\xEAte. La premi\xE8re rubrique est assez \xE9l\xE9mentaire,
-      vous verrez.\r"
+    m_Localized: "Je me permets aussi de te souligner que ton travail joue un r\xF4le
+      cl\xE9 sur l'accompagnement des victimes."
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974342
@@ -448,9 +377,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 808571208974409
     m_Localized: "\xC9videmment ! Il \xE9tait obs\xE9d\xE9 par les motos, et Arthur
-      l\u2019a suivi \xE9videmment. Avant de le rencontrer, Arthur n\u2019aurait
-      jamais pris de tels risques. Ce n'est pas un hasard, tout est arriv\xE9 \xE0
-      cause de lui. "
+      l\u2019a suivi \xE9videmment. "
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974410
@@ -470,9 +397,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 808571208974413
     m_Localized: "Mais personne ne se soucie des familles ! On n\u2019est m\xEAme
-      pas consid\xE9r\xE9s comme victimes dans ce genre d\u2019affaires ! Comme si
-      on n'existait pas. Alors qu\u2019il n\u2019existe aucune douleur aussi forte
-      que celle de perdre un enfant\u2026"
+      pas consid\xE9r\xE9s comme victimes dans ce genre d\u2019affaires !"
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974414
@@ -492,9 +417,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 808571208974417
     m_Localized: "Ils savent y faire avec les familles de victimes ! Ils nous ont
-      propos\xE9 une somme ridicule, en sachant tr\xE8s bien qu'on allait se d\xE9courager
-      devant la quantit\xE9 de d\xE9marches pour r\xE9cup\xE9rer le moindre euro
-      de plus..."
+      propos\xE9 une somme ridicule. "
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974418
@@ -534,12 +457,8 @@ MonoBehaviour:
     m_Localized: "Bonne fin de journ\xE9e Madame Buffard"
     m_Metadata:
       m_Items: []
-  - m_Id: 808571208974426
-    m_Localized: Assureur
-    m_Metadata:
-      m_Items: []
   - m_Id: 808571208974431
-    m_Localized: 'chapitre 2 : Avocat'
+    m_Localized: L'Avocate
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974432
@@ -548,23 +467,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974433
-    m_Localized: "Bonjour. Merci \xE0 vous. Oui, je suis la nouvelle avocate de Carine.
-      J'ai pris ce dossier tr\xE8s \xE0 c\u0153ur, surtout en voyant l'absence de
-      soutien qu'elle a eu jusqu'\xE0 pr\xE9sent. "
+    m_Localized: "Bonjour. Merci \xE0 vous. Oui, je suis la nouvelle avocate de Carine."
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974434
-    m_Localized: "Je trouve le travail de mon pr\xE9d\xE9cesseur d\xE9plorable. Il
-      manquait clairement d\u2019accompagnement pour Carine, et il est temps que
-      les choses changent."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974435
-    m_Localized: "J'ai pris ce dossier tr\xE8s \xE0 c\u0153ur, surtout en voyant
-      l'absence de soutien qu'elle a eu jusqu'\xE0 pr\xE9sent. "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974436
     m_Localized: "Je trouve le travail de mon pr\xE9d\xE9cesseur d\xE9plorable. Il
       manquait clairement d\u2019accompagnement pour Carine, et il est temps que
       les choses changent."
@@ -577,68 +483,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 808571208974438
     m_Localized: "Mon objectif principal est d'obtenir des compensations pour les
-      nouveaux probl\xE8mes m\xE9dicaux qu'elle rencontre. Elle a souffert bien plus
-      que ce qu'on aurait pu imaginer, et il est crucial que cela soit reconnu."
+      nouveaux probl\xE8mes m\xE9dicaux qu'elle rencontre. "
     m_Metadata:
       m_Items: []
-  - m_Id: 808571208974439
-    m_Localized: Vous pensez qu'elle a des chances d'obtenir cette compensation ?
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974440
+  - m_Id: 808571208974441
     m_Localized: "J\u2019esp\xE8re vraiment que oui. Carine m\xE9rite d\u2019\xEAtre
       entendue et soutenue, surtout apr\xE8s tout ce qu\u2019elle a endur\xE9. "
     m_Metadata:
       m_Items: []
-  - m_Id: 808571208974441
-    m_Localized: "De plus, je trouve que l\u2019ancienne condamnation \xE9tait inutilement
-      lourde. Une peine si s\xE9v\xE8re n'a fait qu'ajouter \xE0 sa souffrance."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974442
-    m_Localized: "Vous estimez que la justice n\u2019a pas pris en compte l'ensemble
-      des circonstances entourant l'accident "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974443
+  - m_Id: 808571208974444
     m_Localized: "Exactement. Au lieu de l\u2019aider \xE0 se reconstruire, on l\u2019a
       punie sans v\xE9ritable r\xE9flexion sur sa situation. Elle n'\xE9tait pas
       la seule responsable, et son \xE9tat de sant\xE9 actuel le prouve."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974444
-    m_Localized: "Je suis d\xE9termin\xE9e \xE0 faire en sorte qu'elle re\xE7oive
-      justice cette fois-ci"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974445
-    m_Localized: "Merci, Ma\xEEtre Darius. Votre engagement pour Carine est clair
-      et essentiel dans ce dossier. Je vais m'assurer que toutes ces pr\xE9occupations
-      soient prises en compte dans l'\xE9valuation de la situation."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974446
-    m_Localized: Merci. Je suis convaincue que nous pouvons avancer et faire bouger
-      les choses pour Carine.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974447
-    m_Localized: A_CO A_OU
-    m_Metadata:
-      m_Items: []
-  - m_Id: 809860802265088
-    m_Localized: Intro 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 809860865179648
-    m_Localized: "Pour obtenir d\u2019autres informations vous pouvez aller voir
-      diff\xE9rentes personnes. Pour cela, utilisez la carte qui vous a \xE9t\xE9 
-      fournie pour aller voir les diff\xE9rentes personnes.\r\n"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 809860865179649
-    m_Localized: " Allez donc r\xE9cup\xE9rer le rapport de l\u2019\xE9poque dans
-      nos archives pour commencer."
     m_Metadata:
       m_Items: []
   - m_Id: 812950762799104
@@ -697,16 +553,309 @@ MonoBehaviour:
     m_Localized: S_DA
     m_Metadata:
       m_Items: []
-  - m_Id: 812950762799116
-    m_Localized: Carine
-    m_Metadata:
-      m_Items: []
-  - m_Id: 812950762799117
+  - m_Id: 825809223794688
     m_Localized: Bonjour, Carine. Merci de me recevoir.
     m_Metadata:
       m_Items: []
-  - m_Id: 812950762799118
+  - m_Id: 825809223794689
     m_Localized: Bonjour.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794690
+    m_Localized: "Je suis ici pour discuter de l'\xE9v\xE9nement survenu il y a 6
+      ans et de ses cons\xE9quences, si c'est toujours ok pour vous."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794691
+    m_Localized: "Oui, je comprends. Ma\xEEtre Darius m'a conseill\xE9 de rouvrir
+      le dossier et c'est elle qui a pens\xE9 \xE0 vous contacter ensuite. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794692
+    m_Localized: "Je ne sais pas si elle vous l'a expliqu\xE9, mais j'ai des complications
+      de sant\xE9 qui sont r\xE9apparues. C\u2019est... compliqu\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794693
+    m_Localized: C02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794694
+    m_Localized: "Des complications de sant\xE9 ? Que s'est-il pass\xE9 exactement
+      ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794695
+    m_Localized: "J\u2019ai \xE9t\xE9 hospitalis\xE9e pendant six mois apr\xE8s l'accident.
+      J'ai des balafres sur le corps qui me rappellent chaque jour ce qui s'est pass\xE9.
+      Et puis, il y a tout le reste. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794696
+    m_Localized: "Je ne sais pas si c\u2019est le stress, mais j\u2019ai des ...
+      r\xE9percussions psychologiques. J'ai oubli\xE9 une partie de ce qui s'est
+      pass\xE9 ce jour-l\xE0, et j'ai peur de me souvenir. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794697
+    m_Localized: "\xC7a me hante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794698
+    m_Localized: "C'est donc encore tr\xE8s douloureux aujourd'hui."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794699
+    m_Localized: "Oui, chaque jour, je pense \xE0 l'accident. Je ne pourrai jamais
+      y \xE9chapper je crois. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794700
+    m_Localized: "J'ai aussi perdu mon travail \xE0 cause de mon hospitalisation.
+      Ils n'ont pas voulu attendre que je me r\xE9tablisse."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794701
+    m_Localized: V_LI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794702
+    m_Localized: "Aujourd'hui j'ai r\xE9ussi \xE0 retrouver un poste, mais \xE0 l'\xE9poque
+      \xE7a avait fini de me faire sombrer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794703
+    m_Localized: "J'en suis navr\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794704
+    m_Localized: "Vous n'imaginez pas l'impact de ce genre de drame sur nos vies...
+      Les m\xE9dias par exemple : ils ont mis une pression \xE9norme sur tout le
+      monde."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794705
+    m_Localized: "Chaque jour, je voyais de nouveaux articles sur l'accident :  des
+      titres sensationnalistes qui me d\xE9crivaient comme un monstre ou une idiote
+      inconsciente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794706
+    m_Localized: "C'\xE9tait insupportable. Ils ne se soucient pas de la v\xE9rit\xE9,
+      juste de faire du buzz. J'ai pens\xE9 que ma vie \xE9tait ruin\xE9e."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794707
+    m_Localized: "Je suis devenue une cible. J'ai d\xFB \xE9viter la prison en portant
+      un bracelet \xE9lectronique pendant un an."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794708
+    m_Localized: "Chaque mouvement \xE9tait surveill\xE9, chaque instant me rappelait
+      cette nuit tragique."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809223794709
+    m_Localized: "Je crois que je trouve \xE7a injuste. Oui, c'est injuste. J'ai
+      jamais voulu que \xE7a arrive, moi !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809232183296
+    m_Localized: J_AR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809232183297
+    m_Localized: "Vous avez le sentiment que la peine \xE9tait disproportionn\xE9e
+      par rapport \xE0 ce qui s'est pass\xE9 ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809232183298
+    m_Localized: "Absolument. Je ne voulais pas qu'Arthur meure. Et je me sens harcel\xE9e
+      par Tim."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809232183299
+    m_Localized: "Regardez \xE7a. Ce sont des menaces. Chaque fois qu'il se souvient
+      de l'accident, il m'\xE9crit, il me fait vivre un cauchemar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809232183300
+    m_Localized: "Je re\xE7ois des lettres dans lesquelles il m'accuse, o\xF9 il
+      me fait revivre tout ce que je tente d'oublier. Je n'ai pas le droit de sortir
+      de la douleur."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809232183301
+    m_Localized: "Je suis coinc\xE9e entre ma culpabilit\xE9 et ses menaces, sans
+      aucune \xE9chappatoire. Je veux juste tourner la page, mais rien ne m\u2019en
+      laisse la possibilit\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809232183302
+    m_Localized: V_ME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809232183303
+    m_Localized: "C'est une situation horrible \xE0 ajouter \xE0 tout le reste...
+      Vous sentez que vous n'avez pas eu le soutien dont vous aviez besoin ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809232183304
+    m_Localized: "Non, je suis vraiment seule. Le seul t\xE9moin de l\u2019accident,
+      c\u2019est Tim. Il a sa version des faits, mais il n'y a pas d'autres t\xE9moins
+      pour corroborer ce qui s'est vraiment pass\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809232183305
+    m_Localized: "\xC7a complique encore tout. Je me sens accul\xE9e. Prise dans
+      une spirale infernale, quoi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809232183306
+    m_Localized: "C'est ce que je vois, oui... Merci d\u2019avoir partag\xE9 tout
+      cela avec moi, Carine. Votre t\xE9moignage est pr\xE9cieux et essentiel pour
+      l'enqu\xEAte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825809232183307
+    m_Localized: "J'esp\xE8re qu'il y aura enfin une justice, mais je crains que
+      ce ne soit trop tard pour moi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833982559141888
+    m_Localized: "Nous traitons tous les jours avec des choses choquantes et rentrons
+      dans l\u2019intimit\xE9 des gens. J\u2019esp\xE8re que vous en prenez conscience
+      ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833982626250752
+    m_Localized: "Je vois\u2026 "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833982626250753
+    m_Localized: "C'est loin d'\xEAtre aussi simple que tu l'imagines. Les victimes
+      ne parviennent pas toutes passer \xE0 autre chose. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833982626250754
+    m_Localized: 'Je comprends bien oui. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833982626250755
+    m_Localized: "Pour ton premier jour, tu vas travailler sur le dossier 2015-06-18-1254. 
+      C'est un vieux dossier mais il vient d'\xEAtre rouvert \xE0 la demande de l'avocate
+      de la victime."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833982626250756
+    m_Localized: "Pour rappel, les dossiers peuvent \xEAtre r\xE9\xE9tudi\xE9s sur
+      dix ans apr\xE8s le fait du crash. Cette affaire ne devrait pas \xEAtre trop
+      compliqu\xE9e, toutes les informations sont quelque part. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833982626250757
+    m_Localized: "Tu vas juste devoir aller les chercher chez certaines institutions,
+      ou aller les demander directement aupr\xE8s des victimes. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833982626250758
+    m_Localized: "Tu peux commencer par aller voir notre archiviste, ouvre la carte
+      \xE0 ta droite et va lui parler s'il-te-pla\xEEt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590788849664
+    m_Localized: Archiviste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764224
+    m_Localized: 'Eh, salut Matthieu ! Et bienvenue. Que puis-je faire pour toi ? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764225
+    m_Localized: "Bonjour ! Il me faudrait le rapport d\u2019enqu\xEAte pour le dossier
+      2015-06-18-1254 s\u2019il te plait"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764226
+    m_Localized: 'Pas de soucis, laisse moi une petite minute. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764227
+    m_Localized: "Tiens le voil\xE0 ! Et n\u2019h\xE9site pas si t\u2019as besoin
+      d\u2019autre chose"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764228
+    m_Localized: "Je te remercie, c\u2019est parfait ! "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764229
+    m_Localized: Intro 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764230
+    m_Localized: "Parfait, merci Matthieu. Le rapport d\u2019\xE9valuation est votre
+      outil principal : il faudra valider les diff\xE9rents points du rapport pour
+      pouvoir avancer dans l\u2019enqu\xEAte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764231
+    m_Localized: "La premi\xE8re rubrique est assez \xE9l\xE9mentaire, vous verrez."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764232
+    m_Localized: Elle a souffert bien plus que ce qu'on aurait pu imaginer, et il
+      est crucial que cela soit reconnu.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764233
+    m_Localized: Vous pensez qu'elle a des chances d'obtenir cette compensation ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764234
+    m_Localized: "De plus, je trouve que l\u2019ancienne condamnation \xE9tait inutilement
+      lourde. Une peine si s\xE9v\xE8re n'a fait qu'ajouter \xE0 sa souffrance."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764235
+    m_Localized: "Vous estimez que la justice n\u2019a pas pris en compte l'ensemble
+      des circonstances entourant l'accident ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764236
+    m_Localized: "Je suis d\xE9termin\xE9e \xE0 faire en sorte qu'elle re\xE7oive
+      justice cette fois-ci."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590851764237
+    m_Localized: "Merci, Ma\xEEtre Darius. Votre engagement pour Carine est clair
+      et essentiel dans ce dossier. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590855958528
+    m_Localized: "Je vais m'assurer que toutes ces pr\xE9occupations soient prises
+      en compte dans l'\xE9valuation de la situation."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590855958529
+    m_Localized: "Merci \xE0 vous. Je suis convaincue que nous pouvons avancer et
+      faire bouger les choses pour Carine et aider les prochaines victimes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837590855958530
+    m_Localized: A_CO A_OU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 838478093860864
+    m_Localized: Madame Buffard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 838478152581120
+    m_Localized: Assureur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 838478152581121
+    m_Localized: Carine
     m_Metadata:
       m_Items: []
   references:

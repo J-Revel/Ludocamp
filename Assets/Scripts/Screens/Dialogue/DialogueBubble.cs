@@ -44,6 +44,8 @@ public class DialogueBubble : MonoBehaviour
         rect_transform.anchorMin = position;
         rect_transform.anchorMax = position;
         rect_transform.pivot = position;
+        dialogue_unlock_display.SetActive(false);
+        document_unlock_display.SetActive(false);
         if(dialogue_line.unlocks != null)
         {
             foreach (string unlock in dialogue_line.unlocks)

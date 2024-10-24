@@ -15,7 +15,13 @@ MonoBehaviour:
   configs:
   - id: ME
     display_name: Vous
-    bubble_color: {r: 0.29799998, g: 0.29799998, b: 0.29799998, a: 0.8235294}
+    bubble_color: {r: 0, g: 0, b: 0, a: 0.89411765}
   - id: Chef
     display_name: Chef
-    bubble_color: {r: 0.18039216, g: 0.18039216, b: 0.18039216, a: 0.8}
+    bubble_color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 0.85882354}
+  - id: Police
+    display_name: Policier
+    bubble_color: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 0.85882354}
+  - id: Maman
+    display_name: Mme Buffard
+    bubble_color: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 0.85882354}

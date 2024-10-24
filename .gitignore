@@ -70,3 +70,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Configs/Localization/Google Sheets Service.asset
+Assets/Configs/Localization/Google Sheets Service.asset.meta
+Assets/Configs/Localization/google_api.json
+Assets/Configs/Localization/google_api.json.meta

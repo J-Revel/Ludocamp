@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class DocViewerController : MonoBehaviour
+public class DocViewer : MonoBehaviour
 {
     [SerializeField] private TMPro.TextMeshProUGUI docTitleText;
     [SerializeField] private UnityEngine.UI.ScrollRect scrollView;

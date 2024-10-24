@@ -10,6 +10,7 @@ public enum ScreenStackMode
 
 public class ScreenTransitionManager : MonoBehaviour
 {
+    [SerializeField] private ScreenRoot startScreen;
     public static ScreenTransitionManager instance;
     private List<ScreenRoot> screen_stack = new List<ScreenRoot>();
     private List<Coroutine> transition_coroutines = new List<Coroutine>();
@@ -17,6 +18,14 @@ public class ScreenTransitionManager : MonoBehaviour
     void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        if(startScreen != null)
+        {
+            ShowScreen(startScreen, ScreenStackMode.Push);
+        }     
     }
 
     public ScreenRoot InstantiateScreen(ScreenRoot prefab, ScreenStackMode screen_stack_mode)

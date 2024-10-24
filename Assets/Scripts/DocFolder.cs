@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class DocFolderController : MonoBehaviour
+public class DocFolder : MonoBehaviour
 {
     private Dictionary<string, DocumentMiniature> docs;
 

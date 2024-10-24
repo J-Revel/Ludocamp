@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public enum ScreenStackMode
 {
@@ -27,6 +28,16 @@ public class ScreenTransitionManager : MonoBehaviour
             ShowScreen(startScreen, ScreenStackMode.Push);
         }     
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape) && screen_stack.Count == 0)
+        {
+            Application.Quit();
+        }
+    }
+
+    public bool IsTopScreen(ScreenRoot screen) => screen_stack.Count > 0 && screen_stack.First() == screen;
 
     public ScreenRoot InstantiateScreen(ScreenRoot prefab, ScreenStackMode screen_stack_mode)
     {

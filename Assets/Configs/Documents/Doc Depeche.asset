@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c90281f5aba478d4385416cdd2af05a2, type: 3}
-  m_Name: TestDocument
+  m_Name: Doc Depeche
   m_EditorClassIdentifier: 
-  id: Document_Test
-  document_prefab: {fileID: 9068469941766942105, guid: 3a521e40fb70cfa4395841238a130e07, type: 3}
-  fullTitle: Super Important Document
+  id: Doc_J_DP
+  document_prefab: {fileID: 9206297188485458783, guid: 526d0b283507a7d41a14e15b349a096a, type: 3}
+  fullTitle: "D\xE9p\xEAche Real News"
   shortTitle: 

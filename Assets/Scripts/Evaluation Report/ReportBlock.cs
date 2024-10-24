@@ -4,6 +4,7 @@ using System.Linq;
 public class ReportBlock : MonoBehaviour
 {
     [SerializeField] private UnlockableConfig[] unlockOnValidate;
+    [SerializeField] private AudioSource validateSound;
     [SerializeField] private GameObject validatedFrame;
     [SerializeField] private float disabledBlockOpacity;
     [SerializeField] private CanvasGroup canvasGroup;
@@ -45,6 +46,7 @@ public class ReportBlock : MonoBehaviour
     {
         canvasGroup.interactable = true;
         validatedFrame.SetActive(true);
+        validateSound.Play();
         //foreach(var unlockable in unlockOnValidate)
         //{
         //    unlockable.OnUnlock();

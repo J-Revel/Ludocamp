@@ -37,7 +37,7 @@ public class DocFolder : MonoBehaviour
     private void Initialize()
     {
         //var unlockedDocs = EvaluationReport.Instance.UnlockedDocuments;
-        var viewedDocs = EvaluationReport.Instance.ViewedDocuments;
+        var notViewedDocs = EvaluationReport.Instance.NotViewedDocuments;
         docs = new Dictionary<string, DocumentMiniature>();
         //docs = GetComponentsInChildren<DocumentMiniature>(true);
         foreach (var docMiniature in GetComponentsInChildren<DocumentMiniature>(true))
@@ -47,7 +47,7 @@ public class DocFolder : MonoBehaviour
             if(EvaluationReport.Instance.IsDocumentUnlocked(docMiniature.DocumentConfig))
             {
                 docMiniature.gameObject.SetActive(true);
-                docMiniature.SetNew(!viewedDocs.Contains(docMiniature.DocumentConfig));
+                docMiniature.SetNew(notViewedDocs.Contains(docMiniature.DocumentConfig.id));
             }
             else
             {

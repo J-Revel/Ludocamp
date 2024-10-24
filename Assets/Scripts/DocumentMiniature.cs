@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 
 public class DocumentMiniature : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    [SerializeField] private Transform docContainer;
     [SerializeField] private ScreenRoot docViewerScreenPrefab;
     [SerializeField] private bool moveToFrontOnHover;
     [SerializeField] private DocumentConfig documentConfig;
@@ -25,6 +26,9 @@ public class DocumentMiniature : MonoBehaviour, IPointerEnterHandler, IPointerEx
         fullTitleTooltip.transform.rotation = Quaternion.identity;
         fullTitleTooltip.transform.SetParent(tooltipContainer);
         fullTitleTooltip.transform.position = this.transform.position + yOffset * Vector3.up;
+        RectTransform docPreview = Instantiate(DocumentConfig.document_prefab, docContainer);
+        docPreview.transform.localScale = Vector3.one;
+        docPreview.anchoredPosition = Vector2.zero;
     }
 
     public void OpenDocument()

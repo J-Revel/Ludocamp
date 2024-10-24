@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90281f5aba478d4385416cdd2af05a2, type: 3}
+  m_Name: Doc PV 1
+  m_EditorClassIdentifier: 
+  id: Doc_P_P1
+  document_prefab: {fileID: 6495806619069190300, guid: 248f7600b4530bf4ebbcf3bb54a12ed1, type: 3}
+  fullTitle: "Proc\xE8s Verbal 1"
+  shortTitle: PV 1

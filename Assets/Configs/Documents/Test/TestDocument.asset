@@ -15,4 +15,4 @@ MonoBehaviour:
   id: Document_Test
   document_prefab: {fileID: 9068469941766942105, guid: 3a521e40fb70cfa4395841238a130e07, type: 3}
   fullTitle: Super Important Document
-  shortTitle: Doc
+  shortTitle: 

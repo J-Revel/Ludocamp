@@ -3,11 +3,13 @@ using System.Collections.Generic;
 
 public class DocFolder : MonoBehaviour
 {
+    [SerializeField] private AudioSource openSound;
     private Dictionary<string, DocumentMiniature> docs;
 
     private void Start()
     {
         EvaluationReport.Instance.DocumentOrDialogueUnlocked += OnDocUnlocked;
+        openSound.Play();
         Initialize();
     }
 

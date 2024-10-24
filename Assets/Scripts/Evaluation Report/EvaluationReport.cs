@@ -134,12 +134,12 @@ public class EvaluationReport : MonoBehaviour
 
     public void OnUpArrowClicked()
     {
-        scrollDirection = -1;
+        scrollDirection = +1;
     }
 
     public void OnDownArrowClicked()
     {
-        scrollDirection = +1;
+        scrollDirection = -1;
     }
 
     public void OnArrowButtonUp()

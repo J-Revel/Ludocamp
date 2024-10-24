@@ -304,10 +304,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdae949e7166795408f0b69b56a9329b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameEndScreen: {fileID: 8257671532271861640, guid: 7c4b6774553a9f04e9f7bbd0499d4342, type: 3}
+  initialScroll: 1
   scrollSpeed: 1
   scrollRect: {fileID: 5117647761311172793}
   pagesContainer: {fileID: 601226233237370175}
   pages: []
+  scrollDirection: 0
 --- !u!1 &2705940072933022378
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,19 +746,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1753172206320442608}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1139369178297509048}
-        m_TargetAssemblyTypeName: EvaluationReport, Assembly-CSharp
-        m_MethodName: OnDownArrowClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &8619625718594579891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1147,8 +1138,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6140752285963839710}
   m_HandleRect: {fileID: 4283742945224884816}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 0.99999994
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1424,7 +1415,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 5982531445799703976}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.6072727
+  m_Size: 0.60727274
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

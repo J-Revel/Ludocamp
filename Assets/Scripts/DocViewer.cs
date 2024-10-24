@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class DocViewer : MonoBehaviour
 {
@@ -8,12 +9,15 @@ public class DocViewer : MonoBehaviour
     [SerializeField] private Transform documentContainer;
     [SerializeField] private AudioSource openDocSound;
     [SerializeField] private AudioSource moveDocSound;
+    [SerializeField] private AudioSource slideSound;
     [SerializeField] private UnityEngine.UI.ScrollRect scrollRect;
+    [SerializeField] private UnityEngine.UI.Button upArrow, downArrow;
     private float scrollDirection;
     private float lastScrollPosition;
     private bool isPlayingSlideSound;
     private float lastScrollDir;
     private float lastScrollPlaySoundTime;
+    private bool isSliding;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -24,47 +28,81 @@ public class DocViewer : MonoBehaviour
 
     private void Update()
     {
-        //scrollRect.verticalNormalizedPosition += Time.deltaTime * scrollDirection * scrollSpeed;
-        float scrollDir = 0;
+        
+        //float scrollDir = 0;
 
-        if(scrollRect.verticalNormalizedPosition - lastScrollPosition > Mathf.Epsilon)
-        {
-            scrollDir = 1f;
-        }
-        else if (scrollRect.verticalNormalizedPosition - lastScrollPosition < -Mathf.Epsilon)
-        {
-            scrollDir = -1f;
-        }
-
-        if(scrollDir != 0)
-        {
-            if(lastScrollDir == 0 && Time.time - lastScrollPlaySoundTime > 1.0f) // || lastScrollDir * scrollDir < -Mathf.Epsilon)
-            {
-                lastScrollPlaySoundTime = Time.time;
-                moveDocSound.Play();
-            }
-        }
-
-        lastScrollDir = scrollDir;
-
-        //if (Mathf.Abs(scrollRect.verticalNormalizedPosition - lastScrollPosition) < Mathf.Epsilon)
+        //if(scrollRect.verticalNormalizedPosition - lastScrollPosition > Mathf.Epsilon)
         //{
-        //    moveDocSound.Stop();
-        //    isPlayingSlideSound = false;
+        //    scrollDir = 1f;
         //}
-        //else if (!isPlayingSlideSound)
+        //else if (scrollRect.verticalNormalizedPosition - lastScrollPosition < -Mathf.Epsilon)
         //{
-        //    moveDocSound.Play();
-        //    isPlayingSlideSound = true;
+        //    scrollDir = -1f;
         //}
+
+        //if(scrollDir != 0)
+        //{
+        //    if(lastScrollDir == 0 && Time.time - lastScrollPlaySoundTime > 1.0f) // || lastScrollDir * scrollDir < -Mathf.Epsilon)
+        //    {
+        //        lastScrollPlaySoundTime = Time.time;
+        //        moveDocSound.Play();
+        //    }
+        //}
+
+        if (Mathf.Abs(scrollRect.verticalNormalizedPosition - lastScrollPosition) < Mathf.Epsilon)
+        {
+            slideSound.Stop();
+            isPlayingSlideSound = false;
+        }
+        else if (!isPlayingSlideSound)
+        {
+            slideSound.Play();
+            isPlayingSlideSound = true;
+        }
         lastScrollPosition = scrollRect.verticalNormalizedPosition;
 
+        upArrow.interactable = scrollRect.verticalNormalizedPosition < 0.99f;
+        downArrow.interactable = scrollRect.verticalNormalizedPosition > 0.01f;
+
+        //lastScrollDir = scrollDir;
+
+        //lastScrollPosition = scrollRect.verticalNormalizedPosition;
 
         // close screen if on top
         if (Input.GetKeyDown(KeyCode.Escape) && ScreenTransitionManager.instance.IsTopScreen(GetComponent<ScreenRoot>()))
         {
             ScreenTransitionManager.instance.CloseScreen();
         }
+    }
+
+    private IEnumerator MoveToPosition(float normalizedPosition)
+    {
+        slideSound.Play();
+        isSliding = true;
+        scrollRect.GetComponent<CanvasGroup>().interactable = false;
+        float startPos = scrollRect.verticalNormalizedPosition;
+        float duration = 0.5f;
+        for (float timer = 0; timer < duration; timer += Time.unscaledDeltaTime)
+        {
+            float f = timer / duration;
+            scrollRect.verticalNormalizedPosition = Mathf.Lerp(startPos, normalizedPosition, f);
+            yield return null;
+        }
+        scrollRect.GetComponent<CanvasGroup>().interactable = true;
+        isSliding = false;
+
+    }
+
+    public void OnUpArrowClicked()
+    {
+        if (isSliding) return;
+        StartCoroutine(MoveToPosition(1f));
+    }
+
+    public void OnDownArrowClicked()
+    {
+        if (isSliding) return;
+        StartCoroutine(MoveToPosition(0f));
     }
 
     public void OpenDocument(DocumentConfig docConfig)

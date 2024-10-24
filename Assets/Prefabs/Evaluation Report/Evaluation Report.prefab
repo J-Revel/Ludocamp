@@ -48,10 +48,10 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -4304877175595673419, guid: 630962a84f63a8f419de337730b0ae87, type: 2}
   m_audioClip: {fileID: 8300000, guid: d44ca8c7cf75b6444b4a6614777051d7, type: 3}
   m_Resource: {fileID: 8300000, guid: d44ca8c7cf75b6444b4a6614777051d7, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameEndScreen: {fileID: 8257671532271861640, guid: 7c4b6774553a9f04e9f7bbd0499d4342, type: 3}
   initialScroll: 1
-  scrollSpeed: 1
+  scrollSpeed: 2
   scrollRect: {fileID: 5117647761311172793}
   pagesContainer: {fileID: 601226233237370175}
   slideSound: {fileID: 4331804476238203281}
@@ -1272,7 +1272,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6140752285963839710}
   m_HandleRect: {fileID: 4283742945224884816}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1549,7 +1549,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 5982531445799703976}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.6072727
+  m_Size: 0.60727274
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

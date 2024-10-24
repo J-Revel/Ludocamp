@@ -8,8 +8,13 @@ using UnityEngine.EventSystems;
 public class SlideViewer : MonoBehaviour
 {
     [SerializeField] private float transitionDuration;
-    [SerializeField] private bool closeScreenOnFinish;
+    [SerializeField] private OnFinishAction onFinishAction;
     [SerializeField] private RectTransform slideContainer;
+    public enum OnFinishAction
+    {
+        CloseScreen,
+        ExitGame
+    }
     public event System.Action LastSlideFinished;
     private int slideIndex;
     private int totalSlideCount;
@@ -47,10 +52,18 @@ public class SlideViewer : MonoBehaviour
         if (slideIndex >= totalSlideCount - 1)
         {
             LastSlideFinished?.Invoke();
-            if(closeScreenOnFinish)
+
+            switch(onFinishAction)
             {
-                ScreenTransitionManager.instance.CloseScreen();
+                case OnFinishAction.CloseScreen:
+                    ScreenTransitionManager.instance.CloseScreen();
+                    break;
+
+                case OnFinishAction.ExitGame:
+                    Application.Quit();
+                    break;
             }
+
             return;
         }
 

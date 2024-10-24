@@ -1,9 +1,11 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using System.Collections;
 
 public class EvaluationReport : MonoBehaviour
 {
+    [SerializeField] private ScreenRoot gameEndScreen;
     [SerializeField] private float initialScroll;
     [SerializeField] private float scrollSpeed;
     [SerializeField] private UnityEngine.UI.ScrollRect scrollRect;
@@ -143,6 +145,15 @@ public class EvaluationReport : MonoBehaviour
         OpenPage(currentBlock.PageIndex);
     }
 
+    private IEnumerator LastBlockValidated()
+    {
+        currentBlock.SetValidated();
+        yield return new WaitForSecondsRealtime(1f);
+
+        ScreenRoot gameEndScreenInstance = ScreenTransitionManager.instance.InstantiateScreen(gameEndScreen, ScreenStackMode.Push);
+        gameEndScreenInstance.GetComponentInChildren<SlideViewer>().LastSlideFinished += () => Application.Quit();
+    }
+
     private void OnBlockValidated(ReportBlock block)
     {
         foreach (var unlocked in block.UnlockOnValidate)
@@ -160,6 +171,13 @@ public class EvaluationReport : MonoBehaviour
         }
 
         block.Validated -= OnBlockValidated;
+
+        if(currentBlockIndex >= blocks.Length - 1) // last block completed
+        {
+            StartCoroutine(LastBlockValidated());
+            return;
+        }
+
         SetCurrentBlock(currentBlockIndex + 1);
     }
 }

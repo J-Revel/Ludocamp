@@ -3,10 +3,13 @@ using System;
 using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueBubble : MonoBehaviour
 {
     public DialogueEntryData dialogue_line;
+    public Image background_image;
+    public CharacterListConfig characters;
     public TMPro.TextMeshProUGUI text;
     private CanvasGroup canvas_group;
     public bool passed = false;
@@ -19,12 +22,21 @@ public class DialogueBubble : MonoBehaviour
 
     IEnumerator Start()
     {
+        string character = "";
+        for(int i=0; i<characters.configs.Length; i++)
+        {
+            if (characters.configs[i].id == dialogue_line.character)
+            {
+                character = characters.configs[i].display_name;
+                background_image.color = characters.configs[i].bubble_color;
+            }
+        }
         string color_hex = ((int)(character_color.r*255)).ToString("X2");
         color_hex += ((int)(character_color.g*255)).ToString("X2");
         color_hex += ((int)(character_color.b*255)).ToString("X2");
         color_hex += ((int)(character_color.a*255)).ToString("X2");
 
-        text.text = "<b><color=#" + color_hex + "> " + dialogue_line.character + " : </b></color>" + dialogue_line.text;
+        text.text = "<b><color=#" + color_hex + "> " + character + " : </b></color>" + dialogue_line.text;
         canvas_group = GetComponent<CanvasGroup>();
         RectTransform rect_transform = GetComponent<RectTransform>();
         rect_transform.anchorMin = position;

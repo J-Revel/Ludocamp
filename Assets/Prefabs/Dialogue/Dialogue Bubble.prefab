@@ -226,6 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa1d5ebc0b220d41be886d119f3df81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  background_image: {fileID: 7032243176512146042}
+  characters: {fileID: 11400000, guid: 0e14455dde569bf479b5844f120815ff, type: 2}
   text: {fileID: 7689355489420029797}
   passed: 0
   appear_duration: 1

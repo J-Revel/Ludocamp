@@ -104,7 +104,7 @@ public class EvaluationReport : MonoBehaviour
     public void UnlockDocument(DocumentConfig docConfig)
     {
         unlockedConfigIDs.Add(docConfig.id);
-        if(docConfig.id.StartsWith("doc")|| docConfig.id.StartsWith("Doc"))
+        if(docConfig.id.StartsWith("doc") || docConfig.id.StartsWith("Doc") || docConfig.id.StartsWith("DOC"))
         {
             notViewedDocuments.Add(docConfig.id);
         }

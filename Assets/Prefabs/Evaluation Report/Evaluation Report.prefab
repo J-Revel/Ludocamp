@@ -438,6 +438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdae949e7166795408f0b69b56a9329b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialDocuments: []
+  initialDialogues: []
   gameEndScreen: {fileID: 8257671532271861640, guid: 7c4b6774553a9f04e9f7bbd0499d4342, type: 3}
   initialScroll: 1
   scrollSpeed: 2
@@ -1272,7 +1274,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6140752285963839710}
   m_HandleRect: {fileID: 4283742945224884816}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

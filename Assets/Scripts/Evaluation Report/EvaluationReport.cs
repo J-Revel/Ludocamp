@@ -13,6 +13,7 @@ public class EvaluationReport : MonoBehaviour
     [SerializeField] private UnityEngine.UI.ScrollRect scrollRect;
     [SerializeField] private RectTransform pagesContainer;
     [SerializeField] private AudioSource slideSound;
+    [SerializeField] private UnityEngine.UI.Button upArrow, downArrow;
     
     private int currentBlockIndex;
     private ReportBlock currentBlock;
@@ -28,9 +29,9 @@ public class EvaluationReport : MonoBehaviour
     //private HashSet<DialogueConfig> unlockedDialogues; // { get; private set; }
     private HashSet<DocumentConfig> viewedDocuments; // { get; private set; }
 
-    private float scrollDirection;
     private float lastScrollPosition;
     private bool isPlayingSlideSound;
+    private bool isSliding;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private void Awake()
@@ -117,7 +118,7 @@ public class EvaluationReport : MonoBehaviour
 
     private void Update()
     {
-        scrollRect.verticalNormalizedPosition += Time.deltaTime * scrollDirection * scrollSpeed;
+        //scrollRect.verticalNormalizedPosition += Time.deltaTime * scrollDirection * scrollSpeed;
 
         if(Mathf.Abs(scrollRect.verticalNormalizedPosition - lastScrollPosition) < Mathf.Epsilon)
         {
@@ -130,21 +131,44 @@ public class EvaluationReport : MonoBehaviour
             isPlayingSlideSound = true;
         }
         lastScrollPosition = scrollRect.verticalNormalizedPosition;
+
+        upArrow.interactable = scrollRect.verticalNormalizedPosition < 0.99f;
+        downArrow.interactable = scrollRect.verticalNormalizedPosition > 0.01f;
     }
 
     public void OnUpArrowClicked()
     {
-        scrollDirection = +1;
+        if (isSliding) return;
+        StartCoroutine(MoveToPosition(1f));
     }
 
     public void OnDownArrowClicked()
     {
-        scrollDirection = -1;
+        if (isSliding) return;
+        StartCoroutine(MoveToPosition(0f));
     }
 
     public void OnArrowButtonUp()
     {
-        scrollDirection = 0;
+
+    }
+
+    private IEnumerator MoveToPosition(float normalizedPosition)
+    {
+        slideSound.Play();
+        isSliding = true;
+        scrollRect.GetComponent<CanvasGroup>().interactable = false;
+        float startPos = scrollRect.verticalNormalizedPosition;
+        float duration = 0.5f;
+        for (float timer = 0; timer < duration; timer += Time.unscaledDeltaTime)
+        {
+            float f = timer / duration;
+            scrollRect.verticalNormalizedPosition = Mathf.Lerp(startPos, normalizedPosition, f);
+            yield return null;
+        }
+        scrollRect.GetComponent<CanvasGroup>().interactable = true;
+        isSliding = false;
+        
     }
 
     private void SetCurrentBlock(int index)

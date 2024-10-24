@@ -26,7 +26,7 @@ public class ScreenTransitionManager : MonoBehaviour
         if(startScreen != null)
         {
             ShowScreen(startScreen, ScreenStackMode.Push);
-        }     
+        }
     }
 
     private void Update()

@@ -47,17 +47,17 @@ public class DialogueDatabase : MonoBehaviour
 
         foreach (KeyValuePair<long, StringTableEntry> entry in LocalizationSettings.StringDatabase.GetTable(table))
         {
-            if (!places.Contains(entry.Value.Key[0]))
-                places.Add(entry.Value.Key[0]);
+            if (!places.Contains(entry.Value.Key[3]))
+                places.Add(entry.Value.Key[3]);
         }
 
-        foreach (char place in places)
-        {
             foreach (KeyValuePair<long, StringTableEntry> entry in LocalizationSettings.StringDatabase.GetTable(table))
             {
                 string key = entry.Value.Key;
-                char location_id = key[0];
-                int dialogue_index = int.Parse(key.Substring(1, 2));
+                char location_id = key[3];
+
+                int chapter_index = (int)key[0] - (int)'A';
+                int dialogue_index = chapter_index * 100 + int.Parse(key.Substring(1, 2));
                 if(key.EndsWith("Topic"))
                 {
                     if(!dialogue_per_location.ContainsKey(location_id))
@@ -67,13 +67,12 @@ public class DialogueDatabase : MonoBehaviour
                         dialogue_index = dialogue_index,
                         topic = entry.Value.Value,
                     });
-                    
                 }
                 else
                 {
                     try
                     {
-                        int line_index = int.Parse(key.Substring(4, 3));
+                        int line_index = int.Parse(key.Substring(5, 3));
                         DialogueEntryID id = new DialogueEntryID
                         {
                             dialogue_index = dialogue_index,
@@ -90,7 +89,7 @@ public class DialogueDatabase : MonoBehaviour
                         }
                         else
                         {
-                            data.character = key.Substring(8);
+                            data.character = key.Substring(9);
                             data.text = entry.Value.Value;
                             data.line_index = line_index;
                         }
@@ -102,7 +101,6 @@ public class DialogueDatabase : MonoBehaviour
                     }
                 }
             }
-        }
     }
 
     public DialogueEntryData[] GetLines(char location_id, int dialogue_index)

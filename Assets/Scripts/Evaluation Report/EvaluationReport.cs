@@ -85,10 +85,15 @@ public class EvaluationReport : MonoBehaviour
     //public List<DocumentConfig> UnlockedDocuments => unlockedDocuments.ToList();
     public List<DocumentConfig> ViewedDocuments => viewedDocuments.ToList();
     public void AddViewedDoc(DocumentConfig doc) => viewedDocuments.Add(doc);
-    public void UnlockDialogueOrDocument(string id)
+    public bool UnlockDialogueOrDocument(string id)
     {
+        if(unlockedConfigIDs.Contains(id))
+        {
+            return false;
+        }
         unlockedConfigIDs.Add(id);
         DocumentOrDialogueUnlocked?.Invoke(id);
+        return false;
     }
     public void UnlockDocument(DocumentConfig docConfig)
     {

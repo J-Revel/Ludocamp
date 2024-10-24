@@ -15,6 +15,10 @@ MonoBehaviour:
   m_TableCollectionName: Dialogues
   m_TableCollectionNameGuidString: cb8e8526a9d155842a7d8256c227454f
   m_Entries:
+  - m_Id: 642376602206208
+    m_Key: A01_Topic
+    m_Metadata:
+      m_Items: []
   - m_Id: 11997419651072
     m_Key: A01_001_Chef
     m_Metadata:
@@ -51,12 +55,20 @@ MonoBehaviour:
     m_Key: A01_008_Chef
     m_Metadata:
       m_Items: []
+  - m_Id: 642376673509376
+    m_Key: A02_Topic
+    m_Metadata:
+      m_Items: []
   - m_Id: 349586450268160
     m_Key: A02_001_Chef
     m_Metadata:
       m_Items: []
   - m_Id: 349586450268161
     m_Key: A02_002_Chef
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642376673509377
+    m_Key: A03_Topic
     m_Metadata:
       m_Items: []
   - m_Id: 349586450268162
@@ -77,6 +89,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 349586450268166
     m_Key: A03_005_ME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642376673509378
+    m_Key: A04_Topic
     m_Metadata:
       m_Items: []
   - m_Id: 349586450268167

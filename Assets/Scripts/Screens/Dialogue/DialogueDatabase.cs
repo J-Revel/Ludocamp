@@ -11,8 +11,9 @@ public class PlaceDialogues
 
 public class DialogueData
 {
+    public char location_id;
     public int dialogue_index;
-    public DialogueEntryData[] entries;
+    public string topic;
 }
 
 public class DialogueEntryData
@@ -22,6 +23,7 @@ public class DialogueEntryData
     public string[] unlocks;
     public string text;
 }
+
 
 public struct DialogueEntryID
 {
@@ -35,6 +37,7 @@ public class DialogueDatabase : MonoBehaviour
     public static DialogueDatabase instance;
     public TableReference table;
     public Dictionary<DialogueEntryID, DialogueEntryData> entries = new Dictionary<DialogueEntryID, DialogueEntryData>();
+    public Dictionary<char, List<DialogueData>> dialogue_per_location = new Dictionary<char, List<DialogueData>>();
 
     public void Awake()
     {
@@ -53,34 +56,50 @@ public class DialogueDatabase : MonoBehaviour
             foreach (KeyValuePair<long, StringTableEntry> entry in LocalizationSettings.StringDatabase.GetTable(table))
             {
                 string key = entry.Value.Key;
-                try
+                char location_id = key[0];
+                int dialogue_index = int.Parse(key.Substring(1, 2));
+                if(key.EndsWith("Topic"))
                 {
-                    int line_index = int.Parse(key.Substring(4, 3));
-                    DialogueEntryID id = new DialogueEntryID
-                    {
-                        dialogue_index = int.Parse(key.Substring(1, 2)),
-                        location_id = key[0],
-                        line_index = line_index,
-                    };
-                    DialogueEntryData data = new DialogueEntryData();
-                    if (entries.ContainsKey(id))
-                        data = entries[id];
-                    if(key.EndsWith("Unlock"))
-                    {
-                        data.unlocks = entry.Value.Value.Split(" ");
-                        data.line_index = line_index;
-                    }
-                    else
-                    {
-                        data.character = key.Substring(8);
-                        data.text = entry.Value.Value;
-                        data.line_index = line_index;
-                    }
-                    entries[id] = data;
+                    if(!dialogue_per_location.ContainsKey(location_id))
+                        dialogue_per_location[location_id] = new List<DialogueData>();
+                    dialogue_per_location[location_id].Add(new DialogueData {
+                        location_id = location_id,
+                        dialogue_index = dialogue_index,
+                        topic = entry.Value.Value,
+                    });
+                    
                 }
-                catch (Exception e)
+                else
                 {
-                    Debug.Log("Wrong dialogue key : " + key);
+                    try
+                    {
+                        int line_index = int.Parse(key.Substring(4, 3));
+                        DialogueEntryID id = new DialogueEntryID
+                        {
+                            dialogue_index = dialogue_index,
+                            location_id = location_id,
+                            line_index = line_index,
+                        };
+                        DialogueEntryData data = new DialogueEntryData();
+                        if (entries.ContainsKey(id))
+                            data = entries[id];
+                        if(key.EndsWith("Unlock"))
+                        {
+                            data.unlocks = entry.Value.Value.Split(" ");
+                            data.line_index = line_index;
+                        }
+                        else
+                        {
+                            data.character = key.Substring(8);
+                            data.text = entry.Value.Value;
+                            data.line_index = line_index;
+                        }
+                        entries[id] = data;
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.Log("Wrong dialogue key : " + key);
+                    }
                 }
             }
         }
@@ -99,4 +118,10 @@ public class DialogueDatabase : MonoBehaviour
         return lines.ToArray();
     }
 
+    public DialogueData[] ListAvailableDialogues(char location_id)
+    {
+        if (!dialogue_per_location.ContainsKey(location_id))
+            return new DialogueData[0];
+        return dialogue_per_location[location_id].ToArray();
+    }
 }

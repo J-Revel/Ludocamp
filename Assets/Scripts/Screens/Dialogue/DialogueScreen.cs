@@ -19,8 +19,7 @@ public struct DialogueLine
 
 public class DialogueScreen : MonoBehaviour
 {
-    public char location_id = 'A';
-    public int dialogue_index;
+    public DialogueData dialogue;
     public DialogueEntryData[] lines;
     private int cursor = 0;
     public DialogueBubble bubble_prefab;
@@ -32,7 +31,7 @@ public class DialogueScreen : MonoBehaviour
     void Start()
     {
         random = new Unity.Mathematics.Random((uint)DateTime.Now.Ticks);
-        lines = DialogueDatabase.instance.GetLines(location_id, dialogue_index);
+        lines = DialogueDatabase.instance.GetLines(dialogue.location_id, dialogue.dialogue_index);
         ShowNext();
     }
 

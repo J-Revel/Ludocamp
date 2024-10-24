@@ -30,9 +30,12 @@ public class DialogueBubble : MonoBehaviour
         rect_transform.anchorMin = position;
         rect_transform.anchorMax = position;
         rect_transform.pivot = position;
-        foreach (string unlock in dialogue_line.unlocks)
+        if(dialogue_line.unlocks != null)
         {
-            EvaluationReport.Instance.UnlockDialogueOrDocument(unlock);
+            foreach (string unlock in dialogue_line.unlocks)
+            {
+                EvaluationReport.Instance.UnlockDialogueOrDocument(unlock);
+            }
         }
 
         for (float time = 0; time < appear_duration; time += Time.unscaledDeltaTime)
@@ -55,7 +58,6 @@ public class DialogueBubble : MonoBehaviour
             canvas_group.alpha = 1 - f;
             yield return null;
         }
-
         
         Destroy(gameObject);
     }

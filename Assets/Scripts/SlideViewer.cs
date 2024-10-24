@@ -21,6 +21,7 @@ public class SlideViewer : MonoBehaviour
     private bool isTransitioning;
     private CanvasGroup[] slides;
     private CanvasGroup previousSlide;
+    private float transitionTimer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -47,10 +48,16 @@ public class SlideViewer : MonoBehaviour
 
     private void TryTransitionToNextSlide()
     {
-        if (isTransitioning) return;
+        if (isTransitioning)
+        {
+            transitionTimer = transitionDuration;
+            return;
+        }
 
         if (slideIndex >= totalSlideCount - 1)
         {
+            isTransitioning = true;
+
             LastSlideFinished?.Invoke();
 
             switch(onFinishAction)
@@ -75,9 +82,9 @@ public class SlideViewer : MonoBehaviour
         slideIndex = index;
         CanvasGroup slide = slides[slideIndex];
         isTransitioning = true;
-        for (float t = 0; t< transitionDuration;t+=Time.unscaledDeltaTime)
+        for (transitionTimer = 0; transitionTimer < transitionDuration; transitionTimer += Time.unscaledDeltaTime)
         {
-            float f = t / transitionDuration;
+            float f = transitionTimer / transitionDuration;
             slide.alpha = f;
             if(previousSlide)
             {

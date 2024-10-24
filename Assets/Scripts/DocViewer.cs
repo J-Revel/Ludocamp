@@ -69,7 +69,7 @@ public class DocViewer : MonoBehaviour
 
     public void OpenDocument(DocumentConfig docConfig)
     {
-        EvaluationReport.Instance.AddViewedDoc(docConfig);
+        EvaluationReport.Instance.RemoveNotViewedDoc(docConfig.id);
 
         List<GameObject> toDelete = new List<GameObject>();
 

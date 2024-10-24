@@ -19,6 +19,7 @@ public class EvaluationReport : MonoBehaviour
     private ReportBlock currentBlock;
     private ReportBlock[] blocks;
     public event System.Action<string> DocumentOrDialogueUnlocked;
+    public event System.Action DocumentViewed;
     //public event System.Action<DialogueConfig> DialogueUnlocked;
     public ReportPage[] pages;
     public int TotalPage => pages.Length;
@@ -27,7 +28,7 @@ public class EvaluationReport : MonoBehaviour
     private HashSet<string> unlockedConfigIDs;
     //private HashSet<DocumentConfig> unlockedDocuments; // { get; private set; }
     //private HashSet<DialogueConfig> unlockedDialogues; // { get; private set; }
-    private HashSet<DocumentConfig> viewedDocuments; // { get; private set; }
+    private HashSet<string> notViewedDocuments; // { get; private set; }
 
     private float lastScrollPosition;
     private bool isPlayingSlideSound;
@@ -40,7 +41,7 @@ public class EvaluationReport : MonoBehaviour
         unlockedConfigIDs = new HashSet<string>();
         //unlockedDocuments = new HashSet<DocumentConfig>();
         //unlockedDialogues = new HashSet<DialogueConfig>();
-        viewedDocuments = new HashSet<DocumentConfig>();
+        notViewedDocuments = new HashSet<string>();
     }
 
     private void Start()
@@ -84,16 +85,29 @@ public class EvaluationReport : MonoBehaviour
     public bool IsDocumentUnlocked(DocumentConfig doc) => unlockedConfigIDs.Contains(doc.id);
     //public List<DialogueConfig> UnlockedDialogues => unlockedDialogues.ToList();
     //public List<DocumentConfig> UnlockedDocuments => unlockedDocuments.ToList();
-    public List<DocumentConfig> ViewedDocuments => viewedDocuments.ToList();
-    public void AddViewedDoc(DocumentConfig doc) => viewedDocuments.Add(doc);
+    public List<string> NotViewedDocuments => notViewedDocuments.ToList();
+    public void AddNotViewedDoc(string docID) => notViewedDocuments.Add(docID);
+    public void RemoveNotViewedDoc(string docID)
+    {
+        notViewedDocuments.Remove(docID);
+        DocumentViewed?.Invoke();
+    }
     public void UnlockDialogueOrDocument(string id)
     {
         unlockedConfigIDs.Add(id);
+        if (id.StartsWith("doc"))
+        {
+            notViewedDocuments.Add(id);
+        }
         DocumentOrDialogueUnlocked?.Invoke(id);
     }
     public void UnlockDocument(DocumentConfig docConfig)
     {
         unlockedConfigIDs.Add(docConfig.id);
+        if(docConfig.id.StartsWith("doc")|| docConfig.id.StartsWith("Doc"))
+        {
+            notViewedDocuments.Add(docConfig.id);
+        }
         DocumentOrDialogueUnlocked?.Invoke(docConfig.id);  
     }
     public void UnlockDialogue(DialogueConfig dialConfig)

@@ -5,6 +5,8 @@ using System.Collections;
 
 public class EvaluationReport : MonoBehaviour
 {
+    [SerializeField] private DocumentConfig[] initialDocuments;
+    [SerializeField] private DialogueConfig[] initialDialogues;
     [SerializeField] private ScreenRoot gameEndScreen;
     [SerializeField] private float initialScroll;
     [SerializeField] private float scrollSpeed;
@@ -47,6 +49,16 @@ public class EvaluationReport : MonoBehaviour
 
     private void Initialize()
     {
+        foreach(var doc in initialDocuments)
+        {
+            UnlockDocument(doc);
+        }
+
+        foreach (var dial in initialDialogues)
+        {
+            UnlockDialogue(dial);
+        }
+
         blocks = GetComponentsInChildren<ReportBlock>(includeInactive: true);
         pages = GetComponentsInChildren<ReportPage>(includeInactive: true);
         int pageIndex = 0;

@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class ReportOption : MonoBehaviour
 {
+    [SerializeField] private AudioSource clickAudio;
     [SerializeField] private int correctOption;
     [SerializeField] private ReportOptionConfig optionConfig;
     [SerializeField] private TMPro.TMP_Dropdown optionDropdown;
@@ -23,7 +24,8 @@ public class ReportOption : MonoBehaviour
 
     private void OnValueChanged(int value)
     {
-        if(value == correctOption)
+        clickAudio.Play();
+        if (value == correctOption)
         {
             Validated?.Invoke(this);
         }

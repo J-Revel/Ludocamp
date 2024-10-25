@@ -20,6 +20,7 @@ public class EvaluationReport : MonoBehaviour
     private ReportBlock[] blocks;
     public event System.Action<string> DocumentOrDialogueUnlocked;
     public event System.Action DocumentViewed;
+    private event System.Action<int> BlockValidated;
     //public event System.Action<DialogueConfig> DialogueUnlocked;
     public ReportPage[] pages;
     public int TotalPage => pages.Length;
@@ -240,6 +241,7 @@ public class EvaluationReport : MonoBehaviour
             }
         }
 
+        BlockValidated?.Invoke(currentBlockIndex);
         block.Validated -= OnBlockValidated;
 
         if(currentBlockIndex >= blocks.Length - 1) // last block completed

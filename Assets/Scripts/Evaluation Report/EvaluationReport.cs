@@ -33,6 +33,8 @@ public class EvaluationReport : MonoBehaviour
     //private HashSet<DialogueConfig> unlockedDialogues; // { get; private set; }
     private HashSet<string> notViewedDocuments; // { get; private set; }
     private HashSet<string> notViewedDialogues; // { get; private set; }
+    private HashSet<string> unlockedDocuments; // { get; private set; }
+    private HashSet<string> unlockedDialogues;
     private Coroutine turnPageRoutine;
 
     private float lastScrollPosition;
@@ -87,7 +89,8 @@ public class EvaluationReport : MonoBehaviour
         scrollRect.verticalNormalizedPosition = initialScroll;
         SetCurrentBlock(0);
     }
-
+    public bool IsAnyDocUnlocked() => unlockedDocuments.Count > 0;
+    public bool IsAnyDialogueUnlocked() => unlockedDialogues.Count > 0;
     public bool IsDialogueUnlocked(DialogueConfig dialogue) => unlockedConfigIDs.Contains(dialogue.id);
     public bool IsDialogueUnlocked(string dialogue_uid) => unlockedConfigIDs.Contains(dialogue_uid);
     public bool IsDialogueViewed(string dialogue_uid) => !notViewedDialogues.Contains(dialogue_uid);
@@ -118,8 +121,14 @@ public class EvaluationReport : MonoBehaviour
         if (id.StartsWith("doc") || id.StartsWith("Doc") || id.StartsWith("DOC"))
         {
             notViewedDocuments.Add(id);
+            unlockedDocuments.Add(id);
         }
-        else notViewedDialogues.Add(id);
+        else
+        {
+            notViewedDialogues.Add(id);
+            unlockedDialogues.Add(id);
+        }
+
         DocumentOrDialogueUnlocked?.Invoke(id);
         return true;
     }

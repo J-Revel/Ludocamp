@@ -10,6 +10,7 @@ public class EvaluationReport : MonoBehaviour
     [SerializeField] private ScreenRoot gameEndScreen;
     [SerializeField] private float initialScroll;
     [SerializeField] private float scrollSpeed;
+    [SerializeField] private float turnPageAnimDuration;
     [SerializeField] private UnityEngine.UI.ScrollRect scrollRect;
     [SerializeField] private RectTransform pagesContainer;
     [SerializeField] private AudioSource slideSound;
@@ -31,6 +32,7 @@ public class EvaluationReport : MonoBehaviour
     //private HashSet<DialogueConfig> unlockedDialogues; // { get; private set; }
     private HashSet<string> notViewedDocuments; // { get; private set; }
     private HashSet<string> notViewedDialogues; // { get; private set; }
+    private Coroutine turnPageRoutine;
 
     private float lastScrollPosition;
     private bool isPlayingSlideSound;
@@ -43,6 +45,7 @@ public class EvaluationReport : MonoBehaviour
         unlockedConfigIDs = new HashSet<string>();
         //unlockedDocuments = new HashSet<DocumentConfig>();
         //unlockedDialogues = new HashSet<DialogueConfig>();
+        currentPageIndex = -1;
         notViewedDocuments = new HashSet<string>();
         notViewedDialogues= new HashSet<string>();
     }
@@ -135,15 +138,86 @@ public class EvaluationReport : MonoBehaviour
 
     public void OpenPage(int index)
     {
-        currentPageIndex = index;
-
-        foreach (var page in pages)
+        if(turnPageRoutine != null)
         {
-            page.gameObject.SetActive(page.Index >= index);
-            if (page.Index > index) page.SetPageColorToBase();
+            StopCoroutine(turnPageRoutine);
         }
 
-        pages[index].OnPageOpened(pages.Length);
+        turnPageRoutine = StartCoroutine(OpenPageRoutine(index));
+
+        //StartCoroutine(OpenPageRoutine(index));
+    }
+
+    private IEnumerator OpenPageRoutine(int index)
+    {
+        int prevIndex = currentPageIndex;
+        
+
+        currentPageIndex = index;
+
+        if (currentPageIndex > prevIndex)
+        {
+            foreach (var page in pages)
+            {
+                if (page.Index >= index) page.gameObject.SetActive(true);
+                //page.gameObject.SetActive(page.Index >= index);
+                if (page.Index > index) page.SetPageColorToBase();
+            }
+            pages[index].OnPageOpened(pages.Length);
+
+            if (prevIndex > -1)
+            {
+                float duration = turnPageAnimDuration;
+                for (float t = 0; t < duration; t += Time.unscaledDeltaTime)
+                {
+                    
+                    float f = t / duration;
+                    pages[prevIndex].GetComponent<CanvasGroup>().alpha = 1 - f;
+                    yield return null;
+
+                }
+                pages[prevIndex].GetComponent<CanvasGroup>().alpha = 0;
+                foreach (var page in pages)
+                {
+                    if (page.Index < index) page.gameObject.SetActive(false);
+                    //page.gameObject.SetActive(page.Index >= index);
+                    //if (page.Index > index) page.SetPageColorToBase();
+                }
+            }
+            
+
+        }
+        else
+        {
+            foreach (var page in pages)
+            {
+                if (page.Index == index) page.gameObject.SetActive(true);
+                //page.gameObject.SetActive(page.Index >= index);
+                if (page.Index > index) page.SetPageColorToBase();
+            }
+            pages[index].OnPageOpened(pages.Length);
+
+            if (index > -1)
+            {
+                float duration = turnPageAnimDuration;
+                for (float t = 0; t < duration; t += Time.unscaledDeltaTime)
+                {
+
+                    float f = t / duration;
+                    pages[index].GetComponent<CanvasGroup>().alpha = f;
+                    yield return null;
+
+                }
+                pages[index].GetComponent<CanvasGroup>().alpha = 1;
+                foreach (var page in pages)
+                {
+                    if (page.Index < index) page.gameObject.SetActive(false);
+                    //page.gameObject.SetActive(page.Index >= index);
+                    //if (page.Index > index) page.SetPageColorToBase();
+                    if (page.Index > index) page.SetPageColorToBase();
+                }
+            }
+        }
     }
 
     private void Update()

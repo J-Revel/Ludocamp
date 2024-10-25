@@ -446,6 +446,7 @@ MonoBehaviour:
   gameEndScreen: {fileID: 8257671532271861640, guid: 7c4b6774553a9f04e9f7bbd0499d4342, type: 3}
   initialScroll: 1
   scrollSpeed: 2
+  turnPageAnimDuration: 0.5
   scrollRect: {fileID: 5117647761311172793}
   pagesContainer: {fileID: 601226233237370175}
   slideSound: {fileID: 4331804476238203281}

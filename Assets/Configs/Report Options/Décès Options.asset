@@ -10,37 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 645b11ecac5a7fe4984fd737a68d72c9, type: 3}
-  m_Name: LastName Options
+  m_Name: "D\xE9c\xE8s Options"
   m_EditorClassIdentifier: 
   options:
   - ---
-  - Ahmed
-  - Ali
-  - Bernard
-  - Buffard
-  - Caron
-  - Chan
-  - Charpentier
-  - Demir
-  - Dubois
-  - Dufour
-  - Fontaine
-  - Garnier
-  - Gonzalez
-  - Ivanov
-  - Kim
-  - Lambert
-  - Lefebvre
-  - Leroy
-  - Marchand
-  - Martin
-  - Moreau
-  - Moreno
-  - Patel
-  - Petit
-  - Rossi
-  - Rousseau
-  - Santos
-  - Singh
-  - Tanaka
-  - Zhang
+  - "Arr\xEAt cardiaque"
+  - Asphyxie
+  - "Blessure p\xE9n\xE9trante"
+  - "Br\xFBlure"
+  - Empoisonnement
+  - "H\xE9morragie interne"
+  - Hyperthermie
+  - Hypothermie
+  - "Oed\xE8me pulmonaire"
+  - Suicide
+  - Traumatisme abdominal
+  - Traumatisme cranien
+  - Traumatisme thoracique

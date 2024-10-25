@@ -10,37 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 645b11ecac5a7fe4984fd737a68d72c9, type: 3}
-  m_Name: LastName Options
+  m_Name: Yes No Options
   m_EditorClassIdentifier: 
   options:
   - ---
-  - Ahmed
-  - Ali
-  - Bernard
-  - Buffard
-  - Caron
-  - Chan
-  - Charpentier
-  - Demir
-  - Dubois
-  - Dufour
-  - Fontaine
-  - Garnier
-  - Gonzalez
-  - Ivanov
-  - Kim
-  - Lambert
-  - Lefebvre
-  - Leroy
-  - Marchand
-  - Martin
-  - Moreau
-  - Moreno
-  - Patel
-  - Petit
-  - Rossi
-  - Rousseau
-  - Santos
-  - Singh
-  - Tanaka
-  - Zhang
+  - Oui
+  - Non

@@ -51,7 +51,9 @@ public class EvaluationReport : MonoBehaviour
         currentPageIndex = -1;
         notViewedDocuments = new HashSet<string>();
         notViewedDialogues= new HashSet<string>();
-    }
+        unlockedDocuments = new HashSet<string>();
+        unlockedDialogues = new HashSet<string>();
+}
 
     private void Start()
     {
@@ -232,9 +234,19 @@ public class EvaluationReport : MonoBehaviour
         }
     }
 
+    public void UnlockCurrentBlock()
+    {
+        currentBlock.SetValidated();
+    }
+
     private void Update()
     {
         //scrollRect.verticalNormalizedPosition += Time.deltaTime * scrollDirection * scrollSpeed;
+
+        if(Input.GetKey(KeyCode.Space) && Input.GetKeyDown(KeyCode.U))
+        {
+            UnlockCurrentBlock();
+        }
 
         if(Mathf.Abs(scrollRect.verticalNormalizedPosition - lastScrollPosition) < Mathf.Epsilon)
         {

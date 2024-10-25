@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "MapPointConfig", menuName = "Scriptable Objects/MapPointConfig")]
 public class MapPointConfig : ScriptableObject
 {
-    public string name;
-    public DialogueConfig[] dialogues;
+    public char location_id;
+    public string title;
+    public AudioClip ambiance;
 }

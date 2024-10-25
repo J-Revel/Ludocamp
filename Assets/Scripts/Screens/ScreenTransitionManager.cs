@@ -66,6 +66,8 @@ public class ScreenTransitionManager : MonoBehaviour
     public void CloseScreen()
     {
         ScreenRoot to_remove = screen_stack[^1];
+        to_remove.screen_close_delegate?.Invoke();
+
         transition_coroutines.Add(StartCoroutine(to_remove.disappear_coroutine));
         screen_stack.RemoveAt(screen_stack.Count - 1);
     }

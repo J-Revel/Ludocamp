@@ -6,7 +6,7 @@ using System.Collections;
 public class EvaluationReport : MonoBehaviour
 {
     [SerializeField] private DocumentConfig[] initialDocuments;
-    [SerializeField] private DialogueConfig[] initialDialogues;
+    [SerializeField] private string[] initialUnlocks;
     [SerializeField] private ScreenRoot gameEndScreen;
     [SerializeField] private float initialScroll;
     [SerializeField] private float scrollSpeed;
@@ -57,9 +57,9 @@ public class EvaluationReport : MonoBehaviour
             UnlockDocument(doc);
         }
 
-        foreach (var dial in initialDialogues)
+        foreach (var dial in initialUnlocks)
         {
-            UnlockDialogue(dial);
+            UnlockDialogueOrDocument(dial);
         }
         scrollRect.GetComponentInChildren<UnityEngine.UI.Mask>().enabled = true;
         blocks = GetComponentsInChildren<ReportBlock>(includeInactive: true);
@@ -83,6 +83,7 @@ public class EvaluationReport : MonoBehaviour
     }
 
     public bool IsDialogueUnlocked(DialogueConfig dialogue) => unlockedConfigIDs.Contains(dialogue.id);
+    public bool IsDialogueUnlocked(string dialogue_uid) => unlockedConfigIDs.Contains(dialogue_uid);
     public bool IsDocumentUnlocked(DocumentConfig doc) => unlockedConfigIDs.Contains(doc.id);
     //public List<DialogueConfig> UnlockedDialogues => unlockedDialogues.ToList();
     //public List<DocumentConfig> UnlockedDocuments => unlockedDocuments.ToList();

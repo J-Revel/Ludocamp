@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 645b11ecac5a7fe4984fd737a68d72c9, type: 3}
-  m_Name: AccidentTypeConfig
+  m_Script: {fileID: 11500000, guid: 73f1fb4f4c63f1b4db58ff58ba53fd27, type: 3}
+  m_Name: C_Map_Point
   m_EditorClassIdentifier: 
-  options:
-  - Accident A
-  - Accident B
-  - Accident C
+  location_id: 67
+  title: Chez Carine
+  ambiance: {fileID: 8300000, guid: dad2700f0da2854478f583ea68af744d, type: 3}

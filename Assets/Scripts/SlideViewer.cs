@@ -10,9 +10,11 @@ public class SlideViewer : MonoBehaviour
     [SerializeField] private float transitionDuration;
     [SerializeField] private OnFinishAction onFinishAction;
     [SerializeField] private RectTransform slideContainer;
+    public ScreenRoot next_screen;
     public enum OnFinishAction
     {
         CloseScreen,
+        OpenScreen,
         ExitGame
     }
     public event System.Action LastSlideFinished;
@@ -22,7 +24,7 @@ public class SlideViewer : MonoBehaviour
     private CanvasGroup[] slides;
     private CanvasGroup previousSlide;
     private float transitionTimer;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         totalSlideCount = slideContainer.childCount;
@@ -37,7 +39,6 @@ public class SlideViewer : MonoBehaviour
         StartCoroutine(FadeToSlide(0));
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.anyKeyDown)
@@ -65,12 +66,14 @@ public class SlideViewer : MonoBehaviour
                 case OnFinishAction.CloseScreen:
                     ScreenTransitionManager.instance.CloseScreen();
                     break;
+                case OnFinishAction.OpenScreen:
+                    ScreenTransitionManager.instance.ShowScreen(next_screen, ScreenStackMode.Replace);
+                    break;
 
                 case OnFinishAction.ExitGame:
                     Application.Quit();
                     break;
             }
-
             return;
         }
 

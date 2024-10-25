@@ -31,6 +31,7 @@ public class DialogueBubble : MonoBehaviour
             {
                 character = characters.configs[i].display_name;
                 background_image.color = characters.configs[i].bubble_color;
+                background_image.material = characters.configs[i].bubble_material;
             }
         }
         string color_hex = ((int)(character_color.r*255)).ToString("X2");
@@ -38,7 +39,8 @@ public class DialogueBubble : MonoBehaviour
         color_hex += ((int)(character_color.b*255)).ToString("X2");
         color_hex += ((int)(character_color.a*255)).ToString("X2");
 
-        text.text = "<b><color=#" + color_hex + "> " + character + " : </b></color>" + dialogue_line.text;
+        string displayed_text = dialogue_line.text.Replace("[", "<color=#dcb200>").Replace("]", "</color>");
+        text.text = "<b><color=#" + color_hex + "> " + character + " : </b></color>" + displayed_text;
         canvas_group = GetComponent<CanvasGroup>();
         RectTransform rect_transform = GetComponent<RectTransform>();
         rect_transform.anchorMin = position;

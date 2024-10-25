@@ -27,6 +27,7 @@ public struct LocationCharacter
 public class DialogueScreen : MonoBehaviour
 {
     public DialogueData dialogue;
+    public MapPointConfig[] map_points;
     public DialogueEntryData[] lines;
     private int cursor = 0;
     public DialogueBubble bubble_prefab;
@@ -39,6 +40,15 @@ public class DialogueScreen : MonoBehaviour
 
     void Start()
     {
+        GetComponent<ScreenRoot>().screen_close_delegate += () =>
+        {
+            AmbianceManager.Instance.ResetToBaseAmbiance();
+        };
+        foreach(var point in map_points)
+        {
+            if (point.location_id == dialogue.location_id)
+                AmbianceManager.Instance.ChangeAmbiance(point.ambiance);
+        }
         random = new Unity.Mathematics.Random((uint)DateTime.Now.Ticks);
         lines = DialogueDatabase.instance.GetLines(dialogue.location_id, dialogue.dialogue_index);
         foreach(var character in characters)

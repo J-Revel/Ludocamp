@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 645b11ecac5a7fe4984fd737a68d72c9, type: 3}
-  m_Name: "Prob Enqu\xEAte Options"
+  m_Name: Licenciement Options
   m_EditorClassIdentifier: 
   options:
   - ---
-  - Conflits de juridiction
-  - Contamination des preuves
-  - "D\xE9ficit de preuves"
-  - Destruction de preuves
-  - "Erreurs dans le Proc\xE8s Verbal"
-  - "Initimidation de t\xE9moins"
-  - "Non-coop\xE9ration des suspects"
-  - "Obstacles l\xE9gaux"
-  - "Probl\xE8mes technique"
+  - "Absences r\xE9p\xE9t\xE9es"
+  - "Comportement inappropri\xE9"
+  - "Conduite d\xE9loyale"
+  - "Conflits d'int\xE9r\xEAts"
+  - Drogue ou alcool
+  - "\xC9valuation n\xE9gative"
+  - Insubordination
+  - "Manque de comp\xE9tence"
+  - "Non-respect des r\xE8gles"
+  - "R\xE9duction d'effectifs"
+  - Vol ou fraude

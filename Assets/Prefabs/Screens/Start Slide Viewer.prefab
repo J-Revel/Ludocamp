@@ -8,13 +8,108 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 93736305911339373, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4270721834320683553, guid: 9a556d2fe91a17741b7035de7febc937, type: 3}
+    - target: {fileID: 1133040444862074460, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4270721834320683553, guid: 9a556d2fe91a17741b7035de7febc937, type: 3}
+    - target: {fileID: 1133040444862074460, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_Color.b
+      value: 0.44313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133040444862074460, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_Color.g
+      value: 0.44313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133040444862074460, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_Color.r
+      value: 0.44313726
+      objectReference: {fileID: 0}
     - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_text
-      value: Start Slide 2
+      value: "L\u2019histoire racont\xE9e ici est fictive mais inspir\xE9e de nombreux
+        cas r\xE9els actuels, et les sujets abord\xE9s peuvent \xEAtre difficiles
+        ou choquants. \n\nSentez-vous libre d\u2019arr\xEAter \xE0 tout moment."
       objectReference: {fileID: 0}
+    - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_fontSize
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_margin.x
+      value: -272.5176
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_margin.z
+      value: -274.76855
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a21177fc26f893b4fade806250612222, type: 2}
+    - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -193813714345396524, guid: a21177fc26f893b4fade806250612222, type: 2}
+    - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852602722816668366, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4270721834320683553, guid: 9a556d2fe91a17741b7035de7febc937, type: 3}
     - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_text
-      value: Start Slide 3
+      value: "Ce jeu est un jeu d\u2019enqu\xEAte, pensez \xE0 prendre des notes
+        pour vous aider si besoin."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_fontSize
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_margin.x
+      value: -235.51596
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_margin.z
+      value: -237.69666
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a21177fc26f893b4fade806250612222, type: 2}
+    - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -193813714345396524, guid: a21177fc26f893b4fade806250612222, type: 2}
+    - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4418605736476581650, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_Name
@@ -34,7 +129,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_text
-      value: Start Slide 1
+      value: "Ce jeu a \xE9t\xE9 cr\xE9\xE9 lors de la Ludocamp, \nr\xE9sidence organis\xE9e
+        par La Science entre en Jeu \net la Ligue Contre la Violence Routi\xE8re."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_fontSize
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_margin.x
+      value: -272.5176
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_margin.z
+      value: -274.76855
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a21177fc26f893b4fade806250612222, type: 2}
+    - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -193813714345396524, guid: a21177fc26f893b4fade806250612222, type: 2}
+    - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045773467882447829, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4270721834320683553, guid: 9a556d2fe91a17741b7035de7febc937, type: 3}
+    - target: {fileID: 5511492514820072259, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_Name
+      value: Slide 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511492514820072259, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5643498158515434314, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: instantAppear
@@ -123,6 +263,10 @@ PrefabInstance:
     - target: {fileID: 7172748665615227398, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662316840710017807, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

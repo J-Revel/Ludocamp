@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   options:
   - ---
-  - Traumatisme cranien
-  - "Br\xFBlure"
-  - "Blessure p\xE9n\xE9trante"
-  - "H\xE9morragie interne"
-  - Traumatisme thoracique
-  - Asphyxie
-  - Traumatisme abdominal
-  - "Oed\xE8me pulmonaire"
-  - "Arr\xEAt cardiaque"
-  - Hypothermie
-  - Empoisonnement
-  - Hyperthermie
-  - Suicide
+  - Animal sur la route
+  - "Ch\xFBte de pierre"
+  - "Conditions m\xE9t\xE9orologiques"
+  - Conduite aggressive
+  - "Conduite en \xE9tat d'ivresse"
+  - "Distances de s\xE9curit\xE9 ignor\xE9es"
+  - "Exc\xE8s de vitesse"
+  - Fatigue au volant
+  - "Manque d'exp\xE9rience"
+  - "Mauvais entretien du v\xE9hicule"
+  - Obstacle sur la voie
+  - "Probl\xE8me technique"
+  - "Violation des r\xE8gles de s\xE9curit\xE9"

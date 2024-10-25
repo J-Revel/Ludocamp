@@ -6,7 +6,7 @@ using System.Collections;
 public class EvaluationReport : MonoBehaviour
 {
     [SerializeField] private DocumentConfig[] initialDocuments;
-    [SerializeField] private DialogueConfig[] initialDialogues;
+    [SerializeField] private string[] initialUnlocks;
     [SerializeField] private ScreenRoot gameEndScreen;
     [SerializeField] private float initialScroll;
     [SerializeField] private float scrollSpeed;
@@ -56,9 +56,9 @@ public class EvaluationReport : MonoBehaviour
             UnlockDocument(doc);
         }
 
-        foreach (var dial in initialDialogues)
+        foreach (var dial in initialUnlocks)
         {
-            UnlockDialogue(dial);
+            UnlockDialogueOrDocument(dial);
         }
 
         blocks = GetComponentsInChildren<ReportBlock>(includeInactive: true);

@@ -56,11 +56,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974345
-    m_Localized: B01
+    m_Localized: B01T
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974346
-    m_Localized: Tim 1
+    m_Localized: L'accident
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974347
@@ -87,139 +87,6 @@ MonoBehaviour:
     m_Localized: "C\u2019est dur, vous savez\u2026 On nous laisse longtemps dans
       le flou, en laissant les grandes institution g\xE9rer des vies, Alors que nous,
       on a besoin de r\xE9ponses pour avancer \u2026"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974352
-    m_Localized: "Pour tout vous dire, je n\u2019ai jamais pu voir le rapport d'enqu\xEAte
-      enti\xE8rement... La police a tout verrouill\xE9, elle m\u2019a m\xEAme refus\xE9
-      de porter plainte. "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974353
-    m_Localized: "C\u2019\xE9tait l\u2019inspecteur Durant qui s\u2019en occupait
-      mais la justice semblait lui passer au-dessus ! M\xEAme la v\xE9rit\xE9 sur
-      ce qui s\u2019est vraiment pass\xE9 ne semblait pas la pr\xE9occuper."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974354
-    m_Localized: B02
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974355
-    m_Localized: "Et vous n\u2019avez jamais eu acc\xE8s aux documents ? Aucun suivi
-      de la part des autorit\xE9s ?"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974356
-    m_Localized: "Non... rien ! Et sans ces r\xE9ponses, c\u2019est juste impossible
-      d\u2019avancer. Comment faire son deuil quand on nous cache tout ?"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974357
-    m_Localized: "J\u2019ai tout perdu... mon travail, mes amis, ... m\xEAme mes
-      beaux-parents -famille d\u2019Arthur je veux dire. Ils m\u2019en veulent \xE0
-      moi. Ils ne veulent plus me parler, comme si c\u2019\xE9tait de ma faute."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974358
-    m_Localized: "Eux, ils ont pu reprendre leur vie... moi, je suis toujours l\xE0,
-      \xE0 voir un psy."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974359
-    m_Localized: B03
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974360
-    m_Localized: "Vous vous sentez abandonn\xE9."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974361
-    m_Localized: "Ouais, compl\xE8tement. Je me suis battu pendant un an pour que
-      la justice condamne quelqu'un... Les proc\xE8s, les regards accusateurs...
-      tout \xE7a pour une condamnation qui ne change rien."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974362
-    m_Localized: "Arthur est mort. Et moi, je suis rest\xE9 \xE0 me battre pour une
-      justice qui n\u2019effacera jamais sa perte et me laisse un go\xFBt amer."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974363
-    m_Localized: "C\u2019est une charge trop lourde \xE0 porter seul... et en plus,
-      vous avez d\xFB faire face aux m\xE9dias ?"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974364
-    m_Localized: "Des vautours... ils ont d\xE9barqu\xE9 d\xE8s le d\xE9but, \xE0
-      m\u2019harceler tous les jours ! Qu\u2019importe o\xF9 j\u2019allais je devais
-      en parler... Ils ne voulaient que des titres, du sensationnel. Pendant que
-      moi je souffrais, ils faisaient de mon deuil un vulgaire spectacle et m'emp\xEAchaient
-      de passer \xE0 autre chose."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974365
-    m_Localized: J_A3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974366
-    m_Localized: "Ce genre d\u2019attention m\xE9diatique est \xE9puisant... Et l\u2019assurance
-      ? Comment cela s\u2019est-il pass\xE9 avec eux ?"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974367
-    m_Localized: "L\u2019assurance a minimis\xE9 tout ce qu\u2019elle pouvait...
-      \"les impacts ne sont pas si graves\", qu\u2019ils disaient."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974368
-    m_Localized: "Ils m\u2019ont propos\xE9 des indemnit\xE9s ridicules ! Comme si
-      \xE7a pouvait compenser la perte d\u2019Arthur... Rien ne pourra jamais le
-      ramener. Tout ce qu\u2019ils ont fait, c'est se moquer de ma douleur."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974369
-    m_Localized: S_IN
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974370
-    m_Localized: "Ils ont donc profit\xE9 de votre vuln\xE9rabilit\xE9 au pire moment
-      possible."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974371
-    m_Localized: "Oui... m\xEAme la morgue a abus\xE9 de ma faiblesse. Ils nous ont
-      fait payer des sommes absurdes pour un service \u201Csp\xE9cial\u201D. J\u2019\xE9tais
-      trop bris\xE9 pour comprendre... Je voulais juste que \xE7a s\u2019arr\xEAte\u2026"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974372
-    m_Localized: "C\u2019est \xE7a, la r\xE9alit\xE9. Tout le monde en profite quand
-      vous \xEAtes \xE0 terre. Arthur ne m\xE9ritait pas \xE7a... moi non plus d\u2019ailleurs."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974373
-    m_Localized: "Mais... comment on avance quand tout vous rappelle \xE0 quel point
-      vous \xEAtes impuissant ? Je veux juste que quelqu\u2019un prenne enfin tout
-      \xE7a au s\xE9rieux\u2026"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974374
-    m_Localized: V_FA
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974375
-    m_Localized: "Je comprends bien, Tim. On t\xE2chera de changer les choses. Merci
-      pour votre t\xE9moignage tr\xE8s pr\xE9cieux."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974376
-    m_Localized: "Merci... je n\u2019ai pas beaucoup d\u2019espoir, mais... merci."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974377
-    m_Localized: "On reste en contact. Je vous tiendrai inform\xE9 d\xE8s que nous
-      aurons des avanc\xE9es, que j'esp\xE8re rapidement... Passez une bonne journ\xE9e."
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974378
@@ -381,80 +248,43 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974410
+    m_Localized: "Avant de le rencontrer, Arthur n\u2019aurait jamais pris de tels
+      risques. Ce n'est pas un hasard, tout est arriv\xE9 \xE0 cause de lui. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 808571208974411
     m_Localized: "Et quand on a appris la nouvelle... la mairie ne nous a m\xEAme
       pas pr\xE9venus correctement ! Ils sont venus nous dire \xE7a comme si c'\xE9tait
       un banal accident de la route."
     m_Metadata:
       m_Items: []
-  - m_Id: 808571208974411
-    m_Localized: Aucune empathie. Rien. Comme si la vie de mon fils ne comptait pas.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974412
-    m_Localized: "Vous auriez m\xE9rit\xE9 plus de consid\xE9ration dans un moment
-      aussi tragique."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974413
+  - m_Id: 808571208974414
     m_Localized: "Mais personne ne se soucie des familles ! On n\u2019est m\xEAme
       pas consid\xE9r\xE9s comme victimes dans ce genre d\u2019affaires !"
     m_Metadata:
       m_Items: []
-  - m_Id: 808571208974414
+  - m_Id: 808571208974416
     m_Localized: "Et apr\xE8s \xE7a, tout a commenc\xE9 \xE0 se d\xE9grader. On a
       tous plong\xE9, surtout mon mari. L\u2019accident n\u2019a pas juste tu\xE9
       Arthur, il a d\xE9truit notre famille."
     m_Metadata:
       m_Items: []
-  - m_Id: 808571208974415
-    m_Localized: "Je suis d\xE9sol\xE9 pour tout ce que vous endurez."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974416
+  - m_Id: 808571208974418
     m_Localized: "L\u2019assurance aussi s'est bien moqu\xE9e de nous ! On n'a eu
       que des miettes ! C\u2019\xE9tait comme si la vie de mon fils ne valait rien."
     m_Metadata:
       m_Items: []
-  - m_Id: 808571208974417
-    m_Localized: "Ils savent y faire avec les familles de victimes ! Ils nous ont
-      propos\xE9 une somme ridicule. "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974418
-    m_Localized: "Je vous ai pr\xE9par\xE9 le document, tenez regardez."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974419
-    m_Localized: B04
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974420
-    m_Localized: "Merci beaucoup, ce genre de document est pr\xE9cieux pour nous. "
-    m_Metadata:
-      m_Items: []
   - m_Id: 808571208974421
-    m_Localized: "J'esp\xE8re que \xE7a aidera les prochaines victimes \xE0 ne pas
-      vivre les m\xEAmes choses que nous..."
+    m_Localized: "Ils savaient tr\xE8s bien qu'on allait se d\xE9courager devant
+      la quantit\xE9 de d\xE9marches pour r\xE9cup\xE9rer le moindre euro de plus..."
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974422
-    m_Localized: "Parce que, franchement, tous ces gens -je veux dire les assurances,
-      les autorit\xE9s, ... m\xEAme ceux qui parlent de justice : ils ne comprennent
-      rien \xE0 ce qu'on a perdu."
+    m_Localized: "Je vous ai pr\xE9par\xE9 le document, tenez regardez."
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974423
-    m_Localized: "C'est pour \xE7a que vos t\xE9moignages sont importants. Merci
-      pour tout \xE7a."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974424
-    m_Localized: "Je m'assurerai que tout ce que vous m'avez partag\xE9 soit pris
-      en compte dans l'enqu\xEAte."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974425
-    m_Localized: "Bonne fin de journ\xE9e Madame Buffard"
+    m_Localized: "Merci beaucoup, ce genre de document est pr\xE9cieux pour nous. "
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974431
@@ -856,6 +686,234 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 838478152581121
     m_Localized: Carine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934578634752
+    m_Localized: "Le rapport d'enqu\xEAte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160704
+    m_Localized: "Pour tout vous dire, je n\u2019ai jamais pu voir le rapport d'enqu\xEAte
+      enti\xE8rement... La police a tout verrouill\xE9, elle m\u2019a m\xEAme refus\xE9
+      de porter plainte. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160705
+    m_Localized: "C\u2019\xE9tait l\u2019[inspecteur Durant] qui s\u2019en occupait
+      mais la justice semblait lui passer au-dessus ! M\xEAme la v\xE9rit\xE9 sur
+      ce qui s\u2019est vraiment pass\xE9 ne semblait pas la pr\xE9occuper."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160706
+    m_Localized: B02P
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160707
+    m_Localized: "Et vous n\u2019avez jamais eu acc\xE8s aux documents ? Aucun suivi
+      de la part des autorit\xE9s ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160708
+    m_Localized: "Non... rien ! Et sans ces r\xE9ponses, c\u2019est juste impossible
+      d\u2019avancer. Comment faire son deuil quand on nous cache tout ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160709
+    m_Localized: Relations avec la famille
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160710
+    m_Localized: "J\u2019ai tout perdu... mon travail, mes amis, ... m\xEAme mes
+      beaux-parents -famille d\u2019Arthur je veux dire. Ils m\u2019en veulent \xE0
+      moi. Ils ne veulent plus me parler."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160711
+    m_Localized: "Comme si c\u2019\xE9tait de ma faute."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160712
+    m_Localized: "Eux, ils ont pu reprendre leur vie... moi, je suis toujours l\xE0,
+      \xE0 voir un psy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160713
+    m_Localized: B03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160714
+    m_Localized: "Vous vous sentez abandonn\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160715
+    m_Localized: "Ouais, compl\xE8tement. Je me suis battu pendant un an pour que
+      la justice condamne quelqu'un..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160716
+    m_Localized: "Le proc\xE8s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160717
+    m_Localized: "Les proc\xE8s, les regards accusateurs... tout \xE7a pour une condamnation
+      qui ne change rien."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160718
+    m_Localized: "Arthur est mort. Et moi, je suis rest\xE9 \xE0 me battre pour une
+      justice qui n\u2019effacera jamais sa perte et me laisse un go\xFBt amer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160719
+    m_Localized: "Les m\xE9dias"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160720
+    m_Localized: "C\u2019est une charge trop lourde \xE0 porter seul... et en plus,
+      vous avez d\xFB faire face aux m\xE9dias ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160721
+    m_Localized: "Des vautours... ils ont d\xE9barqu\xE9 d\xE8s le d\xE9but, \xE0
+      m\u2019harceler tous les jours ! Qu\u2019importe o\xF9 j\u2019allais je devais
+      en parler... Ils ne voulaient que des titres, du sensationnel. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160722
+    m_Localized: "Pendant que moi je souffrais, ils faisaient de mon deuil un vulgaire
+      spectacle et m'emp\xEAchaient de passer \xE0 autre chose."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160723
+    m_Localized: J_A3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160724
+    m_Localized: "Je comprends, ce genre d\u2019attention m\xE9diatique est \xE9puisant..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160725
+    m_Localized: L'assurance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160726
+    m_Localized: "Et l\u2019assurance ? Comment cela s\u2019est-il pass\xE9 avec
+      eux ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160727
+    m_Localized: "L\u2019assurance a minimis\xE9 tout ce qu\u2019elle pouvait...
+      \"les impacts ne sont pas si graves\", qu\u2019ils disaient."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160728
+    m_Localized: "Ils m\u2019ont propos\xE9 des indemnit\xE9s ridicules ! Comme si
+      \xE7a pouvait compenser la perte d\u2019Arthur... Rien ne pourra jamais le
+      ramener. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160729
+    m_Localized: "Tout ce qu\u2019ils ont fait, c'est se moquer de ma douleur."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160730
+    m_Localized: S_IN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160731
+    m_Localized: "Ils ont donc profit\xE9 de votre vuln\xE9rabilit\xE9 au pire moment
+      possible."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160732
+    m_Localized: "Oui... m\xEAme la morgue a abus\xE9 de ma faiblesse. Ils nous ont
+      fait payer des sommes absurdes pour un service \u201Csp\xE9cial\u201D. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160733
+    m_Localized: "J\u2019\xE9tais trop bris\xE9 pour comprendre... Je voulais juste
+      que \xE7a s\u2019arr\xEAte\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160734
+    m_Localized: "C\u2019est \xE7a, la r\xE9alit\xE9. Tout le monde en profite quand
+      vous \xEAtes \xE0 terre. Arthur ne m\xE9ritait pas \xE7a... moi non plus d\u2019ailleurs."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160735
+    m_Localized: "Mais... comment on avance quand tout vous rappelle \xE0 quel point
+      vous \xEAtes impuissant ? Je veux juste que quelqu\u2019un prenne enfin tout
+      \xE7a au s\xE9rieux\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160736
+    m_Localized: V_FA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160737
+    m_Localized: "Je comprends bien, Tim. On t\xE2chera de changer les choses. Merci
+      pour votre t\xE9moignage tr\xE8s pr\xE9cieux."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160738
+    m_Localized: "Merci... je n\u2019ai pas beaucoup d\u2019espoir, mais... merci."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160739
+    m_Localized: "On reste en contact. Je vous tiendrai inform\xE9 d\xE8s que nous
+      aurons des avanc\xE9es, que j'esp\xE8re rapidement... Passez une bonne journ\xE9e."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160740
+    m_Localized: Aucune empathie. Rien. Comme si la vie de mon fils ne comptait pas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160741
+    m_Localized: "Vous auriez m\xE9rit\xE9 plus de consid\xE9ration dans un moment
+      aussi tragique."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160742
+    m_Localized: "Comme si on n'existait pas. Alors qu\u2019il n\u2019existe aucune
+      douleur aussi forte que celle de perdre un enfant\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160743
+    m_Localized: "Je suis d\xE9sol\xE9 pour tout ce que vous endurez."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160744
+    m_Localized: "Ils savent y faire avec les familles de victimes ! Ils nous ont
+      propos\xE9 une somme ridicule. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160745
+    m_Localized: B04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160746
+    m_Localized: "J'esp\xE8re que \xE7a aidera les prochaines victimes \xE0 ne pas
+      vivre les m\xEAmes choses que nous..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160747
+    m_Localized: "Parce que, franchement, tous ces gens -je veux dire les assurances,
+      les autorit\xE9s, ... m\xEAme ceux qui parlent de justice : ils ne comprennent
+      rien \xE0 ce qu'on a perdu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160748
+    m_Localized: "C'est pour \xE7a que vos t\xE9moignages sont importants. Merci
+      pour tout \xE7a."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160749
+    m_Localized: "Je m'assurerai que tout ce que vous m'avez partag\xE9 soit pris
+      en compte dans l'enqu\xEAte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 984934633160750
+    m_Localized: "Bonne fin de journ\xE9e Madame Buffard"
     m_Metadata:
       m_Items: []
   references:

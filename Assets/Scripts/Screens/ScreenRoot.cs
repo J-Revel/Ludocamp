@@ -5,6 +5,7 @@ using UnityEngine;
 public class ScreenRoot : MonoBehaviour
 {
     public delegate IEnumerator ScreenTransitionDelegate();
+    public System.Action screen_close_delegate;
 
     public IEnumerator disappear_coroutine { 
         get

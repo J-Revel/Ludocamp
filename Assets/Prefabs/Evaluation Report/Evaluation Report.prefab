@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 5415025297960203376}
   - component: {fileID: 6279196322322131351}
   - component: {fileID: 4644288275588817052}
+  - component: {fileID: 2067024528180585528}
   m_Layer: 5
   m_Name: Evaluation Report
   m_TagString: Untagged
@@ -510,6 +511,25 @@ MonoBehaviour:
     uid: A11I
     location_id: 73
     dialogue_index: 11
+    topic: 
+--- !u!114 &2067024528180585528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2401003102044938497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee26601da1b335489afa6f287deee56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  block_unlock_index: 3
+  screen_prefab: {fileID: 8310702686666269401, guid: 3b2c2c5e21c4cca49a4db2ecd090b552, type: 3}
+  dialogue:
+    uid: A05I
+    location_id: 73
+    dialogue_index: 5
     topic: 
 --- !u!1 &2705940072933022378
 GameObject:
@@ -1627,7 +1647,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6750529298714591017}
   m_HandleRect: {fileID: 5982531445799703976}
   m_Direction: 2
-  m_Value: 1.0000002
+  m_Value: 1
   m_Size: 0.66800004
   m_NumberOfSteps: 0
   m_OnValueChanged:

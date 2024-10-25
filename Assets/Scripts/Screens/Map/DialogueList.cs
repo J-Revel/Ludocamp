@@ -42,8 +42,7 @@ public class DialogueList : MonoBehaviour
             button.dialogue = dialogues[i];
             visible_buttons.Add(button);
         }
-        if (dialogues.Length == 0)
-            gameObject.SetActive(false);
+        gameObject.SetActive(dialogues.Length > 0);
 
     }
 }

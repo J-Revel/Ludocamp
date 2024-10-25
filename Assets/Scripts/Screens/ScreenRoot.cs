@@ -6,6 +6,7 @@ public class ScreenRoot : MonoBehaviour
 {
     public delegate IEnumerator ScreenTransitionDelegate();
     public System.Action screen_close_delegate;
+    public System.Action return_to_screen_delegate;
 
     public IEnumerator disappear_coroutine { 
         get

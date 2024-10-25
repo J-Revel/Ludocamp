@@ -550,7 +550,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 833982559141888
     m_Localized: "Nous traitons tous les jours avec des choses choquantes et rentrons
-      dans l\u2019intimit\xE9 des gens. J\u2019esp\xE8re que vous en prenez conscience
+      dans l\u2019intimit\xE9 des gens. J\u2019esp\xE8re que tu en prends conscience
       ?"
     m_Metadata:
       m_Items: []
@@ -917,7 +917,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1011278008008704
-    m_Localized: B01T
+    m_Localized: A02R
     m_Metadata:
       m_Items: []
   references:

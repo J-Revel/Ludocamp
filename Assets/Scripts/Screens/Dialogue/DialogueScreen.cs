@@ -65,6 +65,10 @@ public class DialogueScreen : MonoBehaviour
 
     public void ShowNext()
     {
+        if(lines.Length <= cursor)
+        {
+            ScreenTransitionManager.instance.CloseScreen();
+        }
         DialogueEntryData current_line = lines[cursor];
         if (active_bubble != null)
             active_bubble.passed = true;
@@ -82,9 +86,5 @@ public class DialogueScreen : MonoBehaviour
         active_bubble = bubble;
 
         cursor++;
-        if(lines.Length <= cursor)
-        {
-            ScreenTransitionManager.instance.CloseScreen();
-        }
     }
 }

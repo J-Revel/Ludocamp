@@ -70,5 +70,7 @@ public class ScreenTransitionManager : MonoBehaviour
 
         transition_coroutines.Add(StartCoroutine(to_remove.disappear_coroutine));
         screen_stack.RemoveAt(screen_stack.Count - 1);
+        if(screen_stack.Count > 0)
+            screen_stack[^1].return_to_screen_delegate?.Invoke();
     }
 }

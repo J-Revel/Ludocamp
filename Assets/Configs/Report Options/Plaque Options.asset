@@ -10,9 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 645b11ecac5a7fe4984fd737a68d72c9, type: 3}
-  m_Name: AccidentTypeConfig
+  m_Name: Plaque Options
   m_EditorClassIdentifier: 
   options:
-  - Accident A
-  - Accident B
-  - Accident C
+  - ---
+  - AA-871-MS
+  - AE-897-LO
+  - AZ-811-HH
+  - BC-458-LM
+  - CW-606-BP
+  - DX-147-NY
+  - FS-739-SM
+  - GF-330-AA
+  - JK-780-PM
+  - LN-728-FS
+  - MP-902-RK
+  - NS-517-JQ
+  - OO-153-SD
+  - PM-005-QM
+  - PV-422-JD
+  - RB-780-MQ
+  - SX-783-BJ
+  - TR-265-CV
+  - VB-396-FQ
+  - WF-875-KJ
+  - WX-664-KP
+  - XA-654-SQ
+  - ZE-314-GH

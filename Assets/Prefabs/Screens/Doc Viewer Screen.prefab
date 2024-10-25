@@ -678,7 +678,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2167426590462500373}
   m_Direction: 0
   m_Value: 0.5
-  m_Size: 0.9775001
+  m_Size: 0.9775
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1331,7 +1331,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2298105521281584800}
   m_Direction: 2
   m_Value: 0.5000001
-  m_Size: 0.6341482
+  m_Size: 0.63414806
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2383,12 +2383,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6183273377864368272, guid: 26d32ffbc19891b499b021e917f3166f, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 175
-      objectReference: {fileID: 0}
-    - target: {fileID: 6183273377864368272, guid: 26d32ffbc19891b499b021e917f3166f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 198
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 6183273377864368272, guid: 26d32ffbc19891b499b021e917f3166f, type: 3}
       propertyPath: m_LocalPosition.x

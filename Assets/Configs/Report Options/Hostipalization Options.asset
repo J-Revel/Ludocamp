@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 645b11ecac5a7fe4984fd737a68d72c9, type: 3}
-  m_Name: "Prob Enqu\xEAte Options"
+  m_Name: Hostipalization Options
   m_EditorClassIdentifier: 
   options:
   - ---
-  - Conflits de juridiction
-  - Contamination des preuves
-  - "D\xE9ficit de preuves"
-  - Destruction de preuves
-  - "Erreurs dans le Proc\xE8s Verbal"
-  - "Initimidation de t\xE9moins"
-  - "Non-coop\xE9ration des suspects"
-  - "Obstacles l\xE9gaux"
-  - "Probl\xE8mes technique"
+  - Blessures au visage
+  - Blessures au visage, Coma intermittent
+  - Blessures au visage, Traumatisme cranien
+  - Hypothermie, Traumatisme cranien
+  - Saignements
+  - Saignements, Coma intermittent
+  - Saignements, Fractures
+  - Traumatisme cranien

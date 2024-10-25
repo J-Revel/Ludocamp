@@ -20,7 +20,7 @@ public class EvaluationReport : MonoBehaviour
     private ReportBlock[] blocks;
     public event System.Action<string> DocumentOrDialogueUnlocked;
     public event System.Action DocumentViewed;
-    private event System.Action<int> BlockValidated;
+    public event System.Action<int> BlockValidated;
     //public event System.Action<DialogueConfig> DialogueUnlocked;
     public ReportPage[] pages;
     public int TotalPage => pages.Length;
@@ -30,6 +30,7 @@ public class EvaluationReport : MonoBehaviour
     //private HashSet<DocumentConfig> unlockedDocuments; // { get; private set; }
     //private HashSet<DialogueConfig> unlockedDialogues; // { get; private set; }
     private HashSet<string> notViewedDocuments; // { get; private set; }
+    private HashSet<string> notViewedDialogues; // { get; private set; }
 
     private float lastScrollPosition;
     private bool isPlayingSlideSound;
@@ -43,6 +44,7 @@ public class EvaluationReport : MonoBehaviour
         //unlockedDocuments = new HashSet<DocumentConfig>();
         //unlockedDialogues = new HashSet<DialogueConfig>();
         notViewedDocuments = new HashSet<string>();
+        notViewedDialogues= new HashSet<string>();
     }
 
     private void Start()
@@ -84,6 +86,7 @@ public class EvaluationReport : MonoBehaviour
 
     public bool IsDialogueUnlocked(DialogueConfig dialogue) => unlockedConfigIDs.Contains(dialogue.id);
     public bool IsDialogueUnlocked(string dialogue_uid) => unlockedConfigIDs.Contains(dialogue_uid);
+    public bool IsDialogueViewed(string dialogue_uid) => !notViewedDialogues.Contains(dialogue_uid);
     public bool IsDocumentUnlocked(DocumentConfig doc) => unlockedConfigIDs.Contains(doc.id);
     //public List<DialogueConfig> UnlockedDialogues => unlockedDialogues.ToList();
     //public List<DocumentConfig> UnlockedDocuments => unlockedDocuments.ToList();
@@ -94,6 +97,11 @@ public class EvaluationReport : MonoBehaviour
         notViewedDocuments.Remove(docID);
         DocumentViewed?.Invoke();
     }
+    public void RemoveNotViewedDialogue(string docID)
+    {
+        notViewedDialogues.Remove(docID);
+    }
+
     public bool UnlockDialogueOrDocument(string id)
     {
         if(unlockedConfigIDs.Contains(id))
@@ -105,6 +113,7 @@ public class EvaluationReport : MonoBehaviour
         {
             notViewedDocuments.Add(id);
         }
+        else notViewedDialogues.Add(id);
         DocumentOrDialogueUnlocked?.Invoke(id);
         return true;
     }

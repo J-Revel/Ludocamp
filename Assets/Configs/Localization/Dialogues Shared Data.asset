@@ -91,6 +91,10 @@ MonoBehaviour:
     m_Key: A02R_004_Archiviste
     m_Metadata:
       m_Items: []
+  - m_Id: 1074295089381376
+    m_Key: A02R_004_Unlock
+    m_Metadata:
+      m_Items: []
   - m_Id: 837590851764228
     m_Key: A02R_005_ME
     m_Metadata:

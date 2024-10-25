@@ -24,6 +24,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4478507769348901726, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: next_screen
+      value: 
+      objectReference: {fileID: 8310702686666269401, guid: 3b2c2c5e21c4cca49a4db2ecd090b552, type: 3}
+    - target: {fileID: 4478507769348901726, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
+      propertyPath: onFinishAction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_text
       value: Start Slide 1

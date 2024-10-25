@@ -9,8 +9,10 @@ public class PlaceDialogues
     public DialogueData[] dialogues;
 }
 
+[System.Serializable]
 public class DialogueData
 {
+    public string uid;
     public char location_id;
     public int dialogue_index;
     public string topic;
@@ -59,11 +61,13 @@ public class DialogueDatabase : MonoBehaviour
 
             int chapter_index = (int)key[0] - (int)'A';
             int dialogue_index = chapter_index * 100 + int.Parse(key.Substring(1, 2));
+            string uid = key.Substring(0, 4);
             if(key.EndsWith("Topic"))
             {
                 if(!dialogue_per_location.ContainsKey(location_id))
                     dialogue_per_location[location_id] = new List<DialogueData>();
                 dialogue_per_location[location_id].Add(new DialogueData {
+                    uid = uid,
                     location_id = location_id,
                     dialogue_index = dialogue_index,
                     topic = entry.Value.Value,
@@ -76,7 +80,7 @@ public class DialogueDatabase : MonoBehaviour
                     int line_index = int.Parse(key.Substring(5, 3));
                     DialogueEntryID id = new DialogueEntryID
                     {
-                        uid = key.Substring(0, 4),
+                        uid = uid,
                         dialogue_index = dialogue_index,
                         location_id = location_id,
                         line_index = line_index,
@@ -115,6 +119,7 @@ public class DialogueDatabase : MonoBehaviour
                 lines.Add(entry.Value);
             }
         }
+        lines.Sort((A, B) => { return A.line_index.CompareTo(B.line_index); });
         return lines.ToArray();
     }
 
@@ -122,6 +127,14 @@ public class DialogueDatabase : MonoBehaviour
     {
         if (!dialogue_per_location.ContainsKey(location_id))
             return new DialogueData[0];
-        return dialogue_per_location[location_id].ToArray();
+        List<DialogueData> result = new List<DialogueData>();
+        foreach(var dialogue in dialogue_per_location[location_id])
+        {
+            if(EvaluationReport.Instance.IsDialogueUnlocked(dialogue.uid))
+            {
+                result.Add(dialogue);
+            }
+        }
+        return result.ToArray();
     }
 }

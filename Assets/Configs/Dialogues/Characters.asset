@@ -17,10 +17,14 @@ MonoBehaviour:
     display_name: Vous
     bubble_color: {r: 0, g: 0, b: 0, a: 0.89411765}
     bubble_material: {fileID: 2100000, guid: 4d57898cf313a35459381010f7110860, type: 2}
+  - id: ME_Intro
+    display_name: Vous
+    bubble_color: {r: 0, g: 0, b: 0, a: 0.98039216}
+    bubble_material: {fileID: 2100000, guid: 4d57898cf313a35459381010f7110860, type: 2}
   - id: Chef
     display_name: Chef
-    bubble_color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 0.85882354}
-    bubble_material: {fileID: 2100000, guid: fb79af19145fec54ba3f47d27b4edf14, type: 2}
+    bubble_color: {r: 0, g: 0, b: 0, a: 0.98039216}
+    bubble_material: {fileID: 2100000, guid: 4d57898cf313a35459381010f7110860, type: 2}
   - id: Police
     display_name: Policier
     bubble_color: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 0.85882354}

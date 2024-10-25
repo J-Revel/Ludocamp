@@ -137,6 +137,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e40a9a0197b0663469fda0b2a2fe083a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue:
+    location_id: 73
+    dialogue_index: 1
+    topic: 
   map_points:
   - {fileID: 11400000, guid: c68b474d48bf6eb45823aa6396a6982c, type: 2}
   - {fileID: 11400000, guid: 89449221cb3107045b3ab269be6a42fa, type: 2}

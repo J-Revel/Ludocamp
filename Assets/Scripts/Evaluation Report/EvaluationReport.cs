@@ -83,6 +83,7 @@ public class EvaluationReport : MonoBehaviour
     }
 
     public bool IsDialogueUnlocked(DialogueConfig dialogue) => unlockedConfigIDs.Contains(dialogue.id);
+    public bool IsDialogueUnlocked(string dialogue_uid) => unlockedConfigIDs.Contains(dialogue_uid);
     public bool IsDocumentUnlocked(DocumentConfig doc) => unlockedConfigIDs.Contains(doc.id);
     //public List<DialogueConfig> UnlockedDialogues => unlockedDialogues.ToList();
     //public List<DocumentConfig> UnlockedDocuments => unlockedDocuments.ToList();

@@ -276,8 +276,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1053,8 +1053,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1146,7 +1146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_fontSize
-      value: 20
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_margin.x
@@ -1162,7 +1162,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: a21177fc26f893b4fade806250612222, type: 2}
     - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_fontSizeBase
-      value: 20
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 1578595473109162147, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_sharedMaterial
@@ -1185,7 +1185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_fontSize
-      value: 20
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_margin.x
@@ -1201,7 +1201,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: a21177fc26f893b4fade806250612222, type: 2}
     - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_fontSizeBase
-      value: 20
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3284339419289706085, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_sharedMaterial
@@ -1230,7 +1230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_fontSize
-      value: 20
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_margin.x
@@ -1246,7 +1246,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: a21177fc26f893b4fade806250612222, type: 2}
     - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_fontSizeBase
-      value: 20
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4768693393390016924, guid: 8746e46380b93724a9db3684ba1b3049, type: 3}
       propertyPath: m_sharedMaterial

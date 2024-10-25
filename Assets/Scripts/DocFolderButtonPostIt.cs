@@ -15,7 +15,7 @@ public class DocFolderButtonPostIt : MonoBehaviour
 
     void UpdateState()
     {
-        button.interactable = EvaluationReport.Instance.NotViewedDocuments.Count > 0;
+        button.interactable = EvaluationReport.Instance.IsAnyDocUnlocked();
         postitImage.enabled = EvaluationReport.Instance.NotViewedDocuments.Count > 0;
     }
 }

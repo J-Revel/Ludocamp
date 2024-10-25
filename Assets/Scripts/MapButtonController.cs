@@ -15,7 +15,7 @@ public class MapButtonController : MonoBehaviour
 
     void UpdateState()
     {
-        button.interactable = EvaluationReport.Instance.NotViewedDialogues.Count > 0;
+        button.interactable = EvaluationReport.Instance.IsAnyDialogueUnlocked();
         postitImage.enabled = EvaluationReport.Instance.NotViewedDialogues.Count > 0;
     }
 }

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Doc_J_A3
   document_prefab: {fileID: 7380480183151168224, guid: 15f87b9c691499f4abb70188c618e268, type: 3}
-  fullTitle: Article Tim (WIP)
+  fullTitle: Article RealNews
   shortTitle: 

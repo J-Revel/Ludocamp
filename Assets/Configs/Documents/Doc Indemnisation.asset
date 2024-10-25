@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90281f5aba478d4385416cdd2af05a2, type: 3}
+  m_Name: Doc Indemnisation
+  m_EditorClassIdentifier: 
+  id: Doc_S_IN
+  document_prefab: {fileID: 2078388056893054090, guid: cb903b8c3ba7c2c41a144a14ac0d0498, type: 3}
+  fullTitle: Indemnisation
+  shortTitle: 

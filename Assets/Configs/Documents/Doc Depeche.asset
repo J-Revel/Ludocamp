@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Doc Depeche
   m_EditorClassIdentifier: 
   id: Doc_J_DP
-  document_prefab: {fileID: 9206297188485458783, guid: 526d0b283507a7d41a14e15b349a096a, type: 3}
+  document_prefab: {fileID: 8721702063438909753, guid: 9a331c09af877dc4482d4ab79fb6b9e0, type: 3}
   fullTitle: "D\xE9p\xEAche Real News"
   shortTitle: 

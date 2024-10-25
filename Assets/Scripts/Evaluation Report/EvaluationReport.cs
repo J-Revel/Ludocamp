@@ -21,6 +21,7 @@ public class EvaluationReport : MonoBehaviour
     private ReportBlock[] blocks;
     public event System.Action<string> DocumentOrDialogueUnlocked;
     public event System.Action DocumentViewed;
+    public event System.Action DialogueViewed;
     public event System.Action<int> BlockValidated;
     //public event System.Action<DialogueConfig> DialogueUnlocked;
     public ReportPage[] pages;
@@ -94,6 +95,7 @@ public class EvaluationReport : MonoBehaviour
     //public List<DialogueConfig> UnlockedDialogues => unlockedDialogues.ToList();
     //public List<DocumentConfig> UnlockedDocuments => unlockedDocuments.ToList();
     public List<string> NotViewedDocuments => notViewedDocuments.ToList();
+    public List<string> NotViewedDialogues => notViewedDialogues.ToList();
     public void AddNotViewedDoc(string docID) => notViewedDocuments.Add(docID);
     public void RemoveNotViewedDoc(string docID)
     {
@@ -103,6 +105,7 @@ public class EvaluationReport : MonoBehaviour
     public void RemoveNotViewedDialogue(string docID)
     {
         notViewedDialogues.Remove(docID);
+        DialogueViewed?.Invoke();
     }
 
     public bool UnlockDialogueOrDocument(string id)

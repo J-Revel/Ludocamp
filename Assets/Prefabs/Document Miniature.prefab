@@ -471,8 +471,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7657845403745796768}
   - component: {fileID: 2450588894410052948}
-  - component: {fileID: 3941646835559453346}
   - component: {fileID: 3708626598129661611}
+  - component: {fileID: 3941646835559453346}
   - component: {fileID: 5412880660799740695}
   - component: {fileID: 4695590648403891238}
   m_Layer: 5
@@ -514,6 +514,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5758070804412752893}
   m_CullTransparentMesh: 1
+--- !u!114 &3708626598129661611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5758070804412752893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 867ad69be8a07c44abf528268930fb28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  docContainer: {fileID: 3115646011850808131}
+  docViewerScreenPrefab: {fileID: 734384128903182327, guid: 740fa79692edecb41932b7f4ac5bfe4c, type: 3}
+  moveToFrontOnHover: 0
+  documentConfig: {fileID: 0}
+  shortTitleText: {fileID: 5800788090498757185}
+  fullTitleText: {fileID: 7392794084527033848}
+  fullTitleTooltip: {fileID: 5689180910360660798}
+  newIndicator: {fileID: 3574778475528941302}
+  tooltipContainer: {fileID: 0}
 --- !u!114 &3941646835559453346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,27 +565,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3708626598129661611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5758070804412752893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 867ad69be8a07c44abf528268930fb28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  docContainer: {fileID: 3115646011850808131}
-  docViewerScreenPrefab: {fileID: 734384128903182327, guid: 740fa79692edecb41932b7f4ac5bfe4c, type: 3}
-  moveToFrontOnHover: 0
-  documentConfig: {fileID: 0}
-  shortTitleText: {fileID: 5800788090498757185}
-  fullTitleText: {fileID: 7392794084527033848}
-  fullTitleTooltip: {fileID: 5689180910360660798}
-  newIndicator: {fileID: 3574778475528941302}
-  tooltipContainer: {fileID: 0}
 --- !u!114 &5412880660799740695
 MonoBehaviour:
   m_ObjectHideFlags: 0

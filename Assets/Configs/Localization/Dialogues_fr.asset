@@ -167,8 +167,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 812950762799104
     m_Localized: "Bonjour, je suis ici pour discuter du dossier d'assurance li\xE9
-      \xE0 l'accident d'Arthur Buffard. On avait \xE9chang\xE9 par t\xE9l\xE9phone
-      d\xE9j\xE0 et..."
+      \xE0 l'accident d'Arthur Buffard. Je cherche l'\xE9change que vous avez eu
+      avec sa famille. Je vous avais appel\xE9 a ce sujet..."
     m_Metadata:
       m_Items: []
   - m_Id: 812950762799105
@@ -218,7 +218,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 812950762799115
-    m_Localized: Doc_S_DA
+    m_Localized: Doc_S_IN
     m_Metadata:
       m_Items: []
   - m_Id: 825809223794688
@@ -606,16 +606,11 @@ MonoBehaviour:
   - m_Id: 984934633160721
     m_Localized: "Des vautours... ils ont d\xE9barqu\xE9 d\xE8s le d\xE9but, \xE0
       m\u2019harceler tous les jours ! Qu\u2019importe o\xF9 j\u2019allais je devais
-      en parler... Ils ne voulaient que des titres, du sensationnel. "
+      en parler... "
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160722
-    m_Localized: "Pendant que moi je souffrais, ils faisaient de mon deuil un vulgaire
-      spectacle et m'emp\xEAchaient de passer \xE0 autre chose."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 984934633160723
-    m_Localized: J_A3
+    m_Localized: Ils ne voulaient que des titres, du sensationnel. Regardez cet [article]...
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160724
@@ -644,10 +639,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 984934633160729
     m_Localized: "Tout ce qu\u2019ils ont fait, c'est se moquer de ma douleur."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 984934633160730
-    m_Localized: Doc_S_IN
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160731
@@ -1048,7 +1039,26 @@ MonoBehaviour:
       point de vue de chacun sur ce genre d'histoire quand on le peut
     m_Metadata:
       m_Items: []
-  - m_Id: 1168823783768084
+  - m_Id: 1173044742569984
+    m_Localized: Doc_J_A3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1173044742569985
+    m_Localized: "Pendant que moi je souffrais, ils faisaient de mon deuil un vulgaire
+      spectacle et m'emp\xEAchaient de passer \xE0 autre chose."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1173044742569986
+    m_Localized: "Et une fois le buzz pass\xE9, ils ont disparu du jour au lendemain
+      !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1173044742569987
+    m_Localized: "Je voulais publier un article de sensibilisation aux dangers de
+      la route quelques mois plus tard, mais j'ai trouv\xE9 porte close partout."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1177717998338048
     m_Localized: C01C
     m_Metadata:
       m_Items: []

@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Espagne-Belgique-falsification-police
+  m_text: Avignon-Accident-Moto-Mort
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -170,7 +170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -168.15955, y: -0.00010252}
+  m_AnchoredPosition: {x: -168.16, y: -0.0275}
   m_SizeDelta: {x: 654.121, y: 22.741}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &745939084716087901
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Changement
+  m_text: "(c) 2018 AFP/ Tous droit r\xE9serv\xE9s/ Toute reproduction interdite"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a21177fc26f893b4fade806250612222, type: 2}
   m_sharedMaterial: {fileID: -193813714345396524, guid: a21177fc26f893b4fade806250612222, type: 2}
@@ -306,8 +306,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -157.49, y: 638.6}
-  m_SizeDelta: {x: 689.0231, y: 28.2181}
+  m_AnchoredPosition: {x: -163.49, y: 660.488}
+  m_SizeDelta: {x: 689.0231, y: 28.2866}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2995457648187888667
 CanvasRenderer:
@@ -337,7 +337,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Espagne: arrestation d''un Belge qui vendait de faux passeports diplomatiques'
+  m_text: "Grave accident de la route : un motard tu\xE9 et une conductrice gravement
+    bless\xE9e"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -442,8 +443,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -56.348324, y: 555.04767}
-  m_SizeDelta: {x: 891.3032, y: 114.0375}
+  m_AnchoredPosition: {x: -62.348324, y: 576.7327}
+  m_SizeDelta: {x: 891.3032, y: 114.3145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6088468990145208811
 CanvasRenderer:
@@ -473,13 +474,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\tMADRID, 16 nov 2007 (AFP) - Un Belge qui se faisait passer pour l'attach\xE9
-    culturel de la R\xE9publique de Vanuatu aupr\xE8s de l'Unesco a \xE9t\xE9 arr\xEAt\xE9
-    en Espagne sous l'accusation de vendre de faux passeports diplomatiques sur Internet,
-    a indiqu\xE9 vendredi la police espagnole.\n\tCet homme de 54 ans qui utilisait
-    une fausse identit\xE9 et menait un \"grand train de vie\" vendait des passeports
-    incrimin\xE9s entre 50.000 \xE0 120.000 euros chacun, a pr\xE9cis\xE9 un communiqu\xE9
-    de la police."
+  m_text: "\tAVIGNON, 18 D\xE9c 2018 (AFP) - Un dramatique accident de la circulation
+    s'est produit cette nuit aux alentours de 4h du matin sur une route d\xE9partementale
+    peu fr\xE9quent\xE9e. Le choc a impliqu\xE9 une moto et une voiture. Tim Chan
+    et Arthur Buffard, deux motards, rentraient d'une soir\xE9e, chacun \xE0 bord
+    de sa propre moto.\nCarine Martin, une infirmi\xE8re, se rendait \xE0 son travail
+    de nuit. Alors qu'elle roulait, elle n'a pas aper\xE7u l'un des motards \xE0
+    temps, et la collision a \xE9t\xE9 in\xE9vitable.\n\nArthur, gravement touch\xE9
+    dans l'accident, est retrouv\xE9 inerte sur le bitume apr\xE8s avoir \xE9t\xE9
+    projet\xE9 \xE0 quelques m\xE8tres de sa moto. Tim, t\xE9moin du drame, s'est
+    imm\xE9diatement arr\xEAt\xE9 pour lui porter secours.\n\nCarine, quant \xE0
+    elle, a perdu le contr\xF4le de son v\xE9hicule, lequel a fini sa course dans
+    un foss\xE9. L'infirmi\xE8re a \xE9t\xE9 retrouv\xE9e inconsciente, pr\xE9sentant
+    de graves contusions malgr\xE9 l'activation de l'airbag.\n\nLes secours, rapidement
+    d\xE9p\xEAch\xE9s sur place, n'ont malheureusement pu que constater le d\xE9c\xE8s
+    d'Arthur. Tim, en \xE9tat de choc, a \xE9t\xE9 pris en charge. Carine a \xE9t\xE9
+    transport\xE9e d'urgence \xE0 l'h\xF4pital. Une enqu\xEAte est en cours pour
+    d\xE9terminer les circonstances exactes de l'accident.\ndo/pal/ai ef\n\nAFP"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -585,8 +596,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.7799, y: 377}
-  m_SizeDelta: {x: 990.4432, y: 22.7408}
+  m_AnchoredPosition: {x: -12.778, y: 241}
+  m_SizeDelta: {x: 990.4432, y: 22.796}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4535732064907098314
 CanvasRenderer:
@@ -691,7 +702,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1/11/07-11h25
+  m_text: 18/12/18-11h25
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -799,8 +810,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.7784, y: 676.6}
-  m_SizeDelta: {x: 990.4432, y: 22.7408}
+  m_AnchoredPosition: {x: -12.7784, y: 698.58026}
+  m_SizeDelta: {x: 990.4432, y: 22.796}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7464053999274234683
 CanvasRenderer:
@@ -1014,7 +1025,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -473.81}
+  m_AnchoredPosition: {x: 0, y: -472}
   m_SizeDelta: {x: 1050, y: 1485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4528653870600251862

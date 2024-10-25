@@ -67,7 +67,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Monsieur le Juge,\n \r\nJe me permets, en ma qualit\xE9 d'avocat repr\xE9sentant
     Madame Carine Martin, de solliciter la r\xE9ouverture du dossier r\xE9f\xE9renc\xE9
-    sous le num\xE9ro 2015-06-18-1254, clos en date du 18 F\xE9vrier 2017, dans le
+    sous le num\xE9ro 2018-12-18-1254, clos en date du 18 F\xE9vrier 2020, dans le
     cadre des proc\xE9dures la concernant. \n\r\nEn effet, depuis la cl\xF4ture de
     cette affaire, ma cliente a \xE9t\xE9 confront\xE9e \xE0 des complications de
     sant\xE9 majeures directement li\xE9es aux faits ayant donn\xE9 lieu \xE0 la
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Objet : Demande de r\xE9ouverture du dossier 2015-06-18-1254 suite \xE0
+  m_text: "Objet : Demande de r\xE9ouverture du dossier 2018-12-18-1254 suite \xE0
     des complications de sant\xE9 "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a21177fc26f893b4fade806250612222, type: 2}

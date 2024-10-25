@@ -202,25 +202,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Madame, \n\r\nSuite \xE0 notre entretien du 13 d\xE9cembre 2018, nous
-    vous informons par la pr\xE9sente de notre d\xE9cision de proc\xE9der \xE0 votre
-    licenciement pour motif personnel, conform\xE9ment aux dispositions de l'article
-    L1232-2 du Code du travail. \n\r\nCette d\xE9cision fait suite \xE0 plusieurs
-    \xE9l\xE9ments, notamment : \n\t- Vos absences r\xE9p\xE9t\xE9es au cours des
-    six derniers mois, qui ont eu un impact sur l'organisation de notre service.
-    \r\n\t- Une \xE9valuation de votre performance professionnelle qui n'est pas
-    conforme aux attentes de notre \xE9tablissement, avec des retours de vos sup\xE9rieurs
-    indiquant des difficult\xE9s \xE0 maintenir un niveau de travail satisfaisant.\n
-    \r\nNous tenons \xE0 souligner que cette d\xE9cision n'a pas \xE9t\xE9 prise
-    \xE0 la l\xE9g\xE8re et qu'elle fait suite \xE0 de nombreuses tentatives de r\xE9gularisation
-    de votre situation, ainsi qu'\xE0 plusieurs r\xE9unions de suivi. \n\r\nVous
-    aurez la possibilit\xE9 de r\xE9cup\xE9rer vos documents administratifs et de
-    discuter des modalit\xE9s de votre d\xE9part avec le service des ressources humaines.
-    Vous recevrez \xE9galement votre solde de tout compte et les documents n\xE9cessaires
-    \xE0 votre inscription \xE0 P\xF4le Emploi. \r\nNous vous remercions pour le
-    temps pass\xE9 au sein de notre \xE9tablissement et vous souhaitons le meilleur
-    pour vos projets futurs. \n\r\nCordialement, \r\nDr. Jordan Dupuis \r\nDirecteur
-    des Ressources Humaines \r\nH\xF4pital Priv\xE9 La Lumi\xE8re \r\n"
+  m_text: "Madame, \n\r\nSuite \xE0 notre entretien du 13 juillet 2019, nous vous
+    informons par la pr\xE9sente de notre d\xE9cision de proc\xE9der \xE0 votre licenciement
+    pour motif personnel, conform\xE9ment aux dispositions de l'article L1232-2 du
+    Code du travail. \n\r\nCette d\xE9cision fait suite \xE0 plusieurs \xE9l\xE9ments,
+    notamment : \n\t- Vos absences r\xE9p\xE9t\xE9es au cours des six derniers mois,
+    qui ont eu un impact sur l'organisation de notre service. \r\n\t- Une \xE9valuation
+    de votre performance professionnelle qui n'est pas conforme aux attentes de notre
+    \xE9tablissement, avec des retours de vos sup\xE9rieurs indiquant des difficult\xE9s
+    \xE0 maintenir un niveau de travail satisfaisant.\n \r\nNous tenons \xE0 souligner
+    que cette d\xE9cision n'a pas \xE9t\xE9 prise \xE0 la l\xE9g\xE8re et qu'elle
+    fait suite \xE0 de nombreuses tentatives de r\xE9gularisation de votre situation,
+    ainsi qu'\xE0 plusieurs r\xE9unions de suivi. \n\r\nVous aurez la possibilit\xE9
+    de r\xE9cup\xE9rer vos documents administratifs et de discuter des modalit\xE9s
+    de votre d\xE9part avec le service des ressources humaines. Vous recevrez \xE9galement
+    votre solde de tout compte et les documents n\xE9cessaires \xE0 votre inscription
+    \xE0 P\xF4le Emploi. \r\nNous vous remercions pour le temps pass\xE9 au sein
+    de notre \xE9tablissement et vous souhaitons le meilleur pour vos projets futurs.
+    \n\r\nCordialement, \r\nDr. Jordan Dupuis \r\nDirecteur des Ressources Humaines
+    \r\nH\xF4pital Priv\xE9 La Lumi\xE8re \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a21177fc26f893b4fade806250612222, type: 2}
   m_sharedMaterial: {fileID: -193813714345396524, guid: a21177fc26f893b4fade806250612222, type: 2}
@@ -493,7 +493,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Avignon, le 15 d\xE9cembre 2018 \r\n"
+  m_text: 'Avignon, le 15 juillet 2019
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a21177fc26f893b4fade806250612222, type: 2}
   m_sharedMaterial: {fileID: -193813714345396524, guid: a21177fc26f893b4fade806250612222, type: 2}

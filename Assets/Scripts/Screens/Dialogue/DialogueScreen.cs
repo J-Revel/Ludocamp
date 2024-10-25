@@ -68,6 +68,7 @@ public class DialogueScreen : MonoBehaviour
         if(lines.Length <= cursor)
         {
             ScreenTransitionManager.instance.CloseScreen();
+            return;
         }
         DialogueEntryData current_line = lines[cursor];
         if (active_bubble != null)

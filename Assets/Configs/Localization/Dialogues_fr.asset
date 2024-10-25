@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974344
-    m_Localized: "Je vous conseille d\u2019aller rendre visite \xE0 Tim pour commencer,
+    m_Localized: "Je vous conseille d\u2019aller rendre visite \xE0 [Tim] pour commencer,
       c'est le mari du d\xE9funt. Il sera certainement d\u2019une grande aide."
     m_Metadata:
       m_Items: []
@@ -56,7 +56,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974346
-    m_Localized: L'accident
+    m_Localized: "Pr\xE9sentation"
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974347
@@ -76,7 +76,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974350
-    m_Localized: "Je comprends bien... Racontez moi comment \xE7a s\u2019est pass\xE9."
+    m_Localized: "Je comprends bien... Je n'ai que [quelques questions] \xE0 vous
+      poser."
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974351
@@ -577,12 +578,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 833982626250758
-    m_Localized: "Tu peux commencer par aller voir notre archiviste, ouvre la carte
-      \xE0 ta droite et va lui parler s'il-te-pla\xEEt."
+    m_Localized: "Il y a d\xE9j\xE0 un [document] au dossier, il devrait te permettre
+      de remplir les premiers \xE9l\xE9ments du rapport."
     m_Metadata:
       m_Items: []
   - m_Id: 837590788849664
-    m_Localized: Archiviste
+    m_Localized: "Rapport d'enqu\xEAte"
     m_Metadata:
       m_Items: []
   - m_Id: 837590851764224
@@ -590,8 +591,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 837590851764225
-    m_Localized: "Bonjour ! Il me faudrait le rapport d\u2019enqu\xEAte pour le dossier
-      2018-12-18-1254 s\u2019il te plait"
+    m_Localized: "Bonjour ! Il me faudrait le [rapport d\u2019enqu\xEAte] pour le
+      dossier 2018-12-18-1254 s\u2019il te plait"
     m_Metadata:
       m_Items: []
   - m_Id: 837590851764226
@@ -612,13 +613,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 837590851764230
-    m_Localized: "Parfait, merci Matthieu. Le rapport d\u2019\xE9valuation est votre
-      outil principal : il faudra valider les diff\xE9rents points du rapport pour
-      pouvoir avancer dans l\u2019enqu\xEAte."
+    m_Localized: "C'est parfait. Le rapport d\u2019\xE9valuation est votre outil
+      principal : il faudra valider les diff\xE9rents points du rapport pour pouvoir
+      avancer dans l\u2019enqu\xEAte."
     m_Metadata:
       m_Items: []
   - m_Id: 837590851764231
-    m_Localized: "La premi\xE8re rubrique est assez \xE9l\xE9mentaire, vous verrez."
+    m_Localized: "Mais il faudra plus d'information pour continuer. Le rapport d'enqu\xEAte
+      doit \xEAtre disponible aux [archives], tu devrais aller les consulter."
     m_Metadata:
       m_Items: []
   - m_Id: 837590851764232
@@ -917,7 +919,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1011278008008704
+    m_Localized: Doc_J_DP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1058590512103424
+    m_Localized: Je t'ai mis son emplacement sur la carte.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1058590570823680
     m_Localized: A02R
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1065764911038464
+    m_Localized: B11T B21T B31T B41T B51T
     m_Metadata:
       m_Items: []
   references:

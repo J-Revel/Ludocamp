@@ -1770,7 +1770,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2401003102044938497, guid: 484c8b5e30e07634cb6aae65357d4d5e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2016816576}
   m_SourcePrefab: {fileID: 100100000, guid: 484c8b5e30e07634cb6aae65357d4d5e, type: 3}
 --- !u!1 &1789053568
 GameObject:
@@ -2057,6 +2060,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   table:
     m_TableCollectionName: Dialogues
+--- !u!1 &2016816567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2401003102044938497, guid: 484c8b5e30e07634cb6aae65357d4d5e, type: 3}
+  m_PrefabInstance: {fileID: 1730678729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2016816576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016816567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee26601da1b335489afa6f287deee56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  block_unlock_index: 0
+  screen_prefab: {fileID: 8310702686666269401, guid: 3b2c2c5e21c4cca49a4db2ecd090b552, type: 3}
+  dialogue:
+    uid: A11I
+    location_id: 73
+    dialogue_index: 11
+    topic: 
 --- !u!1 &2120662553
 GameObject:
   m_ObjectHideFlags: 0

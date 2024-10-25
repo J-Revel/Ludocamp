@@ -9,6 +9,9 @@ public class ScreenMovementTransition : MonoBehaviour, IScreenAppearTransition, 
     public float2 appear_offset;
     public float appear_rotation;
     public float appear_duration = 0.5f;
+    public DialogueData tuto_dialogue;
+    public ScreenRoot tuto_dialogue_screen;
+
     public IEnumerator AppearTransitionCoroutine()
     {
         RectTransform rect_transform = GetComponent<RectTransform>();
@@ -25,6 +28,13 @@ public class ScreenMovementTransition : MonoBehaviour, IScreenAppearTransition, 
         }
         rect_transform.anchoredPosition = float2.zero;
         rect_transform.localRotation = quaternion.identity;
+        if(!EvaluationReport.Instance.IsDialogueUnlocked(tuto_dialogue.uid))
+        {
+            EvaluationReport.Instance.UnlockDialogueOrDocument(tuto_dialogue.uid);
+            ScreenRoot screen_root = ScreenTransitionManager.instance.InstantiateScreen(tuto_dialogue_screen, ScreenStackMode.Push);
+            screen_root.GetComponent<DialogueScreen>().dialogue = tuto_dialogue;
+
+        }
         yield return null;
     }
 

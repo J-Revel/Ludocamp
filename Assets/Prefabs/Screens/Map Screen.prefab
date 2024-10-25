@@ -143,6 +143,12 @@ MonoBehaviour:
     y: -17
   appear_rotation: -11.81
   appear_duration: 0.8
+  tuto_dialogue:
+    uid: A21I
+    location_id: 73
+    dialogue_index: 21
+    topic: 
+  tuto_dialogue_screen: {fileID: 8310702686666269401, guid: 3b2c2c5e21c4cca49a4db2ecd090b552, type: 3}
 --- !u!1 &1526534259223306433
 GameObject:
   m_ObjectHideFlags: 0

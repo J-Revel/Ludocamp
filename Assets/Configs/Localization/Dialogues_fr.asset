@@ -42,12 +42,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974343
-    m_Localized: "Et vous voil\xE0 parfaitement form\xE9 ! Je vous laisse approfondir
-      votre travail et finir le dossier. "
+    m_Localized: "Et te voil\xE0 parfaitement form\xE9 ! Je te laisse approfondir
+      ton travail et finir le dossier. "
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974344
-    m_Localized: "Je vous conseille d\u2019aller rendre visite \xE0 [Tim] pour commencer,
+    m_Localized: "Je te conseille d\u2019aller rendre visite \xE0 [Tim] pour commencer,
       c'est le mari du d\xE9funt. Il sera certainement d\u2019une grande aide."
     m_Metadata:
       m_Items: []
@@ -137,13 +137,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974389
-    m_Localized: "Voil\xE0 aussi le rapport du l\xE9giste. C\u2019est tout ce qu\u2019il
+    m_Localized: "Voil\xE0 aussi le [rapport du l\xE9giste]. C\u2019est tout ce qu\u2019il
       y a."
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974390
-    m_Localized: "Si \xE7a vous va pas, vous pouvez toujours vous plaindre ailleurs.
-      Mais honn\xEAtement, j\u2019ai pas que \xE7a \xE0 faire."
+    m_Localized: "Si \xE7a vous va pas, vous pouvez toujours vous plaindre ailleurs,
+      chez [les Buffard] par exemple. Honn\xEAtement, j\u2019ai pas que \xE7a \xE0
+      faire."
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974391
@@ -173,65 +174,6 @@ MonoBehaviour:
   - m_Id: 808571208974396
     m_Localized: "J\u2019ai malheureusement l\u2019habitude de rencontrer des gens
       comme vous."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974397
-    m_Localized: "Et tout \xE7a \xE0 cause de cette... cette Carine. C'est elle qui
-      l\u2019a tu\xE9 ! Elle roulait comme une folle. Arthur n\u2019avait aucune
-      chance. C'est enti\xE8rement sa faute."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974398
-    m_Localized: "Je comprends que vous soyez encore en col\xE8re. \xC7a a d\xFB
-      \xEAtre un choc terrible."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974399
-    m_Localized: "Cette femme a pris la vie de mon fils sans la moindre culpabilit\xE9.
-      Elle a d\xE9truit notre famille, et maintenant elle peut continuer \xE0 profiter
-      de sa vie tranquille ?"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974400
-    m_Localized: "Comment peut-on \xEAtre aussi \xE9go\xEFste ? Je la hais. Si je
-      pouvais lui faire face, je lui dirais \xE0 quel point elle est monstrueuse."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974401
-    m_Localized: Vous ressentez un profond besoin de justice...
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974402
-    m_Localized: "Justice ?! Que voulez-vous dire par justice ? La police l\u2019a
-      prot\xE9g\xE9e ! Tout ce qu\u2019ils ont fait, c\u2019est balayer l\u2019affaire
-      sous le tapis comme si ce n\u2019\xE9tait qu\u2019un banal accident."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974403
-    m_Localized: "Personne n\u2019a pris la peine de s\u2019assurer qu\u2019elle
-      paie pour ce qu'elle a fait. Elle reste impunie et nous, nous sommes l\xE0,
-      d\xE9vast\xE9s !"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974404
-    m_Localized: "Arthur ne reviendra jamais, et cette folle continue sa vie comme
-      si de rien n'\xE9tait."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974405
-    m_Localized: "On m'a dit que l'annonce du d\xE9c\xE8s par les autorit\xE9s s'\xE9tait
-      tr\xE8s mal pass\xE9e ?"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974406
-    m_Localized: "Oui, mais vous savez qui d\u2019autre je bl\xE2me ? Tim ! Ce gar\xE7on...
-      c\u2019est lui qui a pouss\xE9 Arthur \xE0 prendre cette moto. "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974407
-    m_Localized: "Si Arthur n\u2019avait jamais rencontr\xE9 Tim, il n\u2019aurait
-      jamais \xE9t\xE9 attir\xE9 par cette id\xE9e stupide. Il serait encore l\xE0
-      aujourd'hui !"
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974408
@@ -578,8 +520,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 833982626250758
-    m_Localized: "Il y a d\xE9j\xE0 un [document] au dossier, il devrait te permettre
-      de remplir les premiers \xE9l\xE9ments du rapport."
+    m_Localized: "Il y a d\xE9j\xE0 un [document] au dossier, il devrait suffire
+      \xE0 remplir les premiers \xE9l\xE9ments du rapport."
     m_Metadata:
       m_Items: []
   - m_Id: 837590788849664
@@ -619,7 +561,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 837590851764231
-    m_Localized: "Mais il faudra plus d'information pour continuer. Le rapport d'enqu\xEAte
+    m_Localized: "Mais il faudra plus d'information pour continuer. Le [rapport d'enqu\xEAte]
       doit \xEAtre disponible aux [archives], tu devrais aller les consulter."
     m_Metadata:
       m_Items: []
@@ -667,7 +609,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 838478093860864
-    m_Localized: Madame Buffard
+    m_Localized: Salutations
     m_Metadata:
       m_Items: []
   - m_Id: 838478152581120
@@ -714,8 +656,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 984934633160710
     m_Localized: "J\u2019ai tout perdu... mon travail, mes amis, ... m\xEAme mes
-      beaux-parents -famille d\u2019Arthur je veux dire. Ils m\u2019en veulent \xE0
-      moi. Ils ne veulent plus me parler."
+      beaux-parents - la famille d\u2019Arthur je veux dire. Ils m\u2019en veulent
+      \xE0 moi. Ils ne veulent plus me parler."
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160711
@@ -736,8 +678,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160715
-    m_Localized: "Ouais, compl\xE8tement. Je me suis battu pendant un an pour que
-      la justice condamne quelqu'un..."
+    m_Localized: "Ouais, compl\xE8tement. Je me suis battu pendant un an [pour que
+      la justice condamne quelqu'un]..."
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160716
@@ -797,9 +739,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160728
-    m_Localized: "Ils m\u2019ont propos\xE9 des indemnit\xE9s ridicules ! Comme si
-      \xE7a pouvait compenser la perte d\u2019Arthur... Rien ne pourra jamais le
-      ramener. "
+    m_Localized: "Ils m\u2019ont propos\xE9 des [indemnit\xE9s] ridicules ! Comme
+      si \xE7a pouvait compenser la perte d\u2019Arthur... Rien ne pourra jamais
+      le ramener. "
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160729
@@ -816,8 +758,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160732
-    m_Localized: "Oui... m\xEAme la morgue a abus\xE9 de ma faiblesse. Ils nous ont
-      fait payer des sommes absurdes pour un service \u201Csp\xE9cial\u201D. "
+    m_Localized: "Oui... m\xEAme [la morgue] a abus\xE9 de ma faiblesse. Ils nous
+      ont fait payer des sommes absurdes pour un service \u201Csp\xE9cial\u201D. "
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160733
@@ -923,7 +865,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1058590512103424
-    m_Localized: Je t'ai mis son emplacement sur la carte.
+    m_Localized: "Je t'ai mis son emplacement sur la carte. Elle est pos\xE9e \xE0
+      ta droite sur le bureau."
     m_Metadata:
       m_Items: []
   - m_Id: 1058590570823680
@@ -936,6 +879,101 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1074295089381376
     m_Localized: Doc_A_OU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1080275940392960
+    m_Localized: "Ah, et pense \xE0 remplir la [seconde rubrique aussi], en bas de
+      la page ! Beaucoup de personnes l'ont oubli\xE9e..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1085791265603584
+    m_Localized: "Ici, c'est la carte. Je te mettrai des post-it pour chaque personne
+      que tu pourras interroger pour les besoins de l'enqu\xEAte, avec la liste des
+      \xE9lements \xE0 leur demander."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1085791311740928
+    m_Localized: B13M B23M B33M
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1085791311740929
+    m_Localized: Carine Martin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1085791311740930
+    m_Localized: "Et tout \xE7a \xE0 cause de cette... cette Carine. C'est elle qui
+      l\u2019a tu\xE9 ! Elle roulait comme une folle. Arthur n\u2019avait aucune
+      chance. C'est enti\xE8rement sa faute."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1085791311740931
+    m_Localized: "Je comprends que vous soyez encore en col\xE8re. \xC7a a d\xFB
+      \xEAtre un choc terrible."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1085791311740932
+    m_Localized: "Cette femme a pris la vie de mon fils sans la moindre culpabilit\xE9.
+      Elle a d\xE9truit notre famille, et maintenant elle peut continuer \xE0 profiter
+      de sa vie tranquille ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1085791315935232
+    m_Localized: "Comment peut-on \xEAtre aussi \xE9go\xEFste ? Je la hais. Si je
+      pouvais lui faire face, je lui dirais \xE0 quel point elle est monstrueuse."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086834904907776
+    m_Localized: Tu as plusieurs sujets de discussion possibles, clique sur celui
+      que tu veux aborder en premier.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086834904907777
+    m_Localized: "Le proc\xE8s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086834904907778
+    m_Localized: Vous ressentez un profond besoin de justice...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086834904907779
+    m_Localized: "Justice ?! Que voulez-vous dire par justice ? La police l\u2019a
+      prot\xE9g\xE9e ! Tout ce qu\u2019ils ont fait, c\u2019est balayer l\u2019affaire
+      sous le tapis comme si ce n\u2019\xE9tait qu\u2019un banal accident."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086834904907780
+    m_Localized: "Personne n\u2019a pris la peine de s\u2019assurer qu\u2019elle
+      paie pour ce qu'elle a fait. Elle reste impunie et nous, nous sommes l\xE0,
+      d\xE9vast\xE9s !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086834909102080
+    m_Localized: "Arthur ne reviendra jamais, et cette folle continue sa vie comme
+      si de rien n'\xE9tait."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086834909102081
+    m_Localized: "L'annonce du d\xE9c\xE8s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086834909102082
+    m_Localized: "On m'a dit que l'annonce du d\xE9c\xE8s par les autorit\xE9s s'\xE9tait
+      tr\xE8s mal pass\xE9e ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086834909102083
+    m_Localized: "Oui, mais vous savez qui d\u2019autre je bl\xE2me ? [Tim] ! Ce
+      gar\xE7on... c\u2019est lui qui a pouss\xE9 Arthur \xE0 prendre cette moto. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086834909102084
+    m_Localized: B43M
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086834909102085
+    m_Localized: "Si Arthur n\u2019avait jamais rencontr\xE9 Tim, il n\u2019aurait
+      jamais \xE9t\xE9 attir\xE9 par cette id\xE9e stupide. Il serait encore l\xE0
+      aujourd'hui !"
     m_Metadata:
       m_Items: []
   references:

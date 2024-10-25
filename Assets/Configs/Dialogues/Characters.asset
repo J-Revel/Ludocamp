@@ -49,3 +49,7 @@ MonoBehaviour:
     display_name: Assureur
     bubble_color: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 0.85882354}
     bubble_material: {fileID: 2100000, guid: fb79af19145fec54ba3f47d27b4edf14, type: 2}
+  - id: Archiviste
+    display_name: Archiviste
+    bubble_color: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 0.85882354}
+    bubble_material: {fileID: 2100000, guid: fb79af19145fec54ba3f47d27b4edf14, type: 2}

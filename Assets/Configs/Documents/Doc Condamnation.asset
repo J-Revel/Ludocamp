@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c90281f5aba478d4385416cdd2af05a2, type: 3}
-  m_Name: Doc Article 3 Mots Tim
+  m_Name: Doc Condamnation
   m_EditorClassIdentifier: 
-  id: Doc_J_A3
-  document_prefab: {fileID: 7380480183151168224, guid: 15f87b9c691499f4abb70188c618e268, type: 3}
-  fullTitle: Article RealNews
+  id: Doc_A_CO
+  document_prefab: {fileID: 92594582761708779, guid: c353b301228493741a908a3e70050ef8, type: 3}
+  fullTitle: Rendu Jugement
   shortTitle: 

@@ -484,13 +484,14 @@ MonoBehaviour:
     dans l'accident, est retrouv\xE9 inerte sur le bitume apr\xE8s avoir \xE9t\xE9
     projet\xE9 \xE0 quelques m\xE8tres de sa moto. Tim, t\xE9moin du drame, s'est
     imm\xE9diatement arr\xEAt\xE9 pour lui porter secours.\n\nCarine, quant \xE0
-    elle, a perdu le contr\xF4le de son v\xE9hicule, lequel a fini sa course dans
-    un foss\xE9. L'infirmi\xE8re a \xE9t\xE9 retrouv\xE9e inconsciente, pr\xE9sentant
-    de graves contusions malgr\xE9 l'activation de l'airbag.\n\nLes secours, rapidement
-    d\xE9p\xEAch\xE9s sur place, n'ont malheureusement pu que constater le d\xE9c\xE8s
-    d'Arthur. Tim, en \xE9tat de choc, a \xE9t\xE9 pris en charge. Carine a \xE9t\xE9
-    transport\xE9e d'urgence \xE0 l'h\xF4pital. Une enqu\xEAte est en cours pour
-    d\xE9terminer les circonstances exactes de l'accident.\ndo/pal/ai ef\n\nAFP"
+    elle, a perdu le contr\xF4le de son v\xE9hicule, sans doute du \xE0 la fatigue
+    de son travail, lequel a fini sa course dans un foss\xE9. L'infirmi\xE8re a \xE9t\xE9
+    retrouv\xE9e inconsciente, pr\xE9sentant de graves contusions malgr\xE9 l'activation
+    de l'airbag.\n\nLes secours, rapidement d\xE9p\xEAch\xE9s sur place, n'ont malheureusement
+    pu que constater le d\xE9c\xE8s d'Arthur. Tim, en \xE9tat de choc, a \xE9t\xE9
+    pris en charge. Carine a \xE9t\xE9 transport\xE9e d'urgence \xE0 l'h\xF4pital.
+    Une enqu\xEAte est en cours pour d\xE9terminer les circonstances exactes de l'accident.\ndo/pal/ai
+    ef\n\nAFP"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

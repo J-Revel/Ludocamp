@@ -14,12 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   options:
   - ---
-  - Emma
-  - Tim
+  - Amina
+  - Antoine
+  - Arthur
+  - Camille
   - Carine
+  - "Chlo\xE9"
+  - Clara
+  - Darya
+  - "\xC9milie"
+  - Emma
+  - Ines
+  - Jeremy
   - Julien
-  - Emmanuel
-  - Maeva
-  - Pol
-  - "Th\xE9o"
-  - Loline
+  - Kenji
+  - "L\xE9a"
+  - Lucas
+  - Malik
+  - Nathan
+  - Noa
+  - Omar
+  - Paul
+  - Priya
+  - Sacha
+  - Sarah
+  - Selma
+  - Sophie
+  - Thomas
+  - Tim
+  - Youssef
+  - Zara

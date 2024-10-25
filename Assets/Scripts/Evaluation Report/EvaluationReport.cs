@@ -60,7 +60,7 @@ public class EvaluationReport : MonoBehaviour
         {
             UnlockDialogue(dial);
         }
-
+        scrollRect.GetComponentInChildren<UnityEngine.UI.Mask>().enabled = true;
         blocks = GetComponentsInChildren<ReportBlock>(includeInactive: true);
         pages = GetComponentsInChildren<ReportPage>(includeInactive: true);
         int pageIndex = 0;

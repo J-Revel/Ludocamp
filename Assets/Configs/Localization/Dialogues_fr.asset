@@ -87,69 +87,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974378
-    m_Localized: Police
+    m_Localized: "D\xE9roul\xE9 de l'enqu\xEAte"
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974379
     m_Localized: "Bonjour, je suis l\xE0 pour obtenir des informations sur l'enqu\xEAte
-      concernant Arthur Buffard, d\xE9c\xE9d\xE9 il y a six ans dans un crash routier.
-      J'aimerais consulter le dossier, s'il vous pla\xEEt."
+      concernant Arthur Buffard, d\xE9c\xE9d\xE9 il y a six ans dans un crash routier."
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974380
-    m_Localized: Arthur Buffard, hein ? Je vais voir ce qu'on a.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974381
-    m_Localized: Merci beaucoup.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974382
-    m_Localized: "Voil\xE0 ce que j'ai trouv\xE9. C\u2019\xE9tait une petite affaire
-      sans importance. On a fait \xE7a rapidement \xE0 l'\xE9poque, on \xE9tait d\xE9bord\xE9s... "
+    m_Localized: "Arthur Buffard, hein ? C\u2019\xE9tait une petite affaire sans
+      importance. On a fait \xE7a rapidement \xE0 l'\xE9poque, on \xE9tait d\xE9bord\xE9s..."
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974383
-    m_Localized: Ce genre de truc, on s'en occupe quand on a le temps. Rien de prioritaire.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974385
-    m_Localized: "C'est une affaire de d\xE9c\xE8s, cela m\xE9ritait une enqu\xEAte
-      approfondie."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974386
     m_Localized: "On fait ce qu'on peut avec ce qu'on a ! Franchement, vous voyez
       bien que c'\xE9tait pas grand-chose."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974387
-    m_Localized: On a des affaires bien plus urgentes en ce moment vous savez.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974388
-    m_Localized: "Vous ne pourriez pas me fournir un rapport plus d\xE9taill\xE9
-      ? Je dois m'assurer que toutes les pistes ont \xE9t\xE9 correctement suivies."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974389
-    m_Localized: "Voil\xE0 aussi le [rapport du l\xE9giste]. C\u2019est tout ce qu\u2019il
-      y a."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974390
-    m_Localized: "Si \xE7a vous va pas, vous pouvez toujours vous plaindre ailleurs,
-      chez [les Buffard] par exemple. Honn\xEAtement, j\u2019ai pas que \xE7a \xE0
-      faire."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974391
-    m_Localized: P_LE B03M
-    m_Metadata:
-      m_Items: []
-  - m_Id: 808571208974392
-    m_Localized: "Merci. Je vais examiner ces documents, mais nous risquons de revenir
-      pour obtenir des informations compl\xE9mentaires."
     m_Metadata:
       m_Items: []
   - m_Id: 808571208974393
@@ -265,7 +218,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 812950762799115
-    m_Localized: S_DA
+    m_Localized: Doc_S_DA
     m_Metadata:
       m_Items: []
   - m_Id: 825809223794688
@@ -331,7 +284,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 825809223794701
-    m_Localized: V_LI
+    m_Localized: Doc_V_LI
     m_Metadata:
       m_Items: []
   - m_Id: 825809223794702
@@ -376,7 +329,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 825809232183296
-    m_Localized: J_AR
+    m_Localized: Doc_J_AR
     m_Metadata:
       m_Items: []
   - m_Id: 825809232183297
@@ -407,7 +360,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 825809232183302
-    m_Localized: V_ME
+    m_Localized: Doc_V_ME
     m_Metadata:
       m_Items: []
   - m_Id: 825809232183303
@@ -438,7 +391,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 833982559141888
-    m_Localized: "Nous traitons tous les jours avec des choses choquantes et rentrons
+    m_Localized: "Nous \xE9tudions tous les jours des choses choquantes et rentrons
       dans l\u2019intimit\xE9 des gens. J\u2019esp\xE8re que tu en prends conscience
       ?"
     m_Metadata:
@@ -550,7 +503,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 837590855958530
-    m_Localized: A_CO A_OU
+    m_Localized: Doc_A_CO Doc_A_OU
     m_Metadata:
       m_Items: []
   - m_Id: 838478093860864
@@ -694,7 +647,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160730
-    m_Localized: S_IN
+    m_Localized: Doc_S_IN
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160731
@@ -724,7 +677,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160736
-    m_Localized: V_FA
+    m_Localized: Doc_V_FA
     m_Metadata:
       m_Items: []
   - m_Id: 984934633160737
@@ -866,7 +819,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1090559232950273
-    m_Localized: B02P
+    m_Localized: B02P B12P
     m_Metadata:
       m_Items: []
   - m_Id: 1090559237144576
@@ -997,8 +950,106 @@ MonoBehaviour:
     m_Localized: "Bonne fin de journ\xE9e Madame Buffard"
     m_Metadata:
       m_Items: []
-  - m_Id: 1092416927940608
-    m_Localized: P_P1 P_P2 P_P3
+  - m_Id: 1168823725047808
+    m_Localized: Ce genre de truc, on s'en occupe quand on a le temps. Rien de prioritaire.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768064
+    m_Localized: "C'est une affaire de d\xE9c\xE8s, cela m\xE9ritait une enqu\xEAte
+      approfondie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768065
+    m_Localized: On a des affaires bien plus urgentes en ce moment vous savez.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768066
+    m_Localized: "Documents d'enqu\xEAte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768067
+    m_Localized: "Bonjour, est-ce que vous auriez le rapport d'enqu\xEAte pour l'affaire
+      Arthur Buffard ? Je dois m'assurer que toutes les pistes ont \xE9t\xE9 correctement
+      suivies."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768068
+    m_Localized: Arthur Buffard hein ? Attendez ici, je vais voir ce que j'ai.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768069
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768070
+    m_Localized: "Alors il n'y a pas grand chose, \xE0 peine quelques pages du [P.V.
+      de police]."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768071
+    m_Localized: Merci beaucoup !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768072
+    m_Localized: "Voil\xE0 aussi le [rapport du l\xE9giste]. C\u2019est tout ce qu\u2019il
+      y a."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768073
+    m_Localized: Doc_P_P1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768074
+    m_Localized: "Si \xE7a vous va pas, vous pouvez toujours vous plaindre ailleurs,
+      chez [les Buffard] par exemple. Honn\xEAtement, j\u2019ai pas que \xE7a \xE0
+      faire."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768075
+    m_Localized: Doc_P_LE B03M
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768076
+    m_Localized: "Merci. Je vais examiner ces documents, mais nous risquons de revenir
+      pour obtenir des informations compl\xE9mentaires."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768077
+    m_Localized: "Alors ? Comment \xE7a se passe, Mathieu ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768078
+    m_Localized: "Pas si mal. Le dossier n'est pas tr\xE8s compliqu\xE9, mais les
+      malfa\xE7ons sont d\xE9j\xE0 nombreuses."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768079
+    m_Localized: "Tu d\xE9couvriras que c'est malheureusement souvent le cas... Il
+      y a beaucoup de cas comme celui-l\xE0. Tu as fait le tour des victimes ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768080
+    m_Localized: Non, pas encore, j'ai juste pu m'occuper du cas de Tim et de la
+      famille d'Arthur.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768081
+    m_Localized: "Et la responsable de l'accident, tu es d\xE9j\xE0 all\xE9 la voir
+      ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768082
+    m_Localized: "Non, malheureusement, j'ai eu pas mal de travail pour r\xE9cup\xE9rer
+      les dossiers"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768083
+    m_Localized: Vraiment ? Tu devrais aller la voir ! C'est important d'avoir le
+      point de vue de chacun sur ce genre d'histoire quand on le peut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1168823783768084
+    m_Localized: C01C
     m_Metadata:
       m_Items: []
   references:

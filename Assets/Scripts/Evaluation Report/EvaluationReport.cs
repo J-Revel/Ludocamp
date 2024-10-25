@@ -112,7 +112,7 @@ public class EvaluationReport : MonoBehaviour
             return false;
         }
         unlockedConfigIDs.Add(id);
-        if (id.StartsWith("doc"))
+        if (id.StartsWith("doc") || id.StartsWith("Doc") || id.StartsWith("DOC"))
         {
             notViewedDocuments.Add(id);
         }

@@ -439,15 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdae949e7166795408f0b69b56a9329b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialDocuments:
-  - {fileID: 11400000, guid: 0df4085a7da429842928e3a41d1e9eb6, type: 2}
-  - {fileID: 11400000, guid: 3e47dff248e8da0499eb54aa7d754552, type: 2}
-  - {fileID: 11400000, guid: 439adfd55473b15489c9cbf604acf78c, type: 2}
-  - {fileID: 11400000, guid: 5498f17f31bacc7419525141ec796bae, type: 2}
-  - {fileID: 11400000, guid: cdcf318745edbe0419b99cae6c56b161, type: 2}
-  - {fileID: 11400000, guid: b145554a6f616c145bb7881af511e419, type: 2}
-  - {fileID: 11400000, guid: 6b7b1b961f76a2b409758c450b0889d0, type: 2}
-  - {fileID: 11400000, guid: c7ada9e557466eb458893090263ae2be, type: 2}
+  initialDocuments: []
   initialUnlocks: []
   gameEndScreen: {fileID: 8257671532271861640, guid: 7c4b6774553a9f04e9f7bbd0499d4342, type: 3}
   initialScroll: 1

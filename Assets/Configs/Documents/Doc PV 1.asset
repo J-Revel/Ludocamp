@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Doc PV 1
   m_EditorClassIdentifier: 
   id: Doc_P_P1
-  document_prefab: {fileID: 6495806619069190300, guid: 248f7600b4530bf4ebbcf3bb54a12ed1, type: 3}
+  document_prefab: {fileID: 4349815423961477261, guid: 6d00637e5a0abf64b9c8fe9b0f5bd0a0, type: 3}
   fullTitle: "Proc\xE8s Verbal 1"
   shortTitle: PV 1

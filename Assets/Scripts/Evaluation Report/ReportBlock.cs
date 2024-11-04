@@ -25,9 +25,7 @@ public class ReportBlock : MonoBehaviour
         validatedFrame.transform.SetAsLastSibling();
     }
 
-
-
-    public void SetCurrent()
+	public void SetCurrent()
     {
         validatedFrame.SetActive(false);
         canvasGroup.interactable = true;
@@ -69,11 +67,11 @@ public class ReportBlock : MonoBehaviour
         return GetComponentsInChildren<ReportOption>().All(x => x.IsOptionValid());
     }
 
-    private void OnDisable()
-    {
-        foreach (var option in options)
-        {
-            option.Validated -= OnOptionValidated;
-        }
-    }
+    //private void OnDisable()
+    //{
+    //    foreach (var option in options)
+    //    {
+    //        option.Validated -= OnOptionValidated;
+    //    }
+    //}
 }

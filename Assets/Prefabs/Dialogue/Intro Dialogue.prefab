@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
+    uid: 
     location_id: 73
     dialogue_index: 1
     topic: 
@@ -284,14 +285,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.007843138}
+  m_Color: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0.94509804}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4364034832326165938, guid: ac2e9f24f35505249be035dc274cec13, type: 3}
+  m_Sprite: {fileID: -4270721834320683553, guid: 9a556d2fe91a17741b7035de7febc937, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

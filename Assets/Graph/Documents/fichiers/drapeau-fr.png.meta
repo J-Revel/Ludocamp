@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      drapeau-fr_0: 3198207500245136321
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

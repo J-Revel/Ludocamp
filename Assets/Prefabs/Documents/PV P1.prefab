@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 8274990067226298995}
   - component: {fileID: 3553932365281818857}
   m_Layer: 5
-  m_Name: adresse1 (2)
+  m_Name: 1er bloc text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -728,8 +728,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 457.29263, y: -262.4141}
-  m_SizeDelta: {x: 910.5769, y: 121.6022}
+  m_AnchoredPosition: {x: 436, y: -262.4141}
+  m_SizeDelta: {x: 867.99, y: 121.6022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8274990067226298995
 CanvasRenderer:
@@ -761,7 +761,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Samedi 18 d\xE9cembre 2018\r\nNous soussign\xE9s Adjudant Nad\xE8ge Sahor
     , Mar\xE9chal des Logis Chef Eug\xE8ne DURANT, Officiers de Police Judiciaire
-    en\r\nr\xE9sidence \xE0 Avignon 84000.\r\nVu les articles 16 \xE0 19 et 75 \xE0
+    en r\xE9sidence \xE0 Avignon 84000.\r\nVu les articles 16 \xE0 19 et 75 \xE0
     78 du Code de Proc\xE8dure P\xE9nale.\r\nNous trouvant au bureau de notre unit\xE9
     \xE0 AVIGNON 84000, rapportons les op\xE9rations suivantes :"
   m_isRightToLeft: 0
@@ -1506,7 +1506,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 160, y: -663}
-  m_SizeDelta: {x: 231.0099, y: 105}
+  m_SizeDelta: {x: 192.8699, y: 66.8601}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8359429064058723012
 CanvasRenderer:
@@ -1946,7 +1946,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -222.74, y: -663}
-  m_SizeDelta: {x: 231.0099, y: 105}
+  m_SizeDelta: {x: 150.916, y: 66.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1890842801863070537
 CanvasRenderer:
@@ -2498,7 +2498,7 @@ GameObject:
   - component: {fileID: 4026217195511084219}
   - component: {fileID: 8496961473906282760}
   m_Layer: 5
-  m_Name: Image
+  m_Name: bloc signatures
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2520,7 +2520,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 417, y: -1251}
+  m_AnchoredPosition: {x: 417, y: -1276}
   m_SizeDelta: {x: 752, y: 89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4026217195511084219
@@ -2981,7 +2981,7 @@ GameObject:
   - component: {fileID: 132373334794445239}
   - component: {fileID: 1621581677765538015}
   m_Layer: 5
-  m_Name: adresse1 (3)
+  m_Name: 2eme bloc txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3003,8 +3003,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 455.29, y: -478.8646}
-  m_SizeDelta: {x: 910.5769, y: 249.2408}
+  m_AnchoredPosition: {x: 435, y: -478.8646}
+  m_SizeDelta: {x: 870, y: 249.2408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &132373334794445239
 CanvasRenderer:
@@ -3034,16 +3034,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Le 18 d\xE9cembre 2018, vers 02h38, madame Carine MARTIN circule sur la
+  m_text: "Le 18 d\xE9cembre 2018, vers 02h38, Madame Carine MARTIN circule sur la
     commune de BARBENTANE en direction d'AVIGNON.\r\nElle se rend \xE0 son travail.\r\nDans
     un virage sur la d\xE9partementale, elle fait un \xE9cart et percute Arthur BUFFARD,
     qui revenait de soir\xE9e avec son compagnon Tim CHAN. Le motard est projet\xE9
     au-dessus de la voiture et heurte le bitume quinze m\xE8tres plus loin.\r\nLa
-    voiture termine sa course dans le foss\xE9. Madame MARTIN sombre rapidement dans
-    le coma, laissant Monsieur CHAN seul\r\npour appeler les secours.\r\nArthur BUFFARD
-    est retrouv\xE9 mort \xE0 l'arriv\xE9e des secours, tandis que Carine MARTIN
-    est \xE9vacu\xE9e dans un \xE9tat grave par les\r\npompiers et le SAMU.sur la
-    d\xE9partementale dans un \xE9tat s\xE9rieux."
+    voiture termine sa course dans le foss\xE9. Madame MARTINE sombre rapidement
+    dans le coma , laissant Monsieur CHAN seul pour appeler les secours.\n\r\nA l'arriv\xE9e
+    des secours, Arthur BUFFARD est retrouv\xE9 mort et Carine MARTIN est emmen\xE9e
+    inconsciente par les ambulanciers aux urgences du Centre Hospitalier d'Avignon."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a21177fc26f893b4fade806250612222, type: 2}
   m_sharedMaterial: {fileID: -193813714345396524, guid: a21177fc26f893b4fade806250612222, type: 2}
@@ -4118,7 +4117,7 @@ GameObject:
   - component: {fileID: 4362260777040896110}
   - component: {fileID: 2501112132161713520}
   m_Layer: 5
-  m_Name: adresse1 (4)
+  m_Name: 3eme bloc text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4140,8 +4139,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 457.29, y: -919}
-  m_SizeDelta: {x: 910.5769, y: 561.756}
+  m_AnchoredPosition: {x: 434.99, y: -919}
+  m_SizeDelta: {x: 865.99, y: 561.756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4362260777040896110
 CanvasRenderer:
@@ -4174,28 +4173,29 @@ MonoBehaviour:
   m_text: "Suite \xE0 l'analyse de la sc\xE8ne de crime, nous avons rapidement s\xE9curis\xE9
     et d\xE9gag\xE9 la zone.\r\nLe v\xE9hicule, une CITRO\xCBN C4 immatricul\xE9e
     GF-865-EL, a \xE9t\xE9 emport\xE9 par les d\xE9panneurs apr\xE8s l'extraction
-    du corps. L'airbag\r\ns'est d\xE9clench\xE9 et plusieurs traces laissent penser
+    du corps. L'airbag s'est d\xE9clench\xE9 et plusieurs traces laissent penser
     que la voiture a percut\xE9 frontalement la moto apr\xE8s un \xE9cart de conduite.\r\nLa
     moto Yamaha immatricul\xE9e AE-899-LI a \xE9t\xE9 retrouv\xE9e \xE0 onze m\xE8tres
-    de l'impact pr\xE9sum\xE9.\r\nLes premiers relev\xE9s montrent qu'aucune trace
+    de l'impact pr\xE9sum\xE9.\n\r\nLes premiers relev\xE9s montrent qu'aucune trace
     de stup\xE9fiants n'a \xE9t\xE9 retrouv\xE9e chez aucun des deux conducteurs.\r\nMonsieur
     CHAN Tim a d\xE9clar\xE9 qu'il \xE9tait en pleine conversation avec son compagnon
-    au moment de l'accident. Ils ne\r\ns'\xE9taient pas particuli\xE8rement d\xE9port\xE9s
+    au moment de l'accident. Ils ne s'\xE9taient pas particuli\xE8rement d\xE9port\xE9s
     et leurs phares \xE9taient allum\xE9s. Les traces de pneus laissent \xE0 penser
-    que l'impact a\r\neu lieu dans leur voie, ce qui soutient cette hypoth\xE8se.\r\nNous
+    que l'impact a eu lieu dans leur voie, ce qui soutient cette hypoth\xE8se.\nNous
     n'avons pas pu interroger la conductrice en raison de son \xE9tat comateux, il
-    est donc actuellement impossible de\r\nd\xE9terminer la cause du d\xE9port du
-    v\xE9hicule.\r\nAucun autre t\xE9moin ne semble avoir assist\xE9 \xE0 la sc\xE8ne.
-    La circulation a \xE9t\xE9 bloqu\xE9e pendant 36 minutes.\r\nAucune vid\xE9osurveillance
-    n'a permis de retracer l'accident, mais les deux motards ont \xE9t\xE9 vus par
-    la cam\xE9ra du parking de\r\nBARBENTANE, \xE0 5 km du lieu de l'accident, \xE0
-    2h23. La moto immatricul\xE9e AE-897-LO semblait pr\xE9senter un l\xE9ger d\xE9faut\r\nd'\xE9quilibrage.\r\nAucun
-    lien ne semble exister entre les deux conducteurs. Le manque d'informations nous
-    emp\xEAche de formuler une hypo-\r\nth\xE8se concluante, en dehors de l'id\xE9e
-    que la voiture ait fait un \xE9cart pour am\xE9liorer la visibilit\xE9.\r\nLa
-    cellule des archives nous indique qu'il s'agit du 8\xE8me accident dans ce virage
-    au cours des cinq derni\xE8res ann\xE9es.\r\nLe maire a \xE9t\xE9 charg\xE9 d'annoncer
-    la nouvelle \xE0 la famille BUFFARD t\xF4t dans la matin\xE9e."
+    est donc actuellement impossible de d\xE9terminer la cause du d\xE9port du v\xE9hicule.\n\r\nAucun
+    autre t\xE9moin ne semble avoir assist\xE9 \xE0 la sc\xE8ne. La circulation a
+    \xE9t\xE9 bloqu\xE9e pendant 36 minutes.\r\nAucune vid\xE9osurveillance n'a permis
+    de retracer l'accident, mais les deux motards ont \xE9t\xE9 vus par la cam\xE9ra
+    du parking de BARBENTANE, \xE0 5 km du lieu de l'accident, \xE0 2h23. La moto
+    immatricul\xE9e AE-897-LO semblait pr\xE9senter un l\xE9ger d\xE9faut d'\xE9quilibrage.\n\r\nAucun
+    lien ne semble exister entre les deux conducteurs des v\xE9hicules accident\xE9s.
+    Le manque d'informations nous emp\xEAche de formuler une hypoth\xE8se concluante,
+    en dehors de l'id\xE9e que la voiture ait fait un \xE9cart pour am\xE9liorer
+    la visibilit\xE9.\n\r\nLa cellule des archives nous indique qu'il s'agit du 8\xE8me
+    accident dans ce virage au cours des cinq derni\xE8res ann\xE9es.\r\nLe maire
+    a \xE9t\xE9 charg\xE9 d'annoncer la nouvelle \xE0 la famille BUFFARD t\xF4t dans
+    la matin\xE9e."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a21177fc26f893b4fade806250612222, type: 2}
   m_sharedMaterial: {fileID: -193813714345396524, guid: a21177fc26f893b4fade806250612222, type: 2}

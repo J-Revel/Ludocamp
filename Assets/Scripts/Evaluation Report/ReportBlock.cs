@@ -8,6 +8,7 @@ public class ReportBlock : MonoBehaviour
     [SerializeField] private GameObject validatedFrame;
     [SerializeField] private float disabledBlockOpacity;
     [SerializeField] private CanvasGroup canvasGroup;
+    public float validate_scroll_position = 0;
     public event System.Action<ReportBlock> Validated;
     public UnlockableConfig[] UnlockOnValidate => unlockOnValidate;
     private ReportOption[] options;

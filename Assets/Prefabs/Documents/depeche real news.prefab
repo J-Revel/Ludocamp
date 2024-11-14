@@ -443,8 +443,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -62.348324, y: 576.7327}
-  m_SizeDelta: {x: 891.3032, y: 114.3145}
+  m_AnchoredPosition: {x: -62.348324, y: 445.77805}
+  m_SizeDelta: {x: 891.3032, y: 376.2239}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6088468990145208811
 CanvasRenderer:
@@ -483,15 +483,15 @@ MonoBehaviour:
     temps, et la collision a \xE9t\xE9 in\xE9vitable.\n\nArthur, gravement touch\xE9
     dans l'accident, est retrouv\xE9 inerte sur le bitume apr\xE8s avoir \xE9t\xE9
     projet\xE9 \xE0 quelques m\xE8tres de sa moto. Tim, t\xE9moin du drame, s'est
-    imm\xE9diatement arr\xEAt\xE9 pour lui porter secours.\n\nCarine, quant \xE0
-    elle, a perdu le contr\xF4le de son v\xE9hicule, sans doute du \xE0 la fatigue
-    de son travail, lequel a fini sa course dans un foss\xE9. L'infirmi\xE8re a \xE9t\xE9
-    retrouv\xE9e inconsciente, pr\xE9sentant de graves contusions malgr\xE9 l'activation
-    de l'airbag.\n\nLes secours, rapidement d\xE9p\xEAch\xE9s sur place, n'ont malheureusement
-    pu que constater le d\xE9c\xE8s d'Arthur. Tim, en \xE9tat de choc, a \xE9t\xE9
-    pris en charge. Carine a \xE9t\xE9 transport\xE9e d'urgence \xE0 l'h\xF4pital.
-    Une enqu\xEAte est en cours pour d\xE9terminer les circonstances exactes de l'accident.\ndo/pal/ai
-    ef\n\nAFP"
+    imm\xE9diatement arr\xEAt\xE9 pour appeler le SAMU et lui porter secours.\n\nCarine,
+    quant \xE0 elle, a perdu le contr\xF4le de son v\xE9hicule, sans doute du \xE0
+    la fatigue de son travail, lequel a fini sa course dans un foss\xE9. L'infirmi\xE8re
+    a \xE9t\xE9 retrouv\xE9e inconsciente, pr\xE9sentant de graves contusions malgr\xE9
+    l'activation de l'airbag.\n\nLes secours, rapidement d\xE9p\xEAch\xE9s sur place,
+    n'ont malheureusement pu que constater le d\xE9c\xE8s d'Arthur. Tim, en \xE9tat
+    de choc, a \xE9t\xE9 pris en charge. Carine a \xE9t\xE9 transport\xE9e d'urgence
+    \xE0 l'h\xF4pital. Une enqu\xEAte est en cours pour d\xE9terminer les circonstances
+    exactes de l'accident.\ndo/pal/ai ef\n\nAFP"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -597,7 +597,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.778, y: 241}
+  m_AnchoredPosition: {x: -12.778, y: 184.56}
   m_SizeDelta: {x: 990.4432, y: 22.796}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4535732064907098314

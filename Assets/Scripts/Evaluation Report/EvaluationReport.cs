@@ -15,6 +15,7 @@ public class EvaluationReport : MonoBehaviour
     [SerializeField] private RectTransform pagesContainer;
     [SerializeField] private AudioSource slideSound;
     [SerializeField] private UnityEngine.UI.Button upArrow, downArrow;
+    public float validation_scroll_delay = 1;
     
     private int currentBlockIndex;
     private ReportBlock currentBlock;
@@ -333,8 +334,15 @@ public class EvaluationReport : MonoBehaviour
         gameEndScreenInstance.GetComponentInChildren<SlideViewer>().LastSlideFinished += () => Application.Quit();
     }
 
+    private IEnumerator MoveToPositionAfterDelay(float scroll_position, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        yield return MoveToPosition(scroll_position);
+    }
+
     private void OnBlockValidated(ReportBlock block)
     {
+        StartCoroutine(MoveToPositionAfterDelay(block.validate_scroll_position, validation_scroll_delay));
         foreach (var unlocked in block.UnlockOnValidate)
         {
             if (unlocked is DocumentConfig docConfig)

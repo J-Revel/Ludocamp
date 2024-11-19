@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
@@ -45,16 +46,22 @@ public class DialogueDatabase : MonoBehaviour
     public void Awake()
     {
         instance = this;
-
+    }
+    
+    public IEnumerator Start()
+    {
+        var table_request = LocalizationSettings.StringDatabase.GetTableAsync(table);
+        while(!table_request.IsDone)
+            yield return null;
         List<char> places = new List<char>();
 
-        foreach (KeyValuePair<long, StringTableEntry> entry in LocalizationSettings.StringDatabase.GetTable(table))
+        foreach (KeyValuePair<long, StringTableEntry> entry in table_request.Result)
         {
             if (!places.Contains(entry.Value.Key[3]))
                 places.Add(entry.Value.Key[3]);
         }
 
-        foreach (KeyValuePair<long, StringTableEntry> entry in LocalizationSettings.StringDatabase.GetTable(table))
+        foreach (KeyValuePair<long, StringTableEntry> entry in table_request.Result)
         {
             string key = entry.Value.Key;
             char location_id = key[3];

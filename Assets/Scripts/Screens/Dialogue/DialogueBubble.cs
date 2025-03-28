@@ -1,6 +1,8 @@
 using JetBrains.Annotations;
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using NUnit.Framework;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,6 +22,7 @@ public class DialogueBubble : MonoBehaviour
     public Color character_color;
     public GameObject dialogue_unlock_display;
     public GameObject document_unlock_display;
+
     
 
     IEnumerator Start()
@@ -55,7 +58,9 @@ public class DialogueBubble : MonoBehaviour
                 if(EvaluationReport.Instance.UnlockDialogueOrDocument(unlock))
                 {
                     if (unlock.ToLower().StartsWith("doc"))
+                    {
                         document_unlock_display.SetActive(true);
+                    }
                     else
                         dialogue_unlock_display.SetActive(true);
                 }

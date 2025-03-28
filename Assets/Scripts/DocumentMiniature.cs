@@ -35,7 +35,7 @@ public class DocumentMiniature : MonoBehaviour, IPointerEnterHandler, IPointerEx
     {
         ScreenRoot docViewer = ScreenTransitionManager.instance.InstantiateScreen(docViewerScreenPrefab, ScreenStackMode.Push);
 
-        docViewer.GetComponentInChildren<DocViewer>().OpenDocument(documentConfig);
+        docViewer.GetComponentInChildren<DocViewer>().OpenDocument(documentConfig.id);
     }
 
     public void SetNew(bool isNew)

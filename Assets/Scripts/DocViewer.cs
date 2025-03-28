@@ -4,6 +4,7 @@ using System.Collections;
 
 public class DocViewer : MonoBehaviour
 {
+    public DocumentConfig[] documents;
     [SerializeField] private TMPro.TextMeshProUGUI docTitleText;
     [SerializeField] private UnityEngine.UI.ScrollRect scrollView;
     [SerializeField] private Transform documentContainer;
@@ -105,9 +106,20 @@ public class DocViewer : MonoBehaviour
         StartCoroutine(MoveToPosition(0f));
     }
 
-    public void OpenDocument(DocumentConfig docConfig)
+    public void OpenDocument(string document_id)
     {
-        EvaluationReport.Instance.RemoveNotViewedDoc(docConfig.id);
+        EvaluationReport.Instance.RemoveNotViewedDoc(document_id);
+        DocumentConfig selected_document = null;
+        foreach (var document in documents)
+        {
+            if (document.id == document_id)
+            {
+                selected_document = document;
+            }
+        }
+
+        if (selected_document == null)
+            return;
 
         List<GameObject> toDelete = new List<GameObject>();
 
@@ -125,9 +137,9 @@ public class DocViewer : MonoBehaviour
 
         //Debug.Log("open doc");
 
-        docTitleText.text = docConfig.fullTitle;
+        docTitleText.text = selected_document.fullTitle;
 
-        RectTransform docInstance = Instantiate(docConfig.document_prefab, documentContainer);
+        RectTransform docInstance = Instantiate(selected_document.document_prefab, documentContainer);
         docInstance.anchoredPosition = Vector3.zero;
         //Instantiate(docConfig.document_prefab, documentContainer);
 

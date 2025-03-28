@@ -87,6 +87,7 @@ Shader"UI/Bubble UI"
             float _NoiseScale;
             float4 _ClipRect;
             float4 _MainTex_ST;
+            float _DistortionNoiseScale;
 
             float rand(float2 vec)
             {

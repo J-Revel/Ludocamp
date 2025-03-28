@@ -2,12 +2,14 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Mono.Cecil.Cil;
 using Unity.Mathematics;
 //using UnityEditor.Localization;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization.Tables;
+using UnityEngine.UI;
 
 [System.Serializable]
 public struct DialogueLine
@@ -26,6 +28,7 @@ public struct LocationCharacter
 
 public class DialogueScreen : MonoBehaviour
 {
+    public DocumentConfig[] documents;
     public DialogueData dialogue;
     public MapPointConfig[] map_points;
     public DialogueEntryData[] lines;
@@ -37,6 +40,14 @@ public class DialogueScreen : MonoBehaviour
     public LocationCharacter[] characters;
     public float2 min_offset = new float2(0.2f, 0.5f);
     private float2 previous_offset;
+    
+    public ScreenRoot docViewerScreenPrefab;
+
+    public Button new_document_button_prefab;
+    public RectTransform new_document_button_panel;
+    
+    private List<string> new_documents = new List<string>();
+    private List<Button> new_document_buttons = new List<Button>();
 
     void Start()
     {
@@ -87,5 +98,30 @@ public class DialogueScreen : MonoBehaviour
         active_bubble = bubble;
 
         cursor++;
+        if (current_line.unlocks == null)
+            return;
+            
+        foreach(string unlock in current_line.unlocks)
+        {
+            if (unlock.ToLower().StartsWith("doc"))
+            {
+                new_documents.Add(unlock);
+                Button new_doc_button = Instantiate(new_document_button_prefab, new_document_button_panel);
+                foreach (DocumentConfig doc in documents)
+                {
+                    if(doc.id == unlock)
+                        new_doc_button.GetComponentInChildren<TMPro.TMP_Text>().text = doc.fullTitle;
+                }
+                new_document_buttons.Add(new_doc_button);
+                new_documents.Add(unlock);
+                new_doc_button.onClick.AddListener(() =>
+                {
+                    ScreenRoot docViewer = ScreenTransitionManager.instance.InstantiateScreen(docViewerScreenPrefab, ScreenStackMode.Push);
+                    docViewer.GetComponentInChildren<DocViewer>().OpenDocument(unlock);
+                });
+                new_document_button_panel.gameObject.SetActive(true);
+            }
+        }
+
     }
 }
